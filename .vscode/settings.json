@@ -1,0 +1,13 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "~/../css/"
+    }
+  ],
+  "git.autofetch": true,
+  "gitlens.graph.minimap.enabled": false,
+  "files.autoSave": "onFocusChange"
+  //   "liveServer.settings.port": 5501
+}
