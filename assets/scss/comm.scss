@@ -6,8 +6,29 @@
     max-width: 1280px;
 }
 
+
+
 // 네브 = 헤더
 
+
+
+
+
+
+
+
+
+
+// 이 아래는 임시로 태그 잡아두었습니다. 추후 클래스 지정 가능성 높습니다.\
+// h2 모두 .blind 예정
+.blind {
+    // display: none;
+    position: absolute;
+    text-indent: -9999px;
+    left: -9999px;
+}
+
+h3 {}
 
 // 아래에 각자 페이지 연결
 @import "main"
