@@ -1,1 +1,340 @@
 // 미린님 보험
+
+.inner{
+    color: $txtDefault;
+    h1{
+        font-size: 28px;
+        font-weight: 600;
+        margin: 0 0 16px 0;
+    }
+    h2{
+        font-size: 28px;
+        font-weight: 600;
+        margin: 0 0 18px 0;
+    }
+}
+
+.insurance_Comprehensive1{
+
+    .Comprehensive1_txt1{
+        font-weight: 500;
+        line-height: 28px;
+        white-space: pre-line;
+    }
+    .Comprehensive1_txt2{
+        display: flex;
+        align-items: center;
+        gap: 8.5px;
+        font-weight: 400;
+    }
+    .Comprehensive1_txt2::before{
+        content: '';
+        display: flex;
+        background-image: url(/images/sub_insurance/square.svg);
+        background-repeat: no-repeat;
+        background-size: 10.5px 12px;
+        background-position: 0 0;
+        width: 10.5px;
+        height: 12px;
+        color: $txtDefault;
+    }
+    .Comprehensive1_txt{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        margin: 18px 0 80px 0;
+    }
+}
+.insurance_Comprehensive2{
+
+    table{
+        color: #555;
+        width: 1197px;
+        height: 943px;
+        
+        th{
+            font-size: 20px;
+            font-weight: 500;
+            border: 1px solid $grayD9;
+            vertical-align: middle;
+            background: $grayE8;
+            color: $txtDefault;
+        }
+        td{
+            font-weight: 400;
+            line-height: 27px;
+            border: 1px solid $grayD9;
+            vertical-align: middle;
+            text-align: center;
+
+            .table_p1{
+                text-align: left;
+                width: 582.57px;
+                margin: 0 auto;
+            }
+            .table_p1_c{
+                text-align: left;
+                width: 554px;
+                margin: 0 auto;
+                white-space: pre-line;
+            }
+            .table_p1_c2{
+                text-align: left;
+                width: 572px;
+                margin: 0 auto;
+                white-space: pre-line;
+            }
+            .table_p2{
+                text-align: left;
+                width: 138px;
+                margin: 0 auto;
+                white-space: pre-line;
+            }
+            .table_p3{
+                text-align: left;
+                width: 1130px;
+                margin: 0 auto;
+                white-space: pre-line;
+                line-height: 26px;
+            }
+            .table_p3_c{
+                text-align: left;
+                width: 1130px;
+                margin: 0 auto;
+                white-space: pre-line;
+                line-height: 26px;
+                padding: 10px 0 0 0;
+            }
+        }
+        th,
+        td:first-child{
+            border-left: 0;
+            border-right: 0;
+        }
+        th,
+        td:last-child{
+            border-left: 0;
+            border-right: 0;
+        }
+        .table_tr1{
+            height: 115px;
+
+            .table_th1{
+                width: 239px;
+            }
+            .table_th2{
+                width: 721px;
+                border: 1px solid $grayD9;
+            }
+            .table_th3{
+                width: 239px;
+            }
+        }
+        .table_tr2{
+            height: 122px;
+            
+            th{
+                height: 129px;
+            }
+        }
+        .table_tr3{
+            height: 157px;
+        }
+        .table_tr4{
+            height: 83px;
+        }
+        .table_tr5{
+            height: 122px
+        }
+        .table_tr6{
+            height: 122px;
+        }
+        .table_tr7{
+            text-align: left;
+            height: 229px;
+        }
+        strong{
+            color: $txtDefault;
+            font-weight: 500;
+            line-height: 26px;
+        }
+        .table_em{
+            color: blue;
+        }
+    }
+}
+.insurance_Comprehensive3{
+
+    h2{
+        font-size: 28px;
+        font-weight: 600;
+        margin: 80px 0 18px 0;
+    }
+    p{
+        color: #555;
+        font-weight: 400;
+    }
+    .Comprehensive3_txt{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        margin: 0 0 36px 0;
+    }
+    .Comprehensive3_txt_1{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin: 0;
+    }
+    .Comprehensive3_txt1{
+        display: flex;
+        align-items: center;
+        gap: 8.5px;
+        font-weight: 400;
+    }
+    .Comprehensive3_txt1::before{
+        content: '';
+        display: flex;
+        background-image: url(/images/sub_insurance/square.svg);
+        background-repeat: no-repeat;
+        background-size: 10.5px 12px;
+        background-position: 0 0;
+        width: 10.5px;
+        height: 12px;
+        color: $txtDefault;
+    }
+    .Comprehensive3_txt2{
+        margin: 0 0 0 19px;
+    }
+    .Comprehensive3_txt3{
+        margin: 0 0 0 62px;
+    }
+    .Comprehensive3_txt4{
+        margin: 0 0 0 91px;
+    }
+    .Comprehensive3_txt5{
+        margin: 0 0 0 18px;
+    }
+    .Comprehensive3_txt_2{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+    .Comprehensive3_txt_c{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.insurance_creation1{
+    color: $txtDefault;
+    margin: 0 0 80px 0;
+
+    p{
+        font-weight: 500;
+        line-height: 28px;
+        white-space: pre-line;
+    }
+}
+.insurance_creation2{
+    margin: 0 0 80px 0;
+
+    table{
+        color: #555;
+        width: 1197px;
+        height: 303px;
+
+        th{
+            font-size: 20px;
+            font-weight: 700;
+            border: 1px solid $grayD9;
+            vertical-align: middle;
+            background: $grayE8;
+            color: $txtDefault;
+        }
+        td{
+            font-weight: 400;
+            line-height: 27px;
+            border: 1px solid $grayD9;
+            vertical-align: middle;
+            text-align: center;
+        }
+        th,
+        td:first-child{
+            border-right: 0;
+            border-left: 0;
+        }
+        th,
+        td:last-child{
+            border-left: 0;
+            border-right: 0;
+        }
+        .table2_tr1{
+            height: 89px;
+        }
+        .table2_th1,
+        .table2_th3{
+            width: 239px;
+        }
+        .table2_th2{
+            width: 722px;
+            border: 1px solid $grayD9;
+        }
+        .table2_tr2{
+            height: 121px;
+        }
+        .table2_tr3{
+            height: 94px;
+        }
+        .table2_p1{
+            text-align: left;
+            white-space: pre-line;
+            margin: 0 auto;
+            width: 137.25px;
+        }
+        .table2_p2{
+            text-align: left;
+            white-space: pre-line;
+            margin: 0 auto;
+            width: 627px;
+        }
+    }
+}
+.insurance_creation3{
+    color: $gray5;
+    font-weight: 500;
+
+    h2{
+        margin: 0;
+    }
+    .creation3_txt1{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        margin: 18px 0 0 0;
+    }
+    .creation3_txt1_1{
+        display: flex;
+        align-items: center;
+        gap: 8.5px;
+    }
+    .creation3_txt1_1::before{
+        content: '';
+        display: flex;
+        background-image: url(/images/sub_insurance/square.svg);
+        background-repeat: no-repeat;
+        background-size: 10.5px 12px;
+        background-position: 0 0;
+        width: 10.5px;
+        height: 12px;
+        color: $txtDefault;
+    }
+    .creation3_txt2{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        margin: 18px 0 0 0;
+        font-weight: 700;
+        color: $txtDefault;
+    }
+}
