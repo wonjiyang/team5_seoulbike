@@ -1,7 +1,12 @@
 @import "variables", "mixins", "reset";
 
-// 네브 = 헤더
+// 페이지 내용 레이아웃 max-width 제한
+.wrap {
+    margin: 0 auto;
+    max-width: 1280px;
+}
 
+// 네브 = 헤더
 
 
 // 아래에 각자 페이지 연결
