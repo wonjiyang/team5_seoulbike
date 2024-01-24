@@ -1,1 +1,98 @@
-// 민영 이용권
+// // 민영 이용권
+
+// ticket_info
+.desktop,
+.mobile {
+    color: $subColor;
+}
+
+.mobile {
+    display: none;
+}
+
+.ticket_summary {
+    padding: 40px 80px 60px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+
+    h3 {
+        color: $subColor;
+    }
+}
+
+.summary-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .sum-gap-line {
+        width: 1px;
+        height: 180px;
+        background-color: $grayE8;
+    }
+
+    .desktop {
+        max-width: 173px;
+    }
+}
+
+.summary-up,
+.summary-down {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sum-item {
+    align-items: center;
+
+    img {
+        display: block;
+        width: 120px;
+    }
+}
+
+// @media screen and (max-width: 1280px) {
+//     .sumary-wrap {
+//         flex-direction: column;
+//     }
+// }
+
+
+// ticket_info : warning
+.warn-wrap {
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: $white;
+
+    span {
+        width: 100%;
+        height: 1px;
+    }
+
+    .warn-num {
+        color: $primary;
+        font-size: 48px;
+        font-weight: 600;
+    }
+
+    .warn-tit {
+        color: $txtDefault;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .warn-txt {
+        color: $gray5;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
