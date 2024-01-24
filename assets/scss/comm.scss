@@ -6,8 +6,85 @@
     max-width: 1280px;
 }
 
+// h1 = 따릉이 로고
+// h2 : 모두 class="blind" 지정 예정
+.blind {
+    // display: none;
+    position: absolute;
+    text-indent: -9999px;
+    left: -9999px;
+}
+
+// h3 페이지 내에 들어가는 소제목
+h3 {
+    font-size: 28px;
+    font-weight: 600
+}
+
+
 // 네브 = 헤더
+#header {
+    position: fixed;
+    width: 672px;
+    // % 전환 가능성 있음
+}
+
+
+
+
+
+
+
+
+
+
+// 이 아래는 임시로 태그 잡아두었습니다. 추후 클래스 지정 가능성 높습니다.
+
+table {
+    width: 100%;
+    background-color: $white ;
+    border-radius: 16px;
+
+    * {
+        padding: 20px;
+    }
+
+    thead th {
+        &:first-child {
+            border-radius: 16px 0 0;
+        }
+
+        &:last-child {
+            border-radius: 0 16px 0 0;
+        }
+    }
+
+    tr {
+        border-bottom: 2px solid $grayE8;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        th {
+            background: $grayE8;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        td {
+            border-right: 2px solid $grayE8;
+            color: $gray5;
+            text-align: center;
+            font-weight: 400;
+
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+}
 
 
 // 아래에 각자 페이지 연결
-@import "main", "sub_insurance"
+@import "main", "sub_insurance", "sub_ticket";
