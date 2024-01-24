@@ -1,0 +1,57 @@
+.wrap{
+    max-width: 1472px;
+}
+img{
+    width: 180px;
+    height: 180px;
+}
+
+.safety-E{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.safety1,
+.safety2,
+.safety3{
+    display: flex;
+    gap: 60px;
+}
+
+.safety4{
+    margin-right: auto;
+}
+
+.safety{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $grayC9;
+    border-radius: 30px;
+    width: 706px;
+    height: 329px;
+    gap: 95px;
+    background-color: $white;
+}
+
+.safety-b{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+.safety-tit{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.safety-txt{
+    white-space: pre-line;
+    color: $gray7;
+    font-weight: 500;
+}
+
