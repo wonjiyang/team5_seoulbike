@@ -34,33 +34,49 @@ h3 {
 }
 
 table {
+    width: 100%;
     background-color: $white ;
+    border-radius: 16px;
 
     * {
         padding: 20px;
     }
 
+    thead th {
+        &:first-child {
+            border-radius: 16px 0 0;
+        }
+
+        &:last-child {
+            border-radius: 0 16px 0 0;
+        }
+    }
+
     tr {
-        border-bottom: 1px solid $grayE8;
-    }
+        border-bottom: 2px solid $grayE8;
 
-    th {
-        background: $grayE8;
-        text-align: center;
-        font-weight: 500;
+        &:last-child {
+            border-bottom: none;
+        }
 
-    }
+        th {
+            background: $grayE8;
+            text-align: center;
+            font-weight: 500;
+        }
 
-    td {
-        border-right: 1px solid $grayE8;
-        color: $gray5;
-        text-align: center;
-        font-weight: 400;
+        td {
+            border-right: 2px solid $grayE8;
+            color: $gray5;
+            text-align: center;
+            font-weight: 400;
 
-
+            &:last-child {
+                border-right: none;
+            }
+        }
     }
 }
-
 
 
 // 아래에 각자 페이지 연결
