@@ -2,7 +2,6 @@
 
 // 페이지 내용 레이아웃 max-width 제한
 .wrap {
-    left: 672px;
     // = header width
     margin: 0 auto;
     max-width: 1280px;
@@ -28,6 +27,7 @@ h3 {
 body {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 // 네브 = 헤더
