@@ -25,12 +25,18 @@ h3 {
 
 
 // 이 아래는 임시로 태그 잡아두었습니다. 추후 클래스 지정 가능성 높습니다.
+body {
+    display: flex;
+    flex-direction: row;
+}
 
 // 네브 = 헤더
 #header {
     width: 672px;
     // % 전환 가능성 있음
     height: 100vh;
+
+    background-color: $white;
 
     img {
         display: block;
