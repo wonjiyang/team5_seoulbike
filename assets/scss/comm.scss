@@ -6,6 +6,20 @@
     max-width: 1280px;
 }
 
+// h1 = 따릉이 로고
+// h2 : 모두 class="blind" 지정 예정
+.blind {
+    // display: none;
+    position: absolute;
+    text-indent: -9999px;
+    left: -9999px;
+}
+
+// h3 페이지 내에 들어가는 소제목
+h3 {
+    font-size: 28px;
+    font-weight: 600
+}
 
 
 // 네브 = 헤더
@@ -19,19 +33,7 @@
 
 
 
-// 이 아래는 임시로 태그 잡아두었습니다. 추후 클래스 지정 가능성 높습니다.\
-// h2 모두 .blind 예정
-.blind {
-    // display: none;
-    position: absolute;
-    text-indent: -9999px;
-    left: -9999px;
-}
-
-h3 {
-    font-size: 28px;
-    font-weight: 600
-}
+// 이 아래는 임시로 태그 잡아두었습니다. 추후 클래스 지정 가능성 높습니다.
 
 table {
     width: 100%;
