@@ -2,11 +2,12 @@
 
 // 페이지 내용 레이아웃 max-width 제한
 .wrap {
-    // = header width
-    margin: 0 auto;
     width: 100%;
-    max-width: 1280px;
     padding: 0 48px;
+    .inner {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
 }
 
 // h1 = 따릉이 로고
