@@ -2,8 +2,7 @@
 
 .inner {
     color: $txtDefault;
-
-    h1 {
+    h1{
         font-size: 28px;
         font-weight: 600;
         margin: 0 0 16px 0;
@@ -51,143 +50,143 @@
     }
 }
 
-.insurance_Comprehensive2 {
+// .insurance_Comprehensive2 {
 
-    table {
-        color: #555;
-        width: 1197px;
-        height: 943px;
+//     table {
+//         color: #555;
+//         width: 1197px;
+//         height: 943px;
 
-        th {
-            font-size: 20px;
-            font-weight: 500;
-            border: 1px solid $grayD9;
-            vertical-align: middle;
-            background: $grayE8;
-            color: $txtDefault;
-        }
+//         th {
+//             font-size: 20px;
+//             font-weight: 500;
+//             border: 1px solid $grayD9;
+//             vertical-align: middle;
+//             background: $grayE8;
+//             color: $txtDefault;
+//         }
 
-        td {
-            font-weight: 400;
-            line-height: 27px;
-            border: 1px solid $grayD9;
-            vertical-align: middle;
-            text-align: center;
+//         td {
+//             font-weight: 400;
+//             line-height: 27px;
+//             border: 1px solid $grayD9;
+//             vertical-align: middle;
+//             text-align: center;
 
-            .table_p1 {
-                text-align: left;
-                width: 582.57px;
-                margin: 0 auto;
-            }
+//             .table_p1 {
+//                 text-align: left;
+//                 width: 582.57px;
+//                 margin: 0 auto;
+//             }
 
-            .table_p1_c {
-                text-align: left;
-                width: 554px;
-                margin: 0 auto;
-                white-space: pre-line;
-            }
+//             .table_p1_c {
+//                 text-align: left;
+//                 width: 554px;
+//                 margin: 0 auto;
+//                 white-space: pre-line;
+//             }
 
-            .table_p1_c2 {
-                text-align: left;
-                width: 572px;
-                margin: 0 auto;
-                white-space: pre-line;
-            }
+//             .table_p1_c2 {
+//                 text-align: left;
+//                 width: 572px;
+//                 margin: 0 auto;
+//                 white-space: pre-line;
+//             }
 
-            .table_p2 {
-                text-align: left;
-                width: 138px;
-                margin: 0 auto;
-                white-space: pre-line;
-            }
+//             .table_p2 {
+//                 text-align: left;
+//                 width: 138px;
+//                 margin: 0 auto;
+//                 white-space: pre-line;
+//             }
 
-            .table_p3 {
-                text-align: left;
-                width: 1130px;
-                margin: 0 auto;
-                white-space: pre-line;
-                line-height: 26px;
-            }
+//             .table_p3 {
+//                 text-align: left;
+//                 width: 1130px;
+//                 margin: 0 auto;
+//                 white-space: pre-line;
+//                 line-height: 26px;
+//             }
 
-            .table_p3_c {
-                text-align: left;
-                width: 1130px;
-                margin: 0 auto;
-                white-space: pre-line;
-                line-height: 26px;
-                padding: 10px 0 0 0;
-            }
-        }
+//             .table_p3_c {
+//                 text-align: left;
+//                 width: 1130px;
+//                 margin: 0 auto;
+//                 white-space: pre-line;
+//                 line-height: 26px;
+//                 padding: 10px 0 0 0;
+//             }
+//         }
 
-        th,
-        td:first-child {
-            border-left: 0;
-            border-right: 0;
-        }
+//         th,
+//         td:first-child {
+//             border-left: 0;
+//             border-right: 0;
+//         }
 
-        th,
-        td:last-child {
-            border-left: 0;
-            border-right: 0;
-        }
+//         th,
+//         td:last-child {
+//             border-left: 0;
+//             border-right: 0;
+//         }
 
-        .table_tr1 {
-            height: 115px;
+//         .table_tr1 {
+//             height: 115px;
 
-            .table_th1 {
-                width: 239px;
-            }
+//             .table_th1 {
+//                 width: 239px;
+//             }
 
-            .table_th2 {
-                width: 721px;
-                border: 1px solid $grayD9;
-            }
+//             .table_th2 {
+//                 width: 721px;
+//                 border: 1px solid $grayD9;
+//             }
 
-            .table_th3 {
-                width: 239px;
-            }
-        }
+//             .table_th3 {
+//                 width: 239px;
+//             }
+//         }
 
-        .table_tr2 {
-            height: 122px;
+//         .table_tr2 {
+//             height: 122px;
 
-            th {
-                height: 129px;
-            }
-        }
+//             th {
+//                 height: 129px;
+//             }
+//         }
 
-        .table_tr3 {
-            height: 157px;
-        }
+//         .table_tr3 {
+//             height: 157px;
+//         }
 
-        .table_tr4 {
-            height: 83px;
-        }
+//         .table_tr4 {
+//             height: 83px;
+//         }
 
-        .table_tr5 {
-            height: 122px
-        }
+//         .table_tr5 {
+//             height: 122px
+//         }
 
-        .table_tr6 {
-            height: 122px;
-        }
+//         .table_tr6 {
+//             height: 122px;
+//         }
 
-        .table_tr7 {
-            text-align: left;
-            height: 229px;
-        }
+//         .table_tr7 {
+//             text-align: left;
+//             height: 229px;
+//         }
 
-        strong {
-            color: $txtDefault;
-            font-weight: 500;
-            line-height: 26px;
-        }
+//         strong {
+//             color: $txtDefault;
+//             font-weight: 500;
+//             line-height: 26px;
+//         }
 
-        .table_em {
-            color: blue;
-        }
-    }
-}
+//         .table_em {
+//             color: blue;
+//         }
+//     }
+// }
 
 .insurance_Comprehensive3 {
 
