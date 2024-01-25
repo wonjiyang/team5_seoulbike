@@ -54,23 +54,13 @@
 // .insurance_Comprehensive2 {
 
 //     table {
-//         color: #555;
-//         width: 1197px;
-//         height: 943px;
 
-//         th {
-//             font-size: 20px;
-//             font-weight: 500;
-//             border: 1px solid $grayD9;
-//             vertical-align: middle;
-//             background: $grayE8;
-//             color: $txtDefault;
-//         }
+        
 
 //         td {
 //             font-weight: 400;
 //             line-height: 27px;
-//             border: 1px solid $grayD9;
+//             border: 2px solid $grayD9;
 //             vertical-align: middle;
 //             text-align: center;
 
@@ -119,18 +109,6 @@
 //             }
 //         }
 
-//         th,
-//         td:first-child {
-//             border-left: 0;
-//             border-right: 0;
-//         }
-
-//         th,
-//         td:last-child {
-//             border-left: 0;
-//             border-right: 0;
-//         }
-
 //         .table_tr1 {
 //             height: 115px;
 
@@ -140,7 +118,7 @@
 
 //             .table_th2 {
 //                 width: 721px;
-//                 border: 1px solid $grayD9;
+//                 border: 2px solid $grayD9;
 //             }
 
 //             .table_th3 {
@@ -275,80 +253,59 @@
     }
 }
 
-.insurance_creation2 {
-    margin: 0 0 80px 0;
+// .insurance_creation2 {
+//     margin: 0 0 80px 0;
 
-    table {
-        color: #555;
-        width: 1197px;
-        height: 303px;
+//     table {
+//         color: #555;
+//         width: 1197px;
+//         height: 303px;
 
-        th {
-            font-size: 20px;
-            font-weight: 700;
-            border: 1px solid $grayD9;
-            vertical-align: middle;
-            background: $grayE8;
-            color: $txtDefault;
-        }
+//         td {
+//             font-weight: 400;
+//             line-height: 27px;
+//             border: 2px solid $grayD9;
+//             vertical-align: middle;
+//             text-align: center;
+//         }
 
-        td {
-            font-weight: 400;
-            line-height: 27px;
-            border: 1px solid $grayD9;
-            vertical-align: middle;
-            text-align: center;
-        }
+//         .table2_tr1 {
+//             height: 89px;
+//         }
 
-        th,
-        td:first-child {
-            border-right: 0;
-            border-left: 0;
-        }
+//         .table2_th1,
+//         .table2_th3 {
+//             width: 239px;
+//         }
 
-        th,
-        td:last-child {
-            border-left: 0;
-            border-right: 0;
-        }
+//         .table2_th2 {
+//             width: 722px;
+//             border: 2px solid $grayD9;
+//         }
 
-        .table2_tr1 {
-            height: 89px;
-        }
+//         .table2_tr2 {
+//             height: 121px;
+//         }
 
-        .table2_th1,
-        .table2_th3 {
-            width: 239px;
-        }
+//         .table2_tr3 {
+//             height: 94px;
+//         }
 
-        .table2_th2 {
-            width: 722px;
-            border: 1px solid $grayD9;
-        }
+//         .table2_p1 {
+//             text-align: left;
+//             white-space: pre-line;
+//             margin: 0 auto;
+//             width: 137.25px;
+//         }
 
-        .table2_tr2 {
-            height: 121px;
-        }
-
-        .table2_tr3 {
-            height: 94px;
-        }
-
-        .table2_p1 {
-            text-align: left;
-            white-space: pre-line;
-            margin: 0 auto;
-            width: 137.25px;
-        }
-
-        .table2_p2 {
-            text-align: left;
-            white-space: pre-line;
-            margin: 0 auto;
-            width: 627px;
-        }
-    }
-}
+//         .table2_p2 {
+//             text-align: left;
+//             white-space: pre-line;
+//             margin: 0 auto;
+//             width: 627px;
+//         }
+//     }
+// }
 
 .insurance_creation3 {
     color: $gray5;
@@ -392,3 +349,20 @@
         color: $txtDefault;
     }
 }
+
+// th {
+//     font-size: 20px;
+//     border: 2px solid $grayD9;
+//     vertical-align: middle;
+//     color: $txtDefault;
+// }
+// th,
+// td:first-child {
+//     border-left: 0;
+//     border-right: 0;
+// }
+// th,
+// td:last-child {
+//     border-left: 0;
+//     border-right: 0;
+// }
