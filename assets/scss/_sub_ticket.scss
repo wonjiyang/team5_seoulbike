@@ -37,6 +37,7 @@
     }
 
     .desktop {
+        // 임시
         max-width: 173px;
     }
 }
@@ -91,8 +92,15 @@
     }
 
     .warn-txt {
+        // margin-left: ;
         color: $gray5;
         font-size: 16px;
         font-weight: 400;
+    }
+
+    .warn-tit-area {
+        display: flex;
+        flex-direction: row;
+        align-items: center
     }
 }
