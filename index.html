@@ -1,3 +1,5 @@
+<!-- 원지 메인 -->
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -39,12 +41,78 @@
 
     <!-- 우리의 작업파일 연결 -->
     <link rel="stylesheet" href="./assets/css/comm.css">
-
+    <!--NAVER MAP API-->
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=4wfp2d63il"></script>
 </head>
 
 <body>
     <!-- header -->
     <header id="header"><a href="#"><img id="logo" src="./images/comm/logo.png" alt="따릉이 로고" />따릉이</a></header>
+
+    <div class="wrap">
+        <div class="container">
+            <div id="map" style="width:100%;height:100vh;">
+            </div>
+            <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=4wfp2d63il&callback=initMap"></script>
+            <script type="text/javascript">
+                var map = null;
+                function initMap() {
+                map = new naver.maps.Map('map', {
+                center: new naver.maps.LatLng(37.50294848228215, 127.02284710156980),
+                zoom: 15
+                });
+                }
+            </script>
+            <div class="bikeinfo">
+                <div class="bikeinfo-title">
+                    <h3 class="tit">따릉이 이용현황</h3>
+                    <div class="text-list">
+                        <a href="#"><span>일반</span></a>
+                        <a href="#"><span>새싹</span></a>
+                    </div>
+                </div>
+                <div class="bikeinfo-bikenum">
+                    <dl>
+                        <dd>200</dd>
+                        <dt>사용가능</dt>
+                    </dl>
+                    <dl>
+                        <dd>0</dd>
+                        <dt>점검중</dt>
+                    </dl>
+                    <dl>
+                        <dd>350</dd>
+                        <dt>전체</dt>
+                    </dl>
+                </div>
+                <div class="bikeinfo-btn-area">
+                    <div class="bikeinfo-btn">
+                        <a href="#">
+                            <p>대여 방법</p>
+                            <img src="./images/main/use_icon.png" alt="대여방법 버튼 이미지">
+                        </a>
+                    </div>
+                    <div class="bikeinfo-btn">
+                        <a href="#">
+                            <p>반납 방법</p>
+                            <img src="./images/main/return_icon.png" alt="반납방법 버튼 이미지">
+                        </a>
+                    </div>
+                    <div class="bikeinfo-btn">
+                        <a href="#">
+                            <p>안전 수칙</p>
+                            <img src="./images/main/safety_icon.png" alt="안전수칙 버튼 이미지">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="chatbot">
+                <img src="./images/main/chatbot_icon.png" alt="챗봇 버튼 이미지">
+            </div>
+        </div>
+    </div>
 </body>
+
+
 
 </html>
