@@ -1,176 +1,167 @@
 // 미린님 보험
 
-.wrap {
+.in-insurance {
+    padding: 56px 48px;
     
     h3 {
-        margin: 0 0 18px 0;
-    }
-}
-
-.insurance_Comprehensive1 {
-
-    .Comprehensive1_txt2 {
-        display: flex;
-        align-items: center;
-        gap: 8.5px;
-        font-weight: 400;
-    }
-
-    .Comprehensive1_txt2::before {
-        content: '';
-        display: flex;
-        background-image: url(/images/sub_insurance/square.svg);
-        background-repeat: no-repeat;
-        background-size: 10.5px 12px;
-        background-position: 0 0;
-        width: 10.5px;
-        height: 12px;
+        padding: 0 0 18px 0;
         color: $txtDefault;
     }
+}
 
-    .Comprehensive1_txt {
+.insurance-cc_txt1{
+    padding: 38px 0 80px 0;
+}
+
+.insurance_Comprehensive2 {
+
+    .table-td1 {
+        text-align: center;
+    }
+
+    .table-p1 {
+        max-width: 706px;
+        text-align: left;
+    }
+
+    .table-p2 {
         display: flex;
         flex-direction: column;
-        gap: 18px;
-        margin: 18px 0 80px 0;
+        align-items: flex-start;
+        margin: 0 auto;
+        width: fit-content;
+        text-align: left;
+    }
+
+    .table-p3 {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: left;
+        width: fit-content;
+    }
+
+    .table-p3-c {
+        padding: 10px 0 0 0;
+    }
+
+    strong {
+        color: $txtDefault;
+        font-weight: 500;
+        line-height: 26px;
+        padding: 0;
+    }
+
+    .table_em {
+        color: blue;
     }
 }
 
-// .insurance_Comprehensive2 {
-
-//     .table-p2 {
-//         display: flex;
-//         flex-direction: column;
-//         align-items: flex-start;
-//         margin: 0 auto;
-//         width: fit-content;
-//     }
-
-//     .table-p3 {
-//         display: flex;
-//         flex-direction: column;
-//         margin: 0 auto;
-//         text-align: left;
-//         width: fit-content;
-//         max-width: 1125px;
-//     }
-
-//     .table-p3-c {
-//         padding: 10px 0 0 0;
-//     }
-
-//     .table_td {
-//         text-align: left;
-//         height: 230px;
-//         padding: 0 36px;
-
-//         p{
-//             text-align: left;
-//         }
-//     }
-
-//     strong {
-//         color: $txtDefault;
-//         font-weight: 500;
-//         line-height: 26px;
-//         padding: 0;
-//     }
-
-//     .table_em {
-//         color: blue;
-//     }
-// }
-
 .insurance_Comprehensive3 {
-    margin: 80px 0 0 0;
+    padding: 80px 0 0 0;
 
     p {
         color: #555;
         font-weight: 400;
     }
 
-    .Comprehensive3_txt {
-        display: flex;
-        flex-direction: column;
-        gap: 18px;
-        margin: 0 0 36px 0;
+    .Comprehensive3_t1 {
+        font-weight: 600;
+        padding: 0 0 5px 0;
     }
-
-    .Comprehensive3_txt_1 {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-        margin: 0;
-    }
-
-    .Comprehensive3_txt1 {
-        display: flex;
-        align-items: center;
-        gap: 8.5px;
-        font-weight: 400;
-    }
-
-    .Comprehensive3_txt1::before {
-        content: '';
-        display: flex;
-        background-image: url(/images/sub_insurance/square.svg);
-        background-repeat: no-repeat;
-        background-size: 10.5px 12px;
-        background-position: 0 0;
-        width: 10.5px;
-        height: 12px;
-        color: $txtDefault;
-    }
-
-    .Comprehensive3_txt2 {
-        margin: 0 0 0 19px;
-    }
-
-    .Comprehensive3_txt3 {
-        margin: 0 0 0 62px;
-    }
-
-    .Comprehensive3_txt4 {
-        margin: 0 0 0 91px;
-    }
-
-    .Comprehensive3_txt5 {
-        margin: 0 0 0 18px;
-    }
-
-    .Comprehensive3_txt_2 {
+    .comprehensive3_txt_2 {
         display: flex;
         flex-direction: column;
         gap: 18px;
     }
 
-    .Comprehensive3_txt_c {
+    .comprehensive3_txt_c-p {
         display: flex;
         flex-direction: column;
+        gap: 5px;
+    
+        .c3_c-p-1 {
+            content: '1.';
+    
+            &::before{
+                content: '1.';
+            }
+        }
+
+        .c3_c-p-1-t {
+            padding: 0 0 0 17px;
+        }
+    }
+    
+    .comprehensive3_txt_c-p2 {
+        display: flex;
+        gap: 5px;
+    
+        .c3_c-p-2{
+            display: flex;
+            min-width: 57px;
+            gap: 5px;
+    
+            &::after {
+                content: '-';
+            }
+        }
+    }
+    
+    .comprehensive3_txt_c-p3 {
+        display: flex;
+        gap: 5px;
+    
+        .c3_c-p-3 {
+            display: flex;
+            min-width: 87px;
+            gap: 5px;
+    
+            &::after {
+                content: '-';
+            }
+        }
+    }
+    
+    .c3_c-p-4 {
+        padding: 0 0 0 16px;
+    }
+
+    .comprehensive3_txt_1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comprehensive3_txt-p {
+        padding: 0 0 22px 0;
+    }
+
+    .Comprehensive3_t2 {
+        padding: 0 0 0 18px;
     }
 }
 
+
 .insurance_creation1 {
     color: $txtDefault;
-    margin: 0 0 80px 0;
+    padding: 0 0 80px 0;
 
     p {
         font-weight: 500;
         line-height: 28px;
-        white-space: pre-line;
-        margin:  0 0 0;
+        margin:  0 0 0 0;
     }
 }
 
-// .insurance_creation2 {
-//     margin: 0 0 80px 0;
+.insurance_creation2 {
+    padding: 0 0 80px 0;
 
-//     .table2-p {
-//         margin: 0 auto;
-//         text-align: left;
-//         max-width: 124px;
-//     }
-// }
+    .table2-p {
+        margin: 0 auto;
+        text-align: left;
+        max-width: 124px;
+    }
+}
 
 .insurance_creation3 {
     color: $gray5;
@@ -180,90 +171,106 @@
         margin: 0;
     }
 
-    .creation3_txt1 {
-        display: flex;
-        flex-direction: column;
-        gap: 18px;
-        margin: 18px 0 0 0;
-    }
-
-    .creation3_txt1_1 {
-        display: flex;
-        align-items: center;
-        gap: 8.5px;
-    }
-
-    .creation3_txt1_1::before {
-        content: '';
-        display: flex;
-        background-image: url(/images/sub_insurance/square.svg);
-        background-repeat: no-repeat;
-        background-size: 10.5px 12px;
-        background-position: 0 0;
-        width: 10.5px;
-        height: 12px;
-        color: $txtDefault;
-    }
-
     .creation3_txt2 {
         display: flex;
-        flex-direction: column;
-        gap: 18px;
+        gap: 5px;
         margin: 18px 0 0 0;
         font-weight: 700;
         color: $txtDefault;
+
+        &::before {
+            content: '※';
+        }
     }
 }
 
-// .insurance-table{
+.insurance-mt{
+    font-weight: 500;
+    line-height: 28px;
+    white-space: none;
+}
+
+.insurance-cc_txt {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+.insurance-cc_txt2 {
+    display: flex;
+    align-items: center;
+    gap: 8.5px;
+    font-weight: 400;
+}
+
+.insurance-cc_txt2::before {
+    content: '';
+    display: block;
+    background: url(/images/sub_insurance/square.svg) no-repeat 0 0;
+    background-size: 10.5px 10.5px;
+    width: 10.5px;
+    height: 10.5px;
+    color: $txtDefault;
+}
+
+.insurance-cc_txt3 {
+    display: flex;
+    padding: 0 0 0 18px;
+    gap: 5px;
+    font-weight: 400;
+
+    &::before {
+        content: '※';
+    }
+}
+
+.insurance_Comprehensive2,
+.insurance_creation2 {
     
-//     th {
-//         font-size: 20px;
-//         border: 2px solid $grayD9;
-//         vertical-align: middle;
-//         color: $txtDefault;
-//     }
-//     td {
-//         line-height: 27px;
-//         border: 2px solid $grayD9;
-//         vertical-align: middle;
-//     }
-//     p,
-//     .table-p,
-//     .table-p2,
-//     .table-p3 {
-//         padding: 0;
-//     }
-//     .table-p {
-//         display: flex;
-//         flex-direction: column;
-//         align-items: flex-start;
-//         margin: 0 auto;
-//         text-align: left;
-//         width: fit-content;
-//         max-width: 573px;
-//     }
-//     .table_tr {
-//         height: 95px;
+    th {
+        font-size: 20px;
+        padding: 35px;
+    }
+    td {
+        vertical-align: middle;
+        padding: 35px;
+    }
 
-//         .table_th1 {
-//             width: 239px;
-//         }
+    p,
+    .table-p,
+    .table-p2,
+    .table-p3,
+    .table2-p {
+        padding: 0;
+    }
+    
+    .table-p3-c {
+        padding: 10px 0 0 0;
+    }
 
-//         .table_th2 {
-//             width: 721px;
-//             border-right: 2px solid $grayD9;
-//             border-left: 2px solid $grayD9;
-//         }
+    .table-p {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 auto;
+        text-align: left;
+        width: fit-content;
+        max-width: 573px;
+    }
 
-//         .table_th3 {
-//             width: 239px;
-//         }
-//     }
-//     .table_tr2 {
-//         height: 124px;
-//     }
-//     .table_tr3 {
-//         height: 150px;
-//     }
-// }
+    .table_tr {
+
+        .table_th1 {
+            width: 239px;
+        }
+
+        .table_th2 {
+            width: 721px;
+        }
+
+        .table_th3 {
+            width: 239px;
+        }
+    }
+}
