@@ -9,6 +9,17 @@
     }
 }
 
+.bikeinfo-layout {
+    filter: drop-shadow( 4px 4px 8px $grayC9);
+    position: absolute;
+    top: 153px;
+    right: 3px;
+    width: 336px;
+    height: 488px;
+    background-color: $white;
+    border-radius: 15px; 
+}
+
 .bikeinfo-box {
     position: absolute;
     top: 0;
@@ -17,21 +28,24 @@
     height: 160px;
     background-color: $white;
     border-radius: 15px 0 0 15px;
+    filter: drop-shadow( 4px 4px 8px $grayC9);
     img {
         padding: 28px 20px;
     }
 }
 
 .bikeinfo {
-    position: absolute;
-    top: 153px;
-    right: 3px;
-    width: 336px;
-    height: 488px;
-    background-color: $white;
-    border-radius: 15px;
-    filter: drop-shadow( 4px 4px 8px $grayC9);
     padding: 16px 24px 24px 24px;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 60px;
+        top: -21px;
+        right: 0px;
+        z-index: 1;
+        background: url(/images/main/bikeinfo_d.png);
+    }
 }
 
 .bikeinfo-title {
