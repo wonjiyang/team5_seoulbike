@@ -36,50 +36,50 @@
     }
 }
 
-.insurance_Comprehensive2 {
+// .insurance_Comprehensive2 {
 
-    .table-p2 {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 0 auto;
-        width: fit-content;
-    }
+//     .table-p2 {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: flex-start;
+//         margin: 0 auto;
+//         width: fit-content;
+//     }
 
-    .table-p3 {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        text-align: left;
-        width: fit-content;
-        max-width: 1125px;
-    }
+//     .table-p3 {
+//         display: flex;
+//         flex-direction: column;
+//         margin: 0 auto;
+//         text-align: left;
+//         width: fit-content;
+//         max-width: 1125px;
+//     }
 
-    .table-p3-c {
-        padding: 10px 0 0 0;
-    }
+//     .table-p3-c {
+//         padding: 10px 0 0 0;
+//     }
 
-    .table_td {
-        text-align: left;
-        height: 230px;
-        padding: 0 36px;
+//     .table_td {
+//         text-align: left;
+//         height: 230px;
+//         padding: 0 36px;
 
-        p{
-            text-align: left;
-        }
-    }
+//         p{
+//             text-align: left;
+//         }
+//     }
 
-    strong {
-        color: $txtDefault;
-        font-weight: 500;
-        line-height: 26px;
-        padding: 0;
-    }
+//     strong {
+//         color: $txtDefault;
+//         font-weight: 500;
+//         line-height: 26px;
+//         padding: 0;
+//     }
 
-    .table_em {
-        color: blue;
-    }
-}
+//     .table_em {
+//         color: blue;
+//     }
+// }
 
 .insurance_Comprehensive3 {
     margin: 80px 0 0 0;
@@ -162,15 +162,15 @@
     }
 }
 
-.insurance_creation2 {
-    margin: 0 0 80px 0;
+// .insurance_creation2 {
+//     margin: 0 0 80px 0;
 
-    .table2-p {
-        margin: 0 auto;
-        text-align: left;
-        max-width: 124px;
-    }
-}
+//     .table2-p {
+//         margin: 0 auto;
+//         text-align: left;
+//         max-width: 124px;
+//     }
+// }
 
 .insurance_creation3 {
     color: $gray5;
@@ -267,12 +267,3 @@
 //         height: 150px;
 //     }
 // }
-
-.table-p{
-    padding: 0;
-    margin: 0 auto;
-
-    p{
-        padding: 0;
-    }
-}
