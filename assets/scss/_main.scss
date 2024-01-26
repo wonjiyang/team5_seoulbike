@@ -12,7 +12,7 @@
 .bikeinfo-box {
     position: absolute;
     top: 0;
-    left: 1656px;
+    right: 3px;
     width: 70px;
     height: 160px;
     background-color: $white;
@@ -21,7 +21,7 @@
 .bikeinfo {
     position: absolute;
     top: 153px;
-    left: 1126px;
+    right: 3px;
     width: 336px;
     height: 488px;
     background-color: $white;
@@ -127,4 +127,10 @@
             }
         }
     }
+}
+
+.chatbot {
+    position: absolute;
+    bottom: 88px;
+    left: 48px;
 }
