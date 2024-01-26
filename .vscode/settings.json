@@ -8,6 +8,7 @@
   ],
   "git.autofetch": true,
   "gitlens.graph.minimap.enabled": false,
-  "files.autoSave": "onFocusChange"
+  "files.autoSave": "onFocusChange",
+  "liveServer.settings.port": 5501
   //   "liveServer.settings.port": 5501
 }
