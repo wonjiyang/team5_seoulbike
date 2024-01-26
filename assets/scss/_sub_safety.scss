@@ -1,7 +1,20 @@
 
+
+.in-safety{
+    h3{
+        color: $txtDefault;
+        font-size: 36px;
+        font-weight: 600;
+        text-align: center;
+        padding: 56px 0 88px 0;
+        margin: 0;
+    }
+}
 .safety-img{
-    width: 180px;
-    height: 180px;
+    max-width: 30%;
+    height: 220px;
+    height: auto;
+    
 }
 
 .safety-E{
@@ -10,6 +23,7 @@
     gap: 60px;
     justify-content: center;
     align-items: center;
+    max-width: 1280px
 }
 
 .safety1,
@@ -29,10 +43,12 @@
     align-items: center;
     border: 1px solid $grayC9;
     border-radius: 30px;
-    width: 706px;
+    max-width: 706px;
     height: 329px;
-    gap: 95px;
+    gap: 40px;
     background-color: $white;
+    width: 100%;
+    padding: 75px 80px;
 }
 
 .safety-b{
@@ -40,16 +56,20 @@
     flex-direction: column;
     text-align: center;
     gap: 20px;
+    max-width: 50%;
+    text-align: left;
 }
 
 .safety-tit{
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 28px;
+    font-weight: 600;
+    width: 100%;
 }
 
 .safety-txt{
-    white-space: pre-line;
     color: $gray7;
+    font-size: 18px;
     font-weight: 500;
+    width: 100%;
 }
 
