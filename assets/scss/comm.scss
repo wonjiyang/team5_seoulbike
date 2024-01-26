@@ -39,11 +39,15 @@ body {
 
 // 네브 = 헤더
 #header {
-    width: 672px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
     // % 전환 가능성 있음
     height: 100vh;
 
     background-color: $white;
+    min-width: 254px;
 
     img {
         display: block;
