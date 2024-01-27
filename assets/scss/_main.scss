@@ -1,1 +1,157 @@
 // 맵 들어가는 메인
+
+.wrap {
+    position: relative;
+    padding-left: 254px;
+    #map {
+        width: 100%;
+        height:100vh;
+    }
+}
+
+.bikeinfo-layout {
+    filter: drop-shadow( 4px 4px 8px $grayC9);
+    position: absolute;
+    top: 153px;
+    right: 3px;
+    width: 336px;
+    height: 488px;
+    background-color: $white;
+    border-radius: 15px; 
+}
+
+.bikeinfo-box {
+    position: absolute;
+    top: 0;
+    right: 3px;
+    width: 70px;
+    height: 160px;
+    background-color: $white;
+    border-radius: 15px 0 0 15px;
+    filter: drop-shadow( 4px 4px 8px $grayC9);
+    img {
+        padding: 28px 20px;
+    }
+}
+
+.bikeinfo {
+    padding: 16px 24px 24px 24px;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 60px;
+        top: -21px;
+        right: 0px;
+        z-index: 1;
+        background: url(/images/main/bikeinfo_d.png);
+    }
+}
+
+.bikeinfo-title {
+    display: flex;
+    justify-content: space-between;
+    .tit {
+        color: $subColor;
+        font-size: 24px;
+        font-weight: 600;
+        background-image: linear-gradient(180deg,$white 75%, $subColor3 10%);
+    }
+    .text-list {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    .text-content {
+        display: block;
+        width: 40px;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            width: 1px;
+            height: 12px;
+            background-color: $grayD9;
+        }
+    }
+    .active {
+        font-weight: 600;
+
+    }
+}
+
+.bikeinfo-bikenum {
+    width: 288px;
+    display: flex;
+    margin: 8px 0 30px 0px;
+    justify-content: space-between;
+    dl {
+        width: 70px;
+        text-align: center;
+    }
+    dt {
+        color: $gray7;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .bikenum_b {
+        color: $subColor;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .active {
+        color: $primary;
+    }
+}
+
+.bikeinfo-btn {
+    height: 80px;
+    background-color: $subColor;
+    border-radius: 50px;
+    padding: 7px 20px 7px 24px;
+    margin-bottom: 16px;
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            position: relative;
+            color: $white;
+            font-size: 20px;
+            font-weight: 500;
+            &:hover {
+                &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -3px;
+                width: 28px;
+                height: 3px;
+                border-radius: 3px;
+                background-color: $primary;
+            }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 31px;
+                    bottom: -3px;
+                    width: 3px;
+                    height: 3px;
+                    border-radius: 50%;
+                    background-color: $primary;
+                }
+            }   
+        }
+    }
+}
+
+.chatbot {
+    position: absolute;
+    bottom: 88px;
+    left: 302px;
+}
