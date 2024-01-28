@@ -9,20 +9,35 @@
     }
 }
 
-.insurance-cc_txt1{
-    padding: 38px 0 80px 0;
+
+.insurance_Comprehensive1 {
+
+    .insurance-cc_txt_1{
+        padding: 38px 0 80px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .insurance-cc_txt1 {
+        display: flex;
+        align-items: center;
+        gap: 8.5px;
+        font-weight: 400;
+    }
+
+    .insurance-cc_txt1::before {
+        content: '';
+        display: block;
+        background: url(/images/sub_insurance/square.svg) no-repeat 0 0;
+        background-size: 10.5px 10.5px;
+        width: 10.5px;
+        height: 10.5px;
+        color: $txtDefault;
+    }
 }
 
 .insurance_Comprehensive2 {
-
-    .table-td1 {
-        text-align: center;
-    }
-
-    .table-p1 {
-        max-width: 706px;
-        text-align: left;
-    }
 
     .table-p2 {
         display: flex;
@@ -65,10 +80,6 @@
         font-weight: 400;
     }
 
-    .Comprehensive3_t1 {
-        font-weight: 600;
-        padding: 0 0 5px 0;
-    }
     .comprehensive3_txt_2 {
         display: flex;
         flex-direction: column;
@@ -80,50 +91,40 @@
         flex-direction: column;
         gap: 5px;
     
-        .c3_c-p-1 {
-            content: '1.';
+        // .c3_c-p-1 {
+        //     font-weight: 500;
     
-            &::before{
-                content: '1.';
-            }
-        }
+        //     &::before{
+        //         content: '1.';
+        //     }
+        // }
 
-        .c3_c-p-1-t {
-            padding: 0 0 0 17px;
-        }
+        // .c3_c-p-2 {
+        //     font-weight: 500;
+    
+        //     &::before{
+        //         content: '2.';
+        //     }
+        // }
+        
+        // .c3_c-p-3 {
+        //     font-weight: 500;
+    
+        //     &::before{
+        //         content: '3.';
+        //     }
+        // }
+
+        // .c3_c-p-4 {
+        //     font-weight: 500;
+    
+        //     &::before{
+        //         content: '4.';
+        //     }
+        // }
     }
-    
-    .comprehensive3_txt_c-p2 {
-        display: flex;
-        gap: 5px;
-    
-        .c3_c-p-2{
-            display: flex;
-            min-width: 57px;
-            gap: 5px;
-    
-            &::after {
-                content: '-';
-            }
-        }
-    }
-    
-    .comprehensive3_txt_c-p3 {
-        display: flex;
-        gap: 5px;
-    
-        .c3_c-p-3 {
-            display: flex;
-            min-width: 87px;
-            gap: 5px;
-    
-            &::after {
-                content: '-';
-            }
-        }
-    }
-    
-    .c3_c-p-4 {
+
+    .c3_c-p-5 {
         padding: 0 0 0 16px;
     }
 
@@ -165,7 +166,7 @@
 
 .insurance_creation3 {
     color: $gray5;
-    font-weight: 500;
+    font-weight: 400;
 
     h2 {
         margin: 0;
@@ -175,55 +176,19 @@
         display: flex;
         gap: 5px;
         margin: 18px 0 0 0;
-        font-weight: 700;
+        font-weight: 600;
         color: $txtDefault;
 
         &::before {
             content: '※';
         }
     }
-}
 
-.insurance-mt{
-    font-weight: 500;
-    line-height: 28px;
-    white-space: none;
-}
-
-.insurance-cc_txt {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-
-
-.insurance-cc_txt2 {
-    display: flex;
-    align-items: center;
-    gap: 8.5px;
-    font-weight: 400;
-}
-
-.insurance-cc_txt2::before {
-    content: '';
-    display: block;
-    background: url(/images/sub_insurance/square.svg) no-repeat 0 0;
-    background-size: 10.5px 10.5px;
-    width: 10.5px;
-    height: 10.5px;
-    color: $txtDefault;
-}
-
-.insurance-cc_txt3 {
-    display: flex;
-    padding: 0 0 0 18px;
-    gap: 5px;
-    font-weight: 400;
-
-    &::before {
-        content: '※';
+    .creation3_txt2-1 {
+        margin: 5px 0 0 0;
     }
 }
+
 
 .insurance_Comprehensive2,
 .insurance_creation2 {
@@ -231,6 +196,7 @@
     th {
         font-size: 20px;
         padding: 35px;
+        vertical-align: middle;
     }
     td {
         vertical-align: middle;
@@ -272,5 +238,65 @@
         .table_th3 {
             width: 239px;
         }
+    }
+
+    .table-p1 {
+        display: flex;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+.insurance_Comprehensive3,
+.insurance_creation3 {
+
+    .insurance-mt{
+        font-weight: 500;
+        line-height: 28px;
+    }
+
+    .insurance-cc_txt {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .insurance-cc_txt2 {
+        display: flex;
+        align-items: center;
+        gap: 8.5px;
+        font-weight: 400;
+    }
+
+    .insurance-cc_txt2::before {
+        content: '';
+        display: block;
+        background: url(/images/sub_insurance/square.svg) no-repeat 0 0;
+        background-size: 10.5px 10.5px;
+        width: 10.5px;
+        height: 10.5px;
+        color: $txtDefault;
+    }
+
+    .insurance-cc_txt3 {
+        display: flex;
+        padding: 0 0 0 18px;
+        gap: 5px;
+        font-weight: 400;
+    
+        &::before {
+            content: '※';
+        }
+    }
+
+    .insurance-cc_t1 {
+        font-weight: 500;
+        padding: 0 0 5px 0;
+    }
+
+    .c3_c-p-1-t{
+        padding: 0 0 0 18px;
     }
 }
