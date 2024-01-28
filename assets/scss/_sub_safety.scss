@@ -1,7 +1,7 @@
+// 안전수칙
 
-
-.in-safety{
-    h3{
+.in-safety {
+    h3 {
         color: $txtDefault;
         font-size: 36px;
         font-weight: 600;
@@ -10,14 +10,14 @@
         margin: 0;
     }
 }
-.safety-img{
+.safety-img {
     max-width: 30%;
     height: 220px;
     height: auto;
     
 }
 
-.safety-E{
+.safety-E {
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -28,16 +28,17 @@
 
 .safety1,
 .safety2,
-.safety3{
+.safety3,
+.safety4 {
     display: flex;
     gap: 60px;
 }
 
-.safety4{
-    margin-right: auto;
+.safety-empty {
+    opacity: 0;
 }
 
-.safety{
+.safety {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,25 +52,26 @@
     padding: 75px 80px;
 }
 
-.safety-b{
+.safety-b {
     display: flex;
     flex-direction: column;
-    text-align: center;
     gap: 20px;
     max-width: 50%;
     text-align: left;
 }
 
-.safety-tit{
-    font-size: 28px;
+.safety-tit {
+    // font-size: 28px;
+    font-size: 1.67vw;
     font-weight: 600;
-    width: 100%;
+    max-width: 100%;
 }
 
-.safety-txt{
+.safety-txt {
     color: $gray7;
-    font-size: 18px;
+    // font-size: 18px;
+    font-size: 1.18vw;
     font-weight: 500;
-    width: 100%;
+    max-width: 100%;
 }
 
