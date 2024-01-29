@@ -1,6 +1,7 @@
 // 안전수칙
 
 .in-safety {
+
     h3 {
         color: $txtDefault;
         font-size: 36px;
@@ -10,6 +11,21 @@
         margin: 0;
     }
 }
+@media screen and (max-width : 375px) {
+
+    .in-safety {
+
+        h3 {
+            color: $txtDefault;
+            font-size: 36px;
+            font-weight: 600;
+            text-align: center;
+            padding: 56px 0 88px 0;
+            margin: 0;
+        }
+    }
+}
+
 .safety-img {
     max-width: 30%;
     height: 220px;
