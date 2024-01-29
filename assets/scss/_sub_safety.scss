@@ -77,17 +77,21 @@
 }
 
 .safety-tit {
-    // font-size: 28px;
-    font-size: 1.67vw;
+    font-size: 28px;
+    font-size: calc(28px - -0.01vw);
     font-weight: 600;
     max-width: 100%;
 }
 
 .safety-txt {
     color: $gray7;
-    // font-size: 18px;
-    font-size: 1.18vw;
+    font-size: 18px;
     font-weight: 500;
     max-width: 100%;
 }
 
+// @media screen and (max-width : 375px) {
+//     .in-safety {
+//         font-size: calc(28px + 0.5vw);
+//     }
+// }
