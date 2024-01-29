@@ -16,7 +16,7 @@
 <body>
     <!-- content? -->
     <div class="wrap">
-        <div class="inner">
+        <div class="inner ticket_gap">
             <!-- 핵심 요약 -->
             <div class="ticket_summary">
                 <h3>한눈에 알아보는 이용요금 안내</h3>
@@ -56,26 +56,26 @@
             </div>
 
             <!-- 상품안내 -->
-            <div>
+            <div class="ticket_detail">
                 <h3>상품안내</h3>
                 <!-- 상품안내 mobile on -->
                 <div>
                     <!-- 공통부분 밖으로 -->
                     <div class="m-pay-comm">
-                        <div>
-                            <p>결제</p>
-                            <p>휴대폰, 신용카드, PAYCO, 카카오페이, 제로페이, Discover Pass(외국인전용)</p>
+                        <div class="pay-comm">
+                            <p class="m-tic-left">결제</p>
+                            <p class="m-tic-right">휴대폰, 신용카드, PAYCO, 카카오페이, 제로페이, Discover Pass(외국인전용)</p>
                         </div>
-                        <div>
-                            <p>추가요금</p>
-                            <div>
+                        <div class="pay-comm">
+                            <p class="m-tic-left">추가요금</p>
+                            <div class="m-tic-right">
                                 <p>1시간(2시간) 단위 반복 이용권을 1시간(2시간) 이내 대여소 미반납시 초과 5분당 200원씩 과금<br />자전거 대여 후 기본 대여 시간 초과 시
                                     추가 요금 부과(추가 요금 미납시 재대여 불가)</p>
                             </div>
                         </div>
-                        <div>
-                            <p>이용시간</p>
-                            <p>[1시간권] 1시간 단위 반복 이용권<br />[2시간권] 2시간 단위 반복 이용권</p>
+                        <div class="pay-comm">
+                            <p class="m-tic-left">이용시간</p>
+                            <p class="m-tic-right">[1시간권] 1시간 단위 반복 이용권<br />[2시간권] 2시간 단위 반복 이용권</p>
                         </div>
                     </div>
                     <!-- 정기권 -->
@@ -212,22 +212,115 @@
                         <div class="warn-tit-area">
                             <p class="warn-num">03</p>
                             <p class="warn-tit">이용권 유효기간은 결제일로부터 3년</p>
-                            <p class="warn-txt">
-                                <br />
-                                <br />
-                            </p>
                         </div>
+                        <!-- <p class="warn-txt">
+                            <br />
+                            <br />
+                        </p> -->
                     </div>
                 </div>
             </div>
             <!-- 환불규정 -->
             <div>
                 <h3>환불규정</h3>
+                <!-- 환불규정 mobile on -->
+                <!-- 환불규정 정기권 -->
                 <table>
                     <colgroup></colgroup>
-                    <thead></thead>
+                    <thead>
+                        <tr>
+                            <th colspan="4">정기권</th>
+                        </tr>
+                    </thead>
                     <tbody>
-                        <td></td>
+                        <tr>
+                            <td>종별</td>
+                            <td>개시 후 신청 가능 기간</td>
+                            <td>이용 개시일 7일 이내</td>
+                            <td>이용 개시일 7일 이내</td>
+                        </tr>
+                        <tr>
+                            <td>7일권</td>
+                            <td>2일 이내</td>
+                            <td rowspan="4">7일권 이용요금 공제</td>
+                            <td rowspan="2">환불불가</td>
+                        </tr>
+                        <tr>
+                            <td>30일권</td>
+                            <td>7일 이내</td>
+                        </tr>
+                        <tr>
+                            <td>180일권</td>
+                            <td>60일 이내</td>
+                            <td rowspan="2">환불요청일까지의 월별 이용요금 공제<br />(사용월수 x 30일권 이용요금)</td>
+                        </tr>
+                        <tr>
+                            <td>365일권</td>
+                            <td>150일 이내</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- 환불규정 일일권 -->
+                <table>
+                    <colgroup></colgroup>
+                    <thead>
+                        <tr>
+                            <th colspan="2">일일권</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>미사용시</td>
+                            <td>전액환불</td>
+                        </tr>
+                        <tr>
+                            <td>사용시</td>
+                            <td>환불불가</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- 환불규정 desktop no -->
+                <table>
+                    <colgroup></colgroup>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th colspan="4">정기권</th>
+                            <th>일일권</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>미사용시</td>
+                            <td colspan="5">전액환불</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5">사용시</td>
+                            <td>종별</td>
+                            <td>이용권 개시일 기준으로 신청가능기간</td>
+                            <td>이용개시일로부터 7일 이내</td>
+                            <td>이용개시일로부터 7일 초과</td>
+                            <td rowspan="5">환불불가</td>
+                        </tr>
+                        <tr>
+                            <td>7일권</td>
+                            <td>2일 이내</td>
+                            <td rowspan="4">7일권 이용요금 공제</td>
+                            <td rowspan="2">환불불가</td>
+                        </tr>
+                        <tr>
+                            <td>30일권</td>
+                            <td>7일 이내</td>
+                        </tr>
+                        <tr>
+                            <td>180일권</td>
+                            <td>60일 이내</td>
+                            <td rowspan="2">환불요청일까지의 월별 이용요금 공제<br />(사용월수 x 30일권 이용요금)</td>
+                        </tr>
+                        <tr>
+                            <td>365일권</td>
+                            <td>150일 이내</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
