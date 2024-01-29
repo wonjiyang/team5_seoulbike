@@ -88,7 +88,7 @@
 
 // 상품안내
 
-.ticket_gap {
+.in-t-info {
     padding-top: 56px;
     padding-bottom: 56px;
     display: flex;
@@ -124,6 +124,8 @@
     .m-tic-right {
         width: 75%;
     }
+
+    word-break: keep-all;
 }
 
 
