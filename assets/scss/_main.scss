@@ -1,5 +1,9 @@
 // 맵 들어가는 메인
 
+#main {
+    overflow: hidden;
+}
+
 .wrap {
     position: relative;
     margin-left: 254px;
@@ -10,33 +14,9 @@
     }
 }
 
-.bikeinfo-layout {
-    filter: drop-shadow( 4px 4px 8px $grayC9);
-    position: absolute;
-    top: 153px;
-    right: 3px;
-    width: 336px;
-    height: 488px;
-    background-color: $white;
-    border-radius: 15px; 
-}
-
-.bikeinfo-box {
-    position: absolute;
-    top: 0;
-    right: 3px;
-    width: 70px;
-    height: 160px;
-    background-color: $white;
-    border-radius: 15px 0 0 15px;
-    filter: drop-shadow( 4px 4px 8px $grayC9);
-    img {
-        padding: 28px 20px;
-    }
-}
-
 .bikeinfo {
     padding: 16px 24px 24px 24px;
+    
     &::after {
         content: "";
         position: absolute;
@@ -48,6 +28,53 @@
         background: url(/images/main/bikeinfo_d.png);
     }
 }
+
+.bikeinfo-layout {
+    display: none;
+    position: absolute;
+    top: 153px;
+    right: 3px;
+    z-index: 100;
+    width: 336px;
+    height: 488px;
+    background-color: $white;
+    filter: drop-shadow( 4px 4px 8px $grayC9);
+    border-radius: 15px;
+    &.hide {
+        display: none !important;
+    }
+}
+
+.bikeinfo-box {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    width: 70px;
+    height: 160px;
+    background-color: $white;
+    border-radius: 15px 0 0 15px;
+    filter: drop-shadow( 4px 4px 8px $grayC9);
+    &::before {
+        display: none;
+    }
+    &.add {
+        &::before {
+            content: '';
+            display: block;
+            width: 13px;
+            height: 100vh;
+            position: absolute;
+            top: -150px;
+            right: 0;
+            z-index: 1;
+            background-color: $white;
+        }
+    }
+    img {
+        padding: 28px 20px;
+    }
+}
+
 
 .bikeinfo-title {
     display: flex;
@@ -157,6 +184,19 @@
     left: 48px;
 }
 
+.chatbotbox {
+    display: none;
+}
+
+.chatbot-buttonimg {
+    width: 52px;
+    height: 52px;
+    background: url(../../images/main/chatbot_button_icon.png) no-repeat 0 0;
+    &.remove {
+        background: url(../../images/main/chatbot_clise_icon.png) no-repeat 0 0;
+    }
+}
+
 .chatbot-messenger {
     position: relative;
     width: 340px;
@@ -244,6 +284,7 @@
             border-radius: 15px;
             padding: 0 16px;
             .typing {
+                width: 100%;
                 height: 50px;
                 color: $gray7;
                 font-size: 14px;

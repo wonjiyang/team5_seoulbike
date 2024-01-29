@@ -41,11 +41,13 @@
 
     <!-- 우리의 작업파일 연결 -->
     <link rel="stylesheet" href="./assets/css/comm.css">
+    <script defer src="./assets/js/_main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!--NAVER MAP API-->
     <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=4wfp2d63il"></script>
 </head>
 
-<body>
+<body id="main">
     <div class="wrap">
     <!-- header -->
     <header id="header"><a href="#"><img id="logo" src="./images/comm/logo.png" alt="따릉이 로고" />따릉이</a></header>
@@ -117,12 +119,13 @@
                 </div>
             </div>
             <div class="chatbot">
-                <div class="chatbot-messenger">
-                    <div class="top">
-                        <img class="img1" src="./images/main/chatbot_icon.png" alt="챗봇 아이콘">
-                        <span>따릉이에게 문의하세요.</span>
-                        <img class="img2" src="./images/main/chatbot_hambuger.png" alt="">
-                    </div>
+                <div class="chatbotbox">
+                    <div class="chatbot-messenger">
+                        <div class="top">
+                            <img class="img1" src="./images/main/chatbot_icon.png" alt="챗봇 아이콘">
+                            <span>따릉이에게 문의하세요.</span>
+                            <img class="img2" src="./images/main/chatbot_hambuger.png" alt="">
+                        </div>
                     <div class="mid">
                         <div class="chatroom">
                             <div class="timestamp">
@@ -154,9 +157,14 @@
                             </div>
                         </div>
                     </div>
+                    </div>
+                    <!-- <div class="chatbot-closeimg">
+                        <img src="./images/main/chatbot_clise_icon.png" alt="">
+                        <span class="blind">챗봇 창 닫기</span>
+                    </div> -->
                 </div>
-                <div class="chatbot-img">
-                    <img src="./images/main/chatbot_button_icon.png" alt="챗봇 버튼 이미지">
+                <div class="chatbot-buttonimg">
+                    <!-- <img src="./images/main/chatbot_button_icon.png" alt="챗봇 버튼 이미지"> -->
                     <span class="blind">궁금한 점 모두 챗봇에게 물어보세요!</span>
                 </div>
             </div>
