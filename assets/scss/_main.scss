@@ -2,7 +2,8 @@
 
 .wrap {
     position: relative;
-    padding-left: 254px;
+    margin-left: 254px;
+    padding: 0;
     #map {
         width: 100%;
         height:100vh;
@@ -153,5 +154,104 @@
 .chatbot {
     position: absolute;
     bottom: 88px;
-    left: 302px;
+    left: 48px;
+}
+
+.chatbot-messenger {
+    position: relative;
+    width: 340px;
+    height: 590px;
+    margin-bottom: 12px;
+    border-radius: 15px;
+    background-color: $bgDefault;
+    filter: drop-shadow( 4px 4px 8px $grayC9);
+    .top {
+        display: flex;
+        align-items: center;
+        background-color: $white;
+        border-radius: 15px 15px 0 0;
+        border-bottom: 1px solid $grayE8;
+        padding: 14px 20px;
+        span {
+            color: $gray3;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .img1 {
+            margin-right: 8px;
+        }
+        .img2 {
+            margin-left: 85px;
+        }
+    }
+    .mid {
+        .chatroom {
+            display: flex;
+            flex-direction: column;
+        }
+        .timestamp {
+            margin: 0 auto;
+            padding: 12px 0 16px 0;
+        }
+        .chatdate {
+            color: $gray7;
+            font-size: 12px;
+            font-weight: 400;
+            padding: 3px 16px;
+            border-radius: 15px;
+            background-color: $grayE8;
+        }
+        .chatmain {
+            margin: 0 20px;
+        }
+        .msg-box {
+            display: flex;
+            align-items: flex-end;
+            margin-top: 8px;
+        }
+        .msg-text {
+            background-color: $white;
+            border-radius: 0 15px 15px 15px;
+            padding: 14px 20px;
+            span {
+                color: $gray3;
+                font-size: 16px;
+                font-weight: 400;
+            }
+            .primary {
+                color: $primary;
+                font-weight: 500;
+            }
+        }
+        .msg-time {
+            color: $gray7;
+            font-size: 12px;
+            font-weight: 400;
+            padding-left: 8px;
+        }
+    }
+    .bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 12px 20px;
+        .type-area {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: $grayE8;
+            border-radius: 15px;
+            padding: 0 16px;
+            .typing {
+                height: 50px;
+                color: $gray7;
+                font-size: 14px;
+                font-weight: 400;
+                border: none;
+                border-radius: 15px;
+                background-color: $grayE8;
+            }
+        }
+    }
 }
