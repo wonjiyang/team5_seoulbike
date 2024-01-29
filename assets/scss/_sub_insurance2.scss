@@ -1,0 +1,219 @@
+// 보험2
+
+.in-insurance {
+    padding: 56px 48px;
+    
+    h3 {
+        padding: 0 0 18px 0;
+        color: $txtDefault;
+    }
+}
+@media screen and (max-width : 375px) {
+
+    .hd-n {
+        display: none;
+    }
+
+    .wrap {
+        padding: 0 0 0 0;
+    }
+
+    .in-insurance {
+        padding: 56px 24px;
+
+        h3 {
+            font-size: 18px;
+            padding: 0 0 5px 0;
+        }
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+.insurance_creation1 {
+    color: $txtDefault;
+    padding: 0 0 80px 0;
+
+    p {
+        font-weight: 500;
+        line-height: 28px;
+        margin:  0 0 0 0;
+    }
+
+    .insurance-mt{
+        font-weight: 500;
+        line-height: 28px;
+    }
+}
+@media screen and (max-width : 375px) {
+
+    .insurance_creation1 {
+        padding: 0 0 33px 0;
+
+        .insurance-mt{
+            font-weight: 500;
+            line-height: 21px;
+        }
+    }
+}
+
+.insurance_creation2 {
+    padding: 0 0 80px 0;
+
+    .table_tr {
+
+        .table_th1 {
+            width: 239px;
+        }
+
+        .table_th2 {
+            width: 721px;
+        }
+
+        .table_th3 {
+            width: 239px;
+        }
+    }
+
+    th {
+        font-size: 20px;
+        padding: 35px;
+        vertical-align: middle;
+    }
+    td {
+        vertical-align: middle;
+        padding: 35px;
+    }
+
+    .table-p1 {
+        display: flex;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .table-p2{
+        display: flex;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        max-width: 122px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    p,
+    .table-p {
+        padding: 0;
+    }
+
+    .table-p {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 auto;
+        text-align: left;
+        width: fit-content;
+        max-width: 573px;
+    }
+}
+@media screen and (max-width : 375px) {
+
+    .insurance_creation2 {
+        padding: 0 0 33px 0;
+
+        th {
+            font-size: 16px;
+            padding: 15px;
+            vertical-align: middle;
+        }
+        td {
+            vertical-align: middle;
+            padding: 15px;
+            font-size: 14px;
+        }
+    }
+}
+
+.insurance_creation3 {
+    color: $gray5;
+    font-weight: 400;
+
+    .creation3_txt2 {
+        display: flex;
+        gap: 5px;
+        margin: 18px 0 0 0;
+        font-weight: 600;
+        color: $txtDefault;
+
+        &::before {
+            content: '※';
+        }
+    }
+
+    .creation3_txt2-1 {
+        margin: 5px 0 0 0;
+    }
+
+    .insurance-cc_txt {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .insurance-cc_txt2 {
+        display: flex;
+        align-items: center;
+        gap: 8.5px;
+        font-weight: 400;
+    }
+    .insurance-cc_txt2::before {
+        content: '';
+        display: block;
+        background: url(/images/sub_insurance/square.svg) no-repeat 0 0;
+        background-size: 10.5px 10.5px;
+        width: 10.5px;
+        height: 10.5px;
+        color: $txtDefault;
+    }
+
+    .insurance-cc_txt3 {
+        display: flex;
+        padding: 0 0 0 18px;
+        gap: 5px;
+        font-weight: 400;
+    
+        &::before {
+            content: '※';
+        }
+    }
+
+    .insurance-cc_t1 {
+        font-weight: 500;
+        padding: 0 0 5px 0;
+    }
+
+    .c3_c-p-1-t{
+        padding: 0 0 0 18px;
+    }
+}
+@media screen and (max-width : 375px) {
+
+    .insurance_creation3 {
+        
+        .insurance-cc_txt {
+            gap: 10px;
+        }
+
+        .insurance-cc_txt2 {
+            gap: 5px;
+        }
+        .insurance-cc_txt2::before {
+            background-size: 9.33px 9.33px;
+            width: 9.33px;
+            height: 9.33px;
+        }
+    }
+}
