@@ -103,6 +103,11 @@
 
 // 상품안내
 
+// on/off
+.hidden {
+    display: none !important;
+}
+
 .in-t-info {
     padding-top: 56px;
     padding-bottom: 56px;
@@ -115,7 +120,13 @@
     }
 }
 
-.m-pay-comm {
+.m-fee {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.m-fee-comm {
     padding: 16px;
 
     display: flex;
@@ -123,13 +134,15 @@
     gap: 16px;
 
     background-color: $white;
+    border-radius: 16px;
 }
 
 
 
-.pay-comm {
+.fee-comm {
     display: flex;
     flex-direction: row;
+    word-break: keep-all;
 
     .m-tic-left {
         width: 25%;
@@ -140,7 +153,7 @@
         width: 75%;
     }
 
-    word-break: keep-all;
+
 }
 
 
@@ -153,6 +166,13 @@
     gap: 40px;
 
     background-color: $white;
+
+    // 미디어 쿼리로 모바일에 적용
+    // .warn {
+    //     display: flex;
+    //     flex-direction: column;
+    //     gap: 20px;
+    // }
 
     span {
         width: 100%;

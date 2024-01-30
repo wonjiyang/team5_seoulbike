@@ -10,7 +10,12 @@
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="./images/comm/fav-test@2x.png" type="image/x-icon" />
 
+
+    <!-- <script src="jquery-3.7.1.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="./assets/css/comm.css">
+    <script src="./assets/js/sub_ticket_info.js"></script>
 </head>
 
 <body>
@@ -23,34 +28,34 @@
                 <div class="summary-wrap">
                     <div class="sum-item sum-item1">
                         <img src="./images/sub_ticket/summary1_locations-1.png" alt="" />
-                        <p class="sum-txt desktop">
+                        <p class="sum-txt tic-for-d">
                             서울 자전거<br />모든 대여소에서 사용 가능
                         </p>
-                        <p class="sum-txt mobile">모든 대여소에서</p>
+                        <p class="sum-txt tic-for-m">모든 대여소에서</p>
                     </div>
                     <span class="sum-gap-line"></span>
                     <div class="sum-item sum-item2">
                         <img src="./images/sub_ticket/summary2_24-hours-.png" alt="" />
-                        <p class="sum-txt desktop">
+                        <p class="sum-txt tic-for-d">
                             이용권 사용 개시 시점부터<br />24시간 이용 가능
                         </p>
-                        <p class="sum-txt mobile">24시간 동안</p>
+                        <p class="sum-txt tic-for-m">24시간 동안</p>
                     </div>
                     <span class="sum-gap-line"></span>
                     <div class="sum-item sum-item3">
                         <img src="./images/sub_ticket/summary3_infinite-.png" alt="" />
-                        <p class="sum-txt desktop">
+                        <p class="sum-txt tic-for-d">
                             정상반납 시<br />횟수 제한 없이 이용 가능
                         </p>
-                        <p class="sum-txt mobile">횟수 제한 없이</p>
+                        <p class="sum-txt tic-for-m">횟수 제한 없이</p>
                     </div>
                     <span class="sum-gap-line"></span>
                     <div class="sum-item sum-item4">
                         <img src="./images/sub_ticket/summary4_cancel-2.png" alt="" />
-                        <p class="sum-txt desktop">
+                        <p class="sum-txt tic-for-d">
                             타인에게 양도 불가<br />불이익은 양도한 사람에게
                         </p>
-                        <p class="sum-txt mobile">양도 불가</p>
+                        <p class="sum-txt tic-for-m">양도 불가</p>
                     </div>
                 </div>
             </div>
@@ -59,28 +64,28 @@
             <div class="ticket_detail">
                 <h3>상품안내</h3>
                 <!-- 상품안내 mobile on -->
-                <div>
+                <div class="tic-for-m hidden m-fee">
                     <!-- 공통부분 밖으로 -->
-                    <div class="m-pay-comm">
-                        <div class="pay-comm">
+                    <div class="m-fee-comm">
+                        <div class="fee-comm">
                             <p class="m-tic-left">결제</p>
                             <p class="m-tic-right">휴대폰, 신용카드, PAYCO, 카카오페이, 제로페이, Discover Pass(외국인전용)</p>
                         </div>
-                        <div class="pay-comm">
+                        <div class="fee-comm">
                             <p class="m-tic-left">추가요금</p>
                             <div class="m-tic-right">
                                 <p>1시간(2시간) 단위 반복 이용권을 1시간(2시간) 이내 대여소 미반납시 초과 5분당 200원씩 과금<br />자전거 대여 후 기본 대여 시간 초과 시
                                     추가 요금 부과(추가 요금 미납시 재대여 불가)</p>
                             </div>
                         </div>
-                        <div class="pay-comm">
+                        <div class="fee-comm">
                             <p class="m-tic-left">이용시간</p>
                             <p class="m-tic-right">[1시간권] 1시간 단위 반복 이용권<br />[2시간권] 2시간 단위 반복 이용권</p>
                         </div>
                     </div>
                     <!-- 정기권 -->
-                    <table class="table-wrap">
-                        <thead>
+                    <table class="th-oneline">
+                        <thead class="th-oneline">
                             <tr>
                                 <th colspan="3">정기권 (회원전용)</th>
                             </tr>
@@ -104,7 +109,7 @@
                             <col>
                             <col>
                         </colgroup>
-                        <thead>
+                        <thead class="th-oneline">
                             <tr>
                                 <th colspan="2">일일권</th>
                             </tr>
@@ -122,7 +127,7 @@
                     </table>
                 </div>
                 <!-- 상품안내 desktop on -->
-                <table class="table-wrap">
+                <table class="tic-for-d">
                     <thead>
                         <tr>
                             <th>구분</th>
@@ -214,7 +219,7 @@
                 <!-- 환불규정 정기권 -->
                 <table>
                     <colgroup></colgroup>
-                    <thead>
+                    <thead class="th-oneline">
                         <tr>
                             <th colspan="4">정기권</th>
                         </tr>
@@ -250,7 +255,7 @@
                 <!-- 환불규정 일일권 -->
                 <table>
                     <colgroup></colgroup>
-                    <thead>
+                    <thead class="th-oneline">
                         <tr>
                             <th colspan="2">일일권</th>
                         </tr>
