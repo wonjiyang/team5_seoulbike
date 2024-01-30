@@ -41,11 +41,13 @@
 
     <!-- 우리의 작업파일 연결 -->
     <link rel="stylesheet" href="./assets/css/comm.css">
+    <script defer src="./assets/js/_main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!--NAVER MAP API-->
     <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=4wfp2d63il"></script>
 </head>
 
-<body>
+<body id="main">
     <div class="wrap">
     <!-- header -->
     <header id="header"><a href="#"><img id="logo" src="./images/comm/logo.png" alt="따릉이 로고" />따릉이</a></header>
@@ -117,13 +119,53 @@
                 </div>
             </div>
             <div class="chatbot">
-                <div class="chatbot-img">
-                    <img src="./images/main/chatbot_icon.png" alt="챗봇 버튼 이미지">
-                </div>
-                <div class="chatbot-layoutbox">
-                    <div class="chatbot-layout">
-                        
+                <div class="chatbotbox">
+                    <div class="chatbot-messenger">
+                        <div class="top">
+                            <img class="img1" src="./images/main/chatbot_icon.png" alt="챗봇 아이콘">
+                            <span>따릉이에게 문의하세요.</span>
+                            <img class="img2" src="./images/main/chatbot_hambuger.png" alt="">
+                        </div>
+                    <div class="mid">
+                        <div class="chatroom">
+                            <div class="timestamp">
+                                <span class="chatdate">2024.01.29 월요일</span>
+                            </div>
+                            <div class="chatmain">
+                                <div class="profile">
+                                    <img src="./images/main/profile.png" alt="">
+                                </div>
+                                <div class="msg-box">
+                                    <div class="msg-text">
+                                        <span>안녕하세요. 고객님 <br>
+                                            <span class="primary">서울자전거 따릉이</span>
+                                            입니다<br>
+                                            무엇이 궁금하신가요?
+                                        </span>
+                                    </div>
+                                    <div class="msg-time">오후 2:21</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="bottom">
+                        <div class="type-area">
+                            <input type="text" class="typing" placeholder="메세지를 입력해주세요." id="user_msg" onkeyup="inputMsg(event);" autocomplete="off">
+                            <div class="sendbox">
+                                <span class="blind">전송하기</span>
+                                <img src="./images/main/send.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- <div class="chatbot-closeimg">
+                        <img src="./images/main/chatbot_clise_icon.png" alt="">
+                        <span class="blind">챗봇 창 닫기</span>
+                    </div> -->
+                </div>
+                <div class="chatbot-buttonimg">
+                    <!-- <img src="./images/main/chatbot_button_icon.png" alt="챗봇 버튼 이미지"> -->
+                    <span class="blind">궁금한 점 모두 챗봇에게 물어보세요!</span>
                 </div>
             </div>
         </div>
