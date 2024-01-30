@@ -73,6 +73,11 @@ table {
         }
     }
 
+    // 표 중에서 thead-tr-th가 하나뿐이라 border-radius값이 제대로 적용되지 않는 경우에 thead에 class="th-oneline" 추가
+    .th-oneline tr th {
+        border-radius: 16px 16px 0 0;
+    }
+
     tr {
         border-bottom: 2px solid $grayE8;
 
