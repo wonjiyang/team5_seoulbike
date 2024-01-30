@@ -4,13 +4,11 @@
 .wrap {
     width: 100%;
     padding: 0 48px;
+
     .inner {
         width: 100%;
         max-width: 1280px;
         margin: 0 auto;
-    }
-    .in-safety {
-        max-width: 1472px;
     }
 }
 
@@ -73,6 +71,11 @@ table {
         &:last-child {
             border-radius: 0 16px 0 0;
         }
+    }
+
+    // 표 중에서 thead-tr-th가 하나뿐이라 border-radius값이 제대로 적용되지 않는 경우에 thead에 class="th-oneline" 추가
+    .th-oneline tr th {
+        border-radius: 16px 16px 0 0;
     }
 
     tr {

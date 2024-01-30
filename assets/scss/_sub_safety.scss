@@ -1,55 +1,97 @@
+// 안전수칙
 
-.safety-img{
-    width: 180px;
-    height: 180px;
+.in-safety {
+
+    h3 {
+        color: $txtDefault;
+        font-size: 36px;
+        font-weight: 600;
+        text-align: center;
+        padding: 56px 0 88px 0;
+        margin: 0;
+    }
+}
+@media screen and (max-width : 375px) {
+
+    .in-safety {
+
+        h3 {
+            color: $txtDefault;
+            font-size: 36px;
+            font-weight: 600;
+            text-align: center;
+            padding: 56px 0 88px 0;
+            margin: 0;
+        }
+    }
 }
 
-.safety-E{
+.safety-img {
+    max-width: 30%;
+    height: 220px;
+    height: auto;
+    
+}
+
+.safety-E {
     display: flex;
     flex-direction: column;
     gap: 60px;
     justify-content: center;
     align-items: center;
+    max-width: 1280px
 }
 
 .safety1,
 .safety2,
-.safety3{
+.safety3,
+.safety4 {
     display: flex;
     gap: 60px;
 }
 
-.safety4{
-    margin-right: auto;
+.safety-empty {
+    opacity: 0;
 }
 
-.safety{
+.safety {
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid $grayC9;
     border-radius: 30px;
-    width: 706px;
+    max-width: 706px;
     height: 329px;
-    gap: 95px;
+    gap: 40px;
     background-color: $white;
+    width: 100%;
+    padding: 75px 80px;
 }
 
-.safety-b{
+.safety-b {
     display: flex;
     flex-direction: column;
-    text-align: center;
     gap: 20px;
+    max-width: 50%;
+    text-align: left;
 }
 
-.safety-tit{
-    font-size: 24px;
-    font-weight: 500;
+.safety-tit {
+    font-size: 28px;
+    font-size: calc(28px - -0.01vw);
+    font-weight: 600;
+    max-width: 100%;
 }
 
-.safety-txt{
-    white-space: pre-line;
+.safety-txt {
     color: $gray7;
+    font-size: 18px;
     font-weight: 500;
+    max-width: 100%;
 }
 
+// @media screen and (max-width : 375px) {
+//     .in-safety {
+//         font-size: calc(28px + 0.5vw);
+//     }
+// }
