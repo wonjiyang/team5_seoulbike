@@ -8,14 +8,6 @@
 
 
 // ticket_info
-.desktop,
-.mobile {
-    color: $subColor;
-}
-
-.mobile {
-    display: none;
-}
 
 .ticket_summary {
     padding: 40px 80px 60px;
@@ -32,6 +24,8 @@
         color: $subColor;
     }
 }
+
+
 
 .summary-wrap {
     width: 100%;
@@ -54,26 +48,39 @@
 //     justify-content: space-between;
 // }
 
+//잠시 주석
 .sum-item {
-    display: flex;
-    flex: auto;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    gap: 16px;
-    align-content: space-between;
-    align-items: center;
+    position: relative;
+    // display: flex;
+    // flex: auto;
+    // flex-wrap: nowrap;
+    // flex-direction: column;
+    // gap: 16px;
+    // align-content: space-between;
+    // align-items: center;
+    border-radius: 0;
 
-    img {
-        display: block;
-        width: 120px;
+    .sum-contents {
+        position: absolute;
+
+        display: flex;
+        flex: auto;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 16px;
+        align-content: space-between;
+        align-items: center;
+
+        img {
+            display: block;
+            width: 120px;
+        }
     }
 
-    &::after {
-        content: '';
-        width: 100%;
-        height: 100%;
-    }
+
 }
+
+
 
 .sum-txt {
     text-align: center;
@@ -83,10 +90,26 @@
 
 
 @media screen and (max-width: 1024px) {
+
+    .ticket_summary {
+        background: none;
+    }
+
     .sum-item {
         width: 40%;
-
         padding: 18px 24px;
+
+        display: block;
+        background-color: #fff;
+        border-radius: 8px;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 0;
+            padding-top: 100%;
+        }
     }
 
     .sum-gap-line {
@@ -100,8 +123,12 @@
 }
 
 
-
 // 상품안내
+
+// on/off
+.hidden {
+    display: none !important;
+}
 
 .in-t-info {
     padding-top: 56px;
@@ -115,7 +142,13 @@
     }
 }
 
-.m-pay-comm {
+.m-fee {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.m-fee-comm {
     padding: 16px;
 
     display: flex;
@@ -123,13 +156,15 @@
     gap: 16px;
 
     background-color: $white;
+    border-radius: 16px;
 }
 
 
 
-.pay-comm {
+.fee-comm {
     display: flex;
     flex-direction: row;
+    word-break: keep-all;
 
     .m-tic-left {
         width: 25%;
@@ -140,7 +175,7 @@
         width: 75%;
     }
 
-    word-break: keep-all;
+
 }
 
 
@@ -153,6 +188,14 @@
     gap: 40px;
 
     background-color: $white;
+    border-radius: 16px;
+
+    // 미디어 쿼리로 모바일에 적용
+    // .warn {
+    //     display: flex;
+    //     flex-direction: column;
+    //     gap: 20px;
+    // }
 
     span {
         width: 100%;
@@ -191,4 +234,24 @@
         background-color: $grayE8;
         align-self: center;
     }
+}
+
+// 환불규정
+
+//table comm.scss설정과 이어짐
+table {
+    tbody {
+        tr {
+            .add-right-line {
+                border-right: 2px solid $grayE8;
+            }
+
+        }
+    }
+}
+
+.tic-refund-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
