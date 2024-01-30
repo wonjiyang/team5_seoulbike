@@ -1,5 +1,11 @@
 // // 민영 이용권
 
+@media screen and (max-width: 1024px) {
+    .hidden {
+        display: none;
+    }
+}
+
 
 // ticket_info
 .desktop,
@@ -53,12 +59,19 @@
     flex: auto;
     flex-wrap: nowrap;
     flex-direction: column;
+    gap: 16px;
     align-content: space-between;
     align-items: center;
 
     img {
         display: block;
         width: 120px;
+    }
+
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -71,7 +84,9 @@
 
 @media screen and (max-width: 1024px) {
     .sum-item {
-        width: 50%;
+        width: 40%;
+
+        padding: 18px 24px;
     }
 
     .sum-gap-line {
@@ -88,7 +103,7 @@
 
 // 상품안내
 
-.ticket_gap {
+.in-t-info {
     padding-top: 56px;
     padding-bottom: 56px;
     display: flex;
@@ -101,7 +116,7 @@
 }
 
 .m-pay-comm {
-    padding: 12px;
+    padding: 16px;
 
     display: flex;
     flex-direction: column;
@@ -124,6 +139,8 @@
     .m-tic-right {
         width: 75%;
     }
+
+    word-break: keep-all;
 }
 
 
