@@ -159,6 +159,10 @@
         width: fit-content;
         max-width: 573px;
     }
+
+    br {
+        display: none;
+    }
 }
 @media screen and (max-width : 375px) {
 
@@ -166,18 +170,34 @@
 
         th {
             font-size: 16px;
-            padding: 15px;
+            padding: 10px;
             vertical-align: middle;
         }
 
         td {
             vertical-align: middle;
-            padding: 15px;
+            padding: 10px;
             font-size: 14px;
         }
         
         .table_em {
             line-height: normal;
+        }
+
+        br {
+            display: block;
+        }
+
+        .table_tr {
+            height: 78px;
+
+            .table_th1 {
+                width: 412px;
+            }
+
+            .table_th3 {
+                width: 412px;
+            }
         }
     }
 }
@@ -329,6 +349,10 @@
 
         .comprehensive3_txt_2 {
             gap: 10px;
+        }
+
+        .insurance-cc_txt2 {
+            gap: 5px;
         }
     }
 }
