@@ -38,8 +38,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- 우리의 작업파일 연결 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/comm.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script defer src="./assets/js/_main.js"></script>
     <!--NAVER MAP API-->
     <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=4wfp2d63il"></script>
@@ -75,24 +77,56 @@
                         <div class="bikeinfo-title">
                             <h3 class="tit">따릉이 이용현황</h3>
                             <div class="text-list">
-                                <a href="#"><span class="text-content active">일반</span></a>
-                                <a href="#"><span class="text-content">새싹</span></a>
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" data-bs-toggle="tab" href="#home">
+                                        <span class="text-content a active">일반</span>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#menu1">
+                                        <span class="text-content b">새싹</span>
+                                    </a>
+                                  </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="bikeinfo-bikenum">
-                            <dl>
-                                <dd class="bikenum_b active">200</dd>
-                                <dt>사용가능</dt>
-                            </dl>
-                            <dl>
-                                <dd class="bikenum_b">0</dd>
-                                <dt>점검중</dt>
-                            </dl>
-                            <dl>
-                                <dd class="bikenum_b">350</dd>
-                                <dt>전체</dt>
-                            </dl>
-                        </div>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                              <div id="home" class="container tab-pane active"><br>
+                                <div class="bikeinfo-bikenum">
+                                    <dl>
+                                        <dd class="bikenum_b active">200</dd>
+                                        <dt>사용가능</dt>
+                                    </dl>
+                                    <dl>
+                                        <dd class="bikenum_b">0</dd>
+                                        <dt>점검중</dt>
+                                    </dl>
+                                    <dl>
+                                        <dd class="bikenum_b">350</dd>
+                                        <dt>전체</dt>
+                                    </dl>
+                                </div>
+                              </div>
+                              <div id="menu1" class="container tab-pane fade"><br>
+                                <div class="bikeinfo-bikenum">
+                                    <dl>
+                                        <dd class="bikenum_b active">32</dd>
+                                        <dt>사용가능</dt>
+                                    </dl>
+                                    <dl>
+                                        <dd class="bikenum_b">0</dd>
+                                        <dt>점검중</dt>
+                                    </dl>
+                                    <dl>
+                                        <dd class="bikenum_b">121</dd>
+                                        <dt>전체</dt>
+                                    </dl>
+                                </div>
+                            </div>
+                            </div>
                         <div class="bikeinfo-btn-area">
                             <div class="bikeinfo-btn">
                                 <a href="#">

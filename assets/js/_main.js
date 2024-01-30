@@ -22,5 +22,4 @@ $(document).ready(function () {
         bikeInfoBox.classList.remove('add') // 'add' 클래스 제거는 선택적
     })
 
-    
 })
