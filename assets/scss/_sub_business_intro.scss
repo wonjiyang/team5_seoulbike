@@ -1,0 +1,123 @@
+// 원지님 사업소개
+
+.intro {
+    padding: 56px 48px;
+}
+
+.intro-top {
+    .bg {
+        text-align: center;
+    }
+}
+
+.text {
+    padding-top: 32px;
+    text-align: center;
+    .title {
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .content {
+        padding-top: 12px;
+        color: $gray7;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .primary {
+        color: $primary;
+        font-weight: 600;
+    }
+}
+
+.intro-main {
+    position: relative;
+    padding-top: 140px;
+    .intro-bg {
+        text-align: center;
+        width: 985px;
+        height: 1668px;
+    }
+}
+
+.intro-content {
+    ul {
+        li {
+        position: absolute;
+            &:first-child {
+                top: 80px;
+                left: 0;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 154px;
+                    right: -320px;
+                    width: 204px;
+                    height: 128px;
+                    background: url(../../images/sub_intro/bike_stone.png);
+                }
+            }
+            &:nth-child(2) {
+                top: 500px;
+                right: 0;
+            }
+            &:nth-child(3) {
+                bottom: -30px;
+                left: 70px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: -288px;
+                    right: -100px;
+                    width: 433px;
+                    height: 134px;
+                    background: url(../../images/sub_intro/bike.png);
+                }
+            }
+            &:last-child {
+                bottom: -360px;
+                right: 0;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 84px;
+                    left: -66px;
+                    width: 86px;
+                    height: 134px;
+                    background: url(../../images/sub_intro/stone_1.png);
+                }
+            }
+        }
+    }
+    .content {
+        width: 490px;
+        padding-bottom: 56px;
+    }
+    .intro-contentimg {
+        border-radius: 15px;
+        width: 100%;
+        &::before { 
+            content: '';
+            display: block;
+            width: 100%;
+            height: 0;
+            padding-top: 100%;
+        }
+    }
+    .txt {
+        margin-top: 20px;
+        text-align: center;
+        position: relative;
+        .title {
+            color: $subColor;
+            font-size: 24px;
+            font-weight: 700;
+            background-image: linear-gradient(180deg, $bgDefault 75%, $subColor3 10%);
+        }
+        .sub {
+            margin-top: 12px;
+            color: $gray7;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
