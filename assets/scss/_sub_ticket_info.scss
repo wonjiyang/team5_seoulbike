@@ -51,6 +51,7 @@
 //잠시 주석
 .sum-item {
     position: relative;
+
     // display: flex;
     // flex: auto;
     // flex-wrap: nowrap;
@@ -64,17 +65,17 @@
         position: absolute;
 
         display: flex;
-        flex: auto;
+        // flex: auto;
         flex-wrap: nowrap;
         flex-direction: column;
         gap: 16px;
         align-content: space-between;
         align-items: center;
 
-        img {
-            display: block;
-            width: 120px;
-        }
+        // img {
+        //     display: block;
+        //     width: 100%;
+        // }
     }
 
 
@@ -92,34 +93,53 @@
 @media screen and (max-width: 1024px) {
 
     .ticket_summary {
+        padding: 24px;
         background: none;
-    }
-
-    .sum-item {
-        width: 40%;
-        padding: 18px 24px;
-
-        display: block;
-        background-color: #fff;
-        border-radius: 8px;
-
-        &::before {
-            content: '';
-            display: block;
-            width: 100%;
-            height: 0;
-            padding-top: 100%;
-        }
     }
 
     .sum-gap-line {
         display: none;
     }
 
+    .sum-item {
+        width: 40%;
+        padding: 18px;
+
+        background-color: #fff;
+        border-radius: 8px;
+
+        .sum-contents {
+            margin: 0 auto;
+            // width: auto;
+            width: calc(0.8 * calc(100% - 18px - 18px));
+            // height: calc(100% - 18px - 18px);
+            position: absolute;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%;
+        }
+    }
+
     .summary-wrap {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
         // flex: 50%;
     }
+
 }
 
 
