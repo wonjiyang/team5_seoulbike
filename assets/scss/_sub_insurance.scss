@@ -14,8 +14,9 @@
         display: none;
     }
 
-    .wrap {
-        padding: 0 0 0 0;
+    .insurance-wrap {
+        padding: 0;
+        margin: 0;
     }
 
     .in-insurance {
@@ -287,13 +288,16 @@
 
     .insurance-cc_txt3 {
         display: flex;
-        padding: 0 0 0 18px;
         gap: 5px;
         font-weight: 400;
     
         &::before {
             content: '※';
         }
+    }
+
+    .insurance-cc_t1 {
+        padding: 0 0 0 18px;
     }
 
     .c3_c-p-1-t{

@@ -1,6 +1,7 @@
 // 안전수칙
 
 .in-safety {
+    padding: 0 0 100px;
 
     h3 {
         color: $txtDefault;
@@ -13,24 +14,34 @@
 }
 @media screen and (max-width : 375px) {
 
+    .hd-n {
+        display: none;
+    }
+
+    .safety-wrap {
+        padding: 0;
+        margin: 0;
+    }
+
     .in-safety {
+        padding: 33px 24px;
 
         h3 {
-            color: $txtDefault;
-            font-size: 36px;
-            font-weight: 600;
-            text-align: center;
-            padding: 56px 0 88px 0;
-            margin: 0;
+            font-size: 20px;
+            padding: 0 0 55px 0;
+            text-align: left;
         }
     }
 }
 
 .safety-img {
     max-width: 30%;
-    height: 220px;
-    height: auto;
-    
+}
+@media screen and (max-width : 375px) {
+
+    .safety-img {
+        max-width: 40%;
+    }
 }
 
 .safety-E {
@@ -41,6 +52,13 @@
     align-items: center;
     max-width: 1280px
 }
+@media screen and (max-width : 375px) {
+
+    .safety-E {
+        gap: 32px;
+        max-width: 375px
+    }
+}
 
 .safety1,
 .safety2,
@@ -49,9 +67,30 @@
     display: flex;
     gap: 60px;
 }
+@media screen and (max-width : 375px) {
+
+    .safety1,
+    .safety2,
+    .safety3,
+    .safety4 {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+}
+    
+}
 
 .safety-empty {
     opacity: 0;
+}
+@media screen and (max-width : 375px) {
+
+    .safety4 {
+
+        .safety-empty {
+            display: none;
+        }
+    }
 }
 
 .safety {
@@ -67,31 +106,60 @@
     width: 100%;
     padding: 75px 80px;
 }
+@media screen and (max-width : 375px) {
+    
+    .safety {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        padding: 34px 0;
+    }
+}
 
 .safety-b {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 50%;
+    max-width: 57%;
     text-align: left;
+}
+@media screen and (max-width : 375px) {
+
+    .safety-b {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        max-width: 100%;
+        text-align: center;
+    }
 }
 
 .safety-tit {
     font-size: 28px;
-    font-size: calc(28px - -0.01vw);
+    font-size: calc(71% + 1vw);
     font-weight: 600;
     max-width: 100%;
+}
+@media screen and (max-width : 375px) {
+
+    .safety-tit {
+    font-size: 20px;
+    // font-size: calc(28px - -0.01vw);
+    font-weight: 600;
+    max-width: 100%;
+    }
 }
 
 .safety-txt {
     color: $gray7;
     font-size: 18px;
+    font-size: calc(9% + 1vw);;
     font-weight: 500;
     max-width: 100%;
 }
-
-// @media screen and (max-width : 375px) {
-//     .in-safety {
-//         font-size: calc(28px + 0.5vw);
-//     }
-// }
+@media screen and (max-width : 375px) {
+    
+    .safety-txt {
+        font-size: 16px;
+    }
+}
