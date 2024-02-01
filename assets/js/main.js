@@ -34,14 +34,20 @@ function initMap() {
     });
 
     // 공통 스타일 설정
-    var contentStyle1 = 'position: relative; width: 180px; height: 32px;  border-radius: 15px; font-size: 14px; text-align: center; background-color: #3D5567; color: #FFF;';
-    var contentStyle2 = 'height: 80px; border-radius: 15px;';
+    var contentStyle1 = 'width: 180px; height: 40px; line-height: 2.7; font-size: 14px; font-weight: 500; text-align: center; background-color: #3D5567; color: #FFF;';
+    var contentStyle2 = 'width: 180px; height: 80px; padding: 10px 29px;';
+    var contentStyle3 = 'width: 150px; font-size: 13px; color: #555555; font-weight: 400;';
 
     // 마커 정보 정의
     var markersInfo = [
-        { position: new naver.maps.LatLng(37.504678975306454, 127.02507115055475), title: "신논현역 4번 출구", content: '<div style="' + contentStyle1 + '">신논현역 4번 출구</div><div style="' + contentStyle2 + '"><p>내용1</p><p>내용2</p></div>', number: "23" },
-        { position: new naver.maps.LatLng(37.503283707385826, 127.02476794307636), title: "신논현역 7번 출구", content: '<div style="' + contentStyle1 + '">신논현역 7번 출구</div><div style="' + contentStyle2 + '"><p>내용1</p><p>내용2</p></div>', number: "28" },
-        { position: new naver.maps.LatLng(37.50417055795581, 127.0238787848778), title: "신논현역 9번 출구", content: '<div style="' + contentStyle1 + '">신논현역 9번 출구</div><div style="' + contentStyle2 + '"><p>내용1</p><p>내용2</p></div>', number: "11" },
+        { position: new naver.maps.LatLng(37.504678975306454, 127.02507115055475), title: "신논현역 4번 출구", content: '<div style="' + contentStyle1 + '">신논현역 4번 출구</div><div style="' + contentStyle2 + '"><p style="' + contentStyle3 + '">현재 위치에서 104m</p><p style="' + contentStyle3 + '">대여 가능한 자전거 : 2</p><p style="' + contentStyle3 + '">반납 가능한 거치대 : 8</p></div>', number: "2" },
+        { position: new naver.maps.LatLng(37.503283707385826, 127.02476794307636), title: "신논현역 7번 출구", content: '<div style="' + contentStyle1 + '">신논현역 7번 출구</div><div style="' + contentStyle2 + '"><p style="' + contentStyle3 + '">현재 위치에서 129m</p><p style="' + contentStyle3 + '">대여 가능한 자전거 : 7</p><p style="' + contentStyle3 + '">반납 가능한 거치대 : 3</p></div>', number: "7" },
+        { position: new naver.maps.LatLng(37.50417055795581, 127.0238787848778), title: "신논현역 9번 출구", content: '<div style="' + contentStyle1 + '">신논현역 9번 출구</div><div style="' + contentStyle2 + '"><p style="' + contentStyle3 + '">현재 위치에서 141m</p><p style="' + contentStyle3 + '">대여 가능한 자전거 : 1</p><p style="' + contentStyle3 + '">반납 가능한 거치대 : 9</p></div>', number: "1" },
+        { position: new naver.maps.LatLng(37.499054924605765, 127.0273894974288), title: "강남역 11번 출구", content: '<div style="' + contentStyle1 + '">강남역 11번 출구</div><div style="' + contentStyle2 + '"><p style="' + contentStyle3 + '">현재 위치에서 206m</p><p style="' + contentStyle3 + '">대여 가능한 자전거 : 4</p><p style="' + contentStyle3 + '">반납 가능한 거치대 : 6</p></div>', number: "4" },
+        { position: new naver.maps.LatLng(37.49713083531913, 127.02674092376765), title: "강남역 9번 출구", content: '<div style="' + contentStyle1 + '">강남역 9번 출구</div><div style="' + contentStyle2 + '"><p style="' + contentStyle3 + '">현재 위치에서 247m</p><p style="' + contentStyle3 + '">대여 가능한 자전거 : 3</p><p style="' + contentStyle3 + '">반납 가능한 거치대 : 7</p></div>', number: "3" },
+        { position: new naver.maps.LatLng(37.495207504971034, 127.02909080684327), title: "강남역 4번 출구", content: '<div style="' + contentStyle1 + '">강남역 4번 출구</div><div style="' + contentStyle2 + '"><p style="' + contentStyle3 + '">현재 위치에서 265m</p><p style="' + contentStyle3 + '">대여 가능한 자전거 : 8</p><p style="' + contentStyle3 + '">반납 가능한 거치대 : 2</p></div>', number: "8" },
+        { position: new naver.maps.LatLng(37.50273163511194, 127.02116161073833), title: "서초4동 주민센터", content: '<div style="' + contentStyle1 + '">서초4동 주민센터</div><div style="' + contentStyle2 + '"><p style="' + contentStyle3 + '">현재 위치에서 407m</p><p style="' + contentStyle3 + '">대여 가능한 자전거 : 4</p><p style="' + contentStyle3 + '">반납 가능한 거치대 : 6</p></div>', number: "4" },
+        { position: new naver.maps.LatLng(37.50461646459502, 127.01396045976747), title: "사평역 1번 출구", content: '<div style="' + contentStyle1 + '">사평역 1번 출구</div><div style="' + contentStyle2 + '"><p style="' + contentStyle3 + '">현재 위치에서 423m</p><p style="' + contentStyle3 + '">대여 가능한 자전거 : 1</p><p style="' + contentStyle3 + '">반납 가능한 거치대 : 9</p></div>', number: "1" },
     ];
 
     var infoWindow;
@@ -65,9 +71,7 @@ function initMap() {
                 infoWindow.close();
             }
             infoWindow = new naver.maps.InfoWindow({
-                content: markerInfo.content,
-                borderColor: '#000', // 테두리 색상
-                borderRadius: 15 // 테두리 반지름
+                content: markerInfo.content
             });
             infoWindow.open(map, marker);
         });                      
