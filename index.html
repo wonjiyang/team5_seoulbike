@@ -42,9 +42,10 @@
     <link rel="stylesheet" href="./assets/css/comm.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script defer src="./assets/js/_main.js"></script>
     <!--NAVER MAP API-->
     <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=4wfp2d63il"></script>
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=4wfp2d63il&callback=initMap"></script>
+    <script defer src="./assets/js/_main.js"></script>
 </head>
 
 <body id="main">
@@ -59,83 +60,6 @@
         <div class="content">
             <div id="map">
             </div>
-            <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=4wfp2d63il&callback=initMap"></script>
-            <script type="text/javascript">
-                function initMap() { 
-	
-	var areaArr = new Array();  // 지역을 담는 배열 ( 지역명/위도경도 )
-	areaArr.push(
-			/*지역구 이름*/			/*위도*/					/*경도*/				
-		 {location : '신논현역 4번출구' , lat : '37.50459652130879' , lng : '127.02507045594146'},
-		 {location : '신논현역 7번출구' , lat : '37.503322240655514' , lng : '127.02497489180057'},
-		 {location : '신논현역 9번출구' , lat : '37.50407730758524' , lng : '127.02363922284954'},
-		 {location : '논현역 2번출구' , lat : '37.510795880286935' , lng : '127.02172070580386' },
-		 {location : '논현역 3번출구' , lat : '37.50982972955651' , lng : '127.02227402774024'},
-		 {location : '논현역 7번출구' , lat : '37.51126659223243' , lng : '127.02038147488449'},
-		 {location : '사평역 1번출구' , lat : '37.50457689999979' , lng : '127.0147158'}
-	);
-	
-	
-	
-	let markers = new Array(); // 마커 정보를 담는 배열
-	let infoWindows = new Array(); // 정보창을 담는 배열
-	
-	var map = new naver.maps.Map('map', {
-        center: new naver.maps.LatLng(37.50294848228215, 127.02284710156980),
-        zoom: 15
-    });
-	
-	// var marker = new naver.maps.Marker({
-    //     map: map,
-    //     icon: {
-    //         content: '<img src="<D:url value="./images/main/marker.png/>" alt="" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; max-width: none; max-height: none; -webkit-user-select: none; position: absolute; width: 32px; height: 32px; left: 0px; top: 0px;">',
-    //         size: new naver.maps.Size(42, 42),
-    //         anchor: new naver.maps.Point(16, 32)
-    //     }
-    // });
-	
-	
-	for (var i = 0; i < areaArr.length; i++) {
-		// 지역을 담은 배열의 길이만큼 for문으로 마커와 정보창을 채워주자 !
-
-	    var marker = new naver.maps.Marker({
-	        map: map,
-	        title: areaArr[i].location, // 지역구 이름 
-	        position: new naver.maps.LatLng(areaArr[i].lat , areaArr[i].lng) // 지역구의 위도 경도 넣기 
-	    });
-	    
-	    /* 정보창 */
-		 var infoWindow = new naver.maps.InfoWindow({
-		     content: '<div style="width:200px;text-align:center;padding:10px;"><b>' + areaArr[i].location + '</b><br> - 네이버 지도 - </div>'
-		 }); // 클릭했을 때 띄워줄 정보 HTML 작성
-	    
-		 markers.push(marker); // 생성한 마커를 배열에 담는다.
-		 infoWindows.push(infoWindow); // 생성한 정보창을 배열에 담는다.
-	}
-    
-	 
-    function getClickHandler(seq) {
-		
-            return function(e) {  // 마커를 클릭하는 부분
-                var marker = markers[seq], // 클릭한 마커의 시퀀스로 찾는다.
-                    infoWindow = infoWindows[seq]; // 클릭한 마커의 시퀀스로 찾는다
-
-                if (infoWindow.getMap()) {
-                    infoWindow.close();
-                } else {
-                    infoWindow.open(map, marker); // 표출
-                }
-    		}
-    	}
-    
-    for (var i=0, ii=markers.length; i<ii; i++) {
-    	console.log(markers[i] , getClickHandler(i));
-        naver.maps.Event.addListener(markers[i], 'click', getClickHandler(i)); // 클릭한 마커 핸들러
-    }
-}
-
-    
-            </script>
             <div class="bikeinfo-layoutbox">
                 <div class="bikeinfo-box">
                     <a href="#">
