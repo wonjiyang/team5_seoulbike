@@ -41,22 +41,21 @@ numberArr.forEach(item => {
     numberArrNumber.classList.add('notice-arr_number');
     numberArrNumber.textContent = item.number;
 
-    const nuberArrText = document.createElement('p');
-    nuberArrText.classList.add('notice-arr_text');
-    // nuberArrText.textContent = item.text;
+    const numberArrText = document.createElement('p');
+    numberArrText.classList.add('notice-arr_text');
 
     const ntcTextlink = document.createElement('a');
     ntcTextlink.href = 'http://127.0.0.1:5501/sub_notice.html';
     ntcTextlink.textContent = item.text;
-    nuberArrText.appendChild(ntcTextlink);
+    numberArrText.appendChild(ntcTextlink);
 
 
     noticeNumT.appendChild(numberArrNumber);
-    noticeNumT.appendChild(nuberArrText);
+    noticeNumT.appendChild(numberArrText);
 
     for (let i = 1; i <= 5; i++) {
         if (item.number === i) {
-            nuberArrText.classList.add(`notice-arr_text_c`);
+            numberArrText.classList.add(`notice-arr_text_c`);
         }
     }
 
@@ -90,20 +89,52 @@ pageNumberArr.forEach(item => {
     pageNumberP.classList.add('pagenum');
 
     const pgnbLink = document.createElement('a');
-    pgnbLink.href = 'http://127.0.0.1:5501/sub_notice.html';
+    // pgnbLink.href = 'http://127.0.0.1:5501/sub_notice.html';
+    pgnbLink.href = `sub_notice.html?page=${item.number}`;
     pgnbLink.textContent = item.number;
 
     const currentPageNumber = localStorage.getItem('selectedPageNumber');
 
     if (currentPageNumber === item.number.toString()) {
-      pageNumberP.classList.add('selected');
+        pgnbLink.classList.add('selected');
     }
 
     pgnbLink.addEventListener('click', () => {
       localStorage.setItem('selectedPageNumber', item.number);
     });
-    
 
     pageNumberP.appendChild(pgnbLink);
     pageNumber.appendChild(pageNumberP);
+});
+
+
+
+const pageNumber = document.getElementById('pagenumber');
+
+pageNumberArr.forEach(item => {
+    const viewportWidth = window.innerWidth;
+
+    const maxPageNumber = (viewportWidth <= 375) ? 4 : 6;
+
+    if (item.number <= maxPageNumber) {
+        const pageNumberP = document.createElement('p');
+        pageNumberP.classList.add('pagenum');
+
+        const pgnbLink = document.createElement('a');
+        pgnbLink.href = `sub_notice.html?page=${item.number}`;
+        pgnbLink.textContent = item.number;
+
+        const currentPageNumber = localStorage.getItem('selectedPageNumber');
+
+        if (currentPageNumber === item.number.toString()) {
+            pgnbLink.classList.add('selected');
+        }
+
+        pgnbLink.addEventListener('click', () => {
+            localStorage.setItem('selectedPageNumber', item.number);
+        });
+
+        pageNumberP.appendChild(pgnbLink);
+        pageNumber.appendChild(pageNumberP);
+    }
 });
