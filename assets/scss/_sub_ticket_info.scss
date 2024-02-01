@@ -238,6 +238,8 @@
     .warn-wrap {
         padding: 24px 16px;
 
+        gap: 24px;
+
         .warn-num {
             margin-right: 20px;
         }
@@ -255,9 +257,9 @@
 
 
     // 라인 넣을 지 말지 최종 결정 필요
-    .warn-gap-line {
-        display: none;
-    }
+    // .warn-gap-line {
+    //     display: none;
+    // }
 }
 
 // 환불규정
