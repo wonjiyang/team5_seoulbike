@@ -1,4 +1,4 @@
-// // 민영 이용권
+// // 민영 이용요금 안내
 
 @media screen and (max-width: 1024px) {
     .hidden {
@@ -9,6 +9,8 @@
 
 // ticket_info
 
+// mq = 미디어 쿼리를 파트를 나누어서 하겠다고 해둔 것.
+// mq 1
 .ticket_summary {
     padding: 40px 80px 60px;
 
@@ -17,6 +19,7 @@
     gap: 32px;
     justify-content: space-between;
     align-items: center;
+
     background-color: $white;
     border-radius: 16px;
 
@@ -25,101 +28,83 @@
     }
 }
 
-
-
+// mq 2
 .summary-wrap {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
     .sum-gap-line {
         width: 1px;
         height: 180px;
         background-color: $grayE8;
     }
-}
 
-// 모바일 고려하여 만들었는데 일단 삭제
-// .summary-up,
-// .summary-down {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-// }
-
-//잠시 주석
-.sum-item {
-    position: relative;
-
-    // display: flex;
-    // flex: auto;
-    // flex-wrap: nowrap;
-    // flex-direction: column;
-    // gap: 16px;
-    // align-content: space-between;
-    // align-items: center;
-    border-radius: 0;
-
-    .sum-contents {
-        position: absolute;
-
-        display: flex;
-        // flex: auto;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        gap: 16px;
-        align-content: space-between;
-        align-items: center;
-
-        // img {
-        //     display: block;
-        //     width: 100%;
-        // }
+    img {
+        width: 120px;
     }
-
-
 }
 
+// mq 3
+.sum-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-
-.sum-txt {
-    text-align: center;
-    color: $subColor;
-    font-weight: 600;
+    .sum-txt {
+        text-align: center;
+        color: $subColor;
+        font-weight: 600;
+    }
 }
+
 
 
 @media screen and (max-width: 1024px) {
 
+    // mq 1
     .ticket_summary {
-        padding: 24px;
-        background: none;
+        padding: 0;
+        // 패딩 값을 어떻게 조절해야 할 지 연구하자
+        background-color: rgba($color: #000000, $alpha: 0.0);
+
+        h3 {
+            font-size: 20px;
+        }
     }
 
-    .sum-gap-line {
-        display: none;
-    }
+    // mq 2
+    .summary-wrap {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
 
-    .sum-item {
-        width: 40%;
-        padding: 18px;
-
-        background-color: #fff;
-        border-radius: 8px;
-
-        .sum-contents {
-            margin: 0 auto;
-            // width: auto;
-            width: calc(0.8 * calc(100% - 18px - 18px));
-            // height: calc(100% - 18px - 18px);
-            position: absolute;
+        .sum-gap-line {
+            display: none;
         }
 
         img {
-            display: block;
-            width: 100%;
+            width: 80px;
         }
+    }
+
+    // mq3 위의 부모 추가
+    .sum-item {
+        width: calc(50% - 10px);
+
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: $white;
+        border-radius: 8px;
 
         &::after {
             content: '';
@@ -128,19 +113,16 @@
             height: 0;
             padding-bottom: 100%;
         }
-    }
 
-    .summary-wrap {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 16px;
-        justify-content: center;
-        // flex: 50%;
+        .sum-contents {
+            position: absolute;
+            display: flex;
+            align-items: center;
+        }
     }
-
 }
+
+
 
 
 // 상품안내
@@ -217,11 +199,6 @@
     //     gap: 20px;
     // }
 
-    span {
-        width: 100%;
-        height: 1px;
-    }
-
     .warn-num {
         margin-right: 44px;
         color: $primary;
@@ -254,6 +231,35 @@
         background-color: $grayE8;
         align-self: center;
     }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .warn-wrap {
+        padding: 24px 16px;
+
+        gap: 24px;
+
+        .warn-num {
+            margin-right: 20px;
+        }
+
+        .warn-tit {
+            font-size: 20px;
+        }
+
+        .warn-txt {
+            margin-top: 16px;
+            margin-left: 0;
+        }
+    }
+
+
+
+    // 라인 넣을 지 말지 최종 결정 필요
+    // .warn-gap-line {
+    //     display: none;
+    // }
 }
 
 // 환불규정
