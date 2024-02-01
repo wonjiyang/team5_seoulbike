@@ -47,14 +47,23 @@
         <div class="inner inner-notice">
             <h3>공지사항</h3>
             <div class="notice">
-                <p class="notice-txt1">구분선택</p>
-                <input placeholder="제목/내용을 입력해주세요">
+                <!-- <but class="select_form">
+                    <p class="notice-select_txt">
+                        구분선택
+                    </p>
+                    <button class="notice-select_btn">
+                        <span class="blind">선택목록</span>
+                    </button>
+                </but> -->
+                <div class="search_form">
+                    <input class="notice-input" placeholder="제목/내용을 입력해주세요">
+                    <button class="notice-search_btn">
+                        <span class="blind">검색</span>
+                    </button>
+                </div>
             </div>
-            <div class="notice1">
-                <p>1</p>
-                <p>기후동행카드 관련 안내사항</p>
-                <p>2024.01.26</p>
-            </div>
+            <div id="notice1container" class="notice1"></div>
+            <div id="pagenumber" class="pagenumber"></div>
         </div>
     </div>
 </body>

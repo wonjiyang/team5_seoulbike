@@ -1,3 +1,11 @@
+const searchBtn = document.querySelector('.notice-search_btn')
+
+searchBtn.addEventListener('click', function () {
+    location.href = 'http://127.0.0.1:5501/sub_notice.html'
+})
+
+
+
 const numberArr = [
     {number : 1, text : '기후동행카드 관련 안내사항', date : '2024.01.26'},
     {number : 2, text : '[안내] 겨울철 따릉이 안전하게 타기', date : '2023.12.19'},
@@ -16,4 +24,86 @@ const numberArr = [
     {number : 15, text : '647. 신이문역 1번출구 대여소 영구 폐쇄 안내', date : '2023.11.20'},
 ]
 
-const notice = () => {}
+const container = document.getElementById('notice1container');
+
+numberArr.forEach(item => {
+    const noticeDiv = document.createElement('div');
+    noticeDiv.classList.add('notice-arr');
+
+    const noticeNumT = document.createElement('div');
+    noticeNumT.classList.add('notice-num_t');
+
+    const noticeNumTD = document.createElement('div');
+    noticeNumTD.classList.add('notice-num_t_d');
+
+
+    const numberArrNumber = document.createElement('p');
+    numberArrNumber.classList.add('notice-arr_number');
+    numberArrNumber.textContent = item.number;
+
+    const nuberArrText = document.createElement('p');
+    nuberArrText.classList.add('notice-arr_text');
+    // nuberArrText.textContent = item.text;
+
+    const ntcTextlink = document.createElement('a');
+    ntcTextlink.href = 'http://127.0.0.1:5501/sub_notice.html';
+    ntcTextlink.textContent = item.text;
+    nuberArrText.appendChild(ntcTextlink);
+
+
+    noticeNumT.appendChild(numberArrNumber);
+    noticeNumT.appendChild(nuberArrText);
+
+    for (let i = 1; i <= 5; i++) {
+        if (item.number === i) {
+            nuberArrText.classList.add(`notice-arr_text_c`);
+        }
+    }
+
+    noticeNumTD.appendChild(noticeNumT);
+
+    const numberArrDate = document.createElement('p');
+    numberArrDate.classList.add('notice-arr_date');
+    numberArrDate.textContent = item.date;
+
+    noticeNumTD.appendChild(numberArrDate);
+    noticeDiv.appendChild(noticeNumTD);
+    container.appendChild(noticeDiv);
+});
+
+
+
+const pageNumberArr = [
+    { number : 1},
+    { number : 2},
+    { number : 3},
+    { number : 4},
+    { number : 5},
+    { number : 6},
+]
+
+const pageNumber = document.getElementById('pagenumber');
+
+pageNumberArr.forEach(item => {
+
+    const pageNumberP = document.createElement('p');
+    pageNumberP.classList.add('pagenum');
+
+    const pgnbLink = document.createElement('a');
+    pgnbLink.href = 'http://127.0.0.1:5501/sub_notice.html';
+    pgnbLink.textContent = item.number;
+
+    const currentPageNumber = localStorage.getItem('selectedPageNumber');
+
+    if (currentPageNumber === item.number.toString()) {
+      pageNumberP.classList.add('selected');
+    }
+
+    pgnbLink.addEventListener('click', () => {
+      localStorage.setItem('selectedPageNumber', item.number);
+    });
+    
+
+    pageNumberP.appendChild(pgnbLink);
+    pageNumber.appendChild(pageNumberP);
+});
