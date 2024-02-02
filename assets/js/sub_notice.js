@@ -83,58 +83,44 @@ const pageNumberArr = [
 
 const pageNumber = document.getElementById('pagenumber');
 
-pageNumberArr.forEach(item => {
-
-    const pageNumberP = document.createElement('p');
-    pageNumberP.classList.add('pagenum');
-
-    const pgnbLink = document.createElement('a');
-    // pgnbLink.href = 'http://127.0.0.1:5501/sub_notice.html';
-    pgnbLink.href = `sub_notice.html?page=${item.number}`;
-    pgnbLink.textContent = item.number;
-
-    const currentPageNumber = localStorage.getItem('selectedPageNumber');
-
-    if (currentPageNumber === item.number.toString()) {
-        pgnbLink.classList.add('selected');
-    }
-
-    pgnbLink.addEventListener('click', () => {
-      localStorage.setItem('selectedPageNumber', item.number);
-    });
-
-    pageNumberP.appendChild(pgnbLink);
-    pageNumber.appendChild(pageNumberP);
-});
-
-
-
-const pageNumber = document.getElementById('pagenumber');
-
-pageNumberArr.forEach(item => {
+function updateMaxPageNumber() {
     const viewportWidth = window.innerWidth;
-
     const maxPageNumber = (viewportWidth <= 375) ? 4 : 6;
+    return maxPageNumber;
+}
 
-    if (item.number <= maxPageNumber) {
-        const pageNumberP = document.createElement('p');
-        pageNumberP.classList.add('pagenum');
+function renderPageNumbers() {
+    pageNumber.innerHTML = '';
+    const maxPageNumber = updateMaxPageNumber();
 
-        const pgnbLink = document.createElement('a');
-        pgnbLink.href = `sub_notice.html?page=${item.number}`;
-        pgnbLink.textContent = item.number;
+    pageNumberArr.forEach(item => {
+        if (item.number <= maxPageNumber) {
+            const pageNumberP = document.createElement('p');
+            pageNumberP.classList.add('pagenum');
 
-        const currentPageNumber = localStorage.getItem('selectedPageNumber');
+            const pgnbLink = document.createElement('a');
+            pgnbLink.href = `sub_notice.html?page=${item.number}`;
+            pgnbLink.textContent = item.number;
 
-        if (currentPageNumber === item.number.toString()) {
-            pgnbLink.classList.add('selected');
+            const currentPageNumber = localStorage.getItem('selectedPageNumber');
+
+            if (currentPageNumber === item.number.toString()) {
+                pgnbLink.classList.add('selected');
+                pgnbLink.addEventListener('click', (event) => {
+                    event.preventDefault();
+                });
+            } else {
+                pgnbLink.addEventListener('click', () => {
+                    localStorage.setItem('selectedPageNumber', item.number);
+                });
+            }
+
+            pageNumberP.appendChild(pgnbLink);
+            pageNumber.appendChild(pageNumberP);
         }
+    });
+}
 
-        pgnbLink.addEventListener('click', () => {
-            localStorage.setItem('selectedPageNumber', item.number);
-        });
+renderPageNumbers();
 
-        pageNumberP.appendChild(pgnbLink);
-        pageNumber.appendChild(pageNumberP);
-    }
-});
+window.addEventListener('resize', renderPageNumbers);
