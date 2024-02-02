@@ -1,5 +1,119 @@
  // 원지님 대여소안내
 
- .rental {
-    padding: 56px 48px;
+
+.infointro-wrap {
+    padding: 0;
+}
+
+.rental-top {
+    position: relative;
+    .bg {
+        position: relative;
+    }
+    .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0;
+    }
+}
+
+.rental-mid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 48px;
+    .left {
+        .text {
+            .title {
+                padding-bottom: 20px;
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .con {
+                font-size: 16px;
+                font-weight: 500;
+                color: $gray5;
+            }
+        }
+        .content {
+            padding-top: 48px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            gap: 80px;
+            .element {
+                display: block;
+            }
+            .title {
+                font-size: 22px;
+                font-weight: 500;
+                color: $gray7;
+            }
+            .primary {
+                font-size: 48px;
+                font-weight: 700;
+                color: $primary;
+            }
+            .con {
+                font-size: 30px;
+                font-weight: 500;
+                color: $gray7;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) { 
+    .wrap {
+        margin: 0;
+    }
+    .hd-n {
+        display: none;
+    }
+    .rental-mid {
+        display: block;
+        .left {
+            .content {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+.rental-bottom {
+    position: relative;
+    padding-top: 140px;
+    .bottom-bg {
+        padding: 0;
+    }
+    .bottom-content {
+        .content {
+            &:first-child {
+                position: absolute;
+                top: 220px;
+                left: 160px;
+            }
+            &:last-child {
+                position: absolute;
+                bottom: 80px;
+                right: 220px;
+            }
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            .txt {
+                width: 360px;
+            }
+            .title {
+                padding-bottom: 16px;
+                font-size: 22px;
+                font-weight: 500;
+            }
+            .con {
+                color: $gray5;
+            }
+        }
+    }
 }
