@@ -1,26 +1,152 @@
 // // 민영 이용요금 안내
 
-// $nav-widthD1: 254px;
-// $nav-widthD2: 373px;
-// // 레이아웃
+$nav-widthD1: 254px;
+$nav-widthD2: 373px;
+// 레이아웃
 
-// #header {
-//     position: fixed;
-//     // width : 변수이므로 여기 적지 말아야 함. 임시!
-//     height: 100svh;
-//     width: calc($nav-widthD1 + &$nav-widthD2);
-// }
+#header {
+    display: flex;
+    flex-direction: column;
 
-// .wrap {
-//     width: calc(100% - $nav-widthD1);
-//     padding: 48px;
-// }
+    position: fixed;
+    height: 100svh;
+    padding: 40px;
 
-// @media screen and (max-width: 1024px) {
-//     .wrap {
-//         padding: 24px;
-//     }
-// }
+    .nav_d1_area {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .depth1 {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+
+        // margin-top: 48px; // 임시 
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .util {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        // icon : html, before로 작업하지 않음.
+    }
+
+    // nav_btm_l (gnb 아래 푸터 왼쪽부분)
+    .nav_btm_d1 {
+        display: flex;
+        flex-direction: column;
+        gap: 16px; // nav_btm_link 간격의 2배
+
+        position: absolute;
+        left: 40px;
+        right: 0;
+        bottom: 40px;
+    }
+
+    .nav_btm_sns {
+        display: flex;
+        gap: 12px;
+    }
+
+    .sns_icon {
+        width: 20px;
+        height: 20px;
+        // object-fit: cover;
+    }
+
+    .nav_btm_info {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+// depth 2 : 일단 밖을 빼고 진행
+.ct-nav_depth2 {
+    position: fixed;
+    width: $nav-widthD2;
+    height: 100svh;
+    padding: 40px;
+    margin-left: $nav-widthD1;
+
+    background: $white;
+
+    h2 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+}
+
+.nav_d2_area {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-top: 98px;
+}
+
+.depth2 {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.nav_btm_d2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+
+    font-size: 12px;
+    font-weight: 400;
+    color: $gray7;
+}
+
+.wrap {
+    width: calc(100% - $nav-widthD1 - $nav-widthD2);
+    padding: 48px;
+    margin-left: calc($nav-widthD1 + $nav-widthD2);
+
+    .inner {
+        padding: 0;
+    }
+}
+
+// 임시
+
+@media screen and (max-width: 1024px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        background-image: url(./../../images/sub_ticket/0131_1-1-m_이용요금\ 안내.jpg);
+    }
+
+    .wrap {
+        padding: 24px;
+        margin-left: 0;
+    }
+
+    #header {
+        position: fixed;
+        // position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        height: 52px;
+    }
+}
+
+
+
+// ★★★★★ 여기 위로는 모두 주석처리하고 커밋하시오! ★★★★★
 
 .in-t-info {
     display: flex;
@@ -156,12 +282,7 @@
 }
 
 
-
-
 // 상품안내
-
-
-
 .m-fee {
     display: flex;
     flex-direction: column;
@@ -179,8 +300,6 @@
     border-radius: 16px;
 }
 
-
-
 .fee-comm {
     display: flex;
     flex-direction: row;
@@ -194,10 +313,7 @@
     .m-tic-right {
         width: 75%;
     }
-
-
 }
-
 
 // ticket_info : warning
 .warn-wrap {
@@ -272,17 +388,16 @@
         }
     }
 
-
-
     // 라인 넣을 지 말지 최종 결정 필요
     // .warn-gap-line {
     //     display: none;
     // }
 }
 
+
 // 환불규정
 
-//table comm.scss설정과 이어짐
+//table comm.scss설정(=세팅)과 이어짐
 table {
     tbody {
         tr {
