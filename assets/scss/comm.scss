@@ -2,13 +2,18 @@
 
 // 페이지 내용 레이아웃 max-width 제한
 body {
+    // 최소 사이즈 설정
+    // 320px 아래는 스크롤
     min-width: 320px;
+
+    // header와의 정렬
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
 
 .wrap {
-    width: 100%;
-    padding: 0 48px;
-
     .inner {
         width: 100%;
         max-width: 1280px;
@@ -17,7 +22,6 @@ body {
 }
 
 // h1 = 따릉이 로고
-// h2 : 모두 class="blind" 지정 예정
 .blind {
     // display: none;
     position: absolute;
@@ -31,33 +35,7 @@ h3 {
     font-weight: 600
 }
 
-
-// 이 아래는 임시로 태그 잡아두었습니다. 추후 클래스 지정 가능성 높습니다.
-body {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-// 네브 = 헤더
-#header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    // % 전환 가능성 있음
-    height: 100vh;
-
-    background-color: $white;
-    min-width: 254px;
-
-    img {
-        display: block;
-        width: 174px;
-    }
-}
-
-
+// table
 table {
     width: 100%;
     background-color: $white ;
@@ -110,4 +88,4 @@ table {
 
 
 // 아래에 각자 페이지 연결
-@import "main", "sub_insurance", "sub_insurance2", "sub_ticket_info", "sub_ticket_pay", "sub_safety", "sub_business_intro", "sub_notice", "sub_rental";
+@import "main", "sub_insurance", "sub_insurance2", "sub_ticket_info", "sub_ticket_pay", "sub_safety", "sub_business_intro", "sub_notice", "sub_rental", "nav";

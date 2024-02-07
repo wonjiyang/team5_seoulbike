@@ -1,4 +1,9 @@
 // 표 스타일
 
 
-// 카드 스타일
+// nav style
+@mixin nav_btm_text {
+    font-size: 12px;
+    font-weight: 400;
+    color: $gray7;
+}

@@ -1,0 +1,249 @@
+// Navigation Bar 작성
+
+// 레이아웃 정돈
+.wrap {
+    /* 임시 이건 티켓 기준이라 메인 충돌 생김. 일단 작성한다고 넣은 것. */
+    // comm 상속
+    width: calc(100% - $nav-widthD1 - $nav-widthD2);
+
+    margin-left: calc($nav-widthD1 + $nav-widthD2);
+    padding: 48px;
+
+    .inner {
+        padding: 0;
+    }
+}
+
+// header pc
+// 헤더 레이아웃 정리
+#header {
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    padding: 40px;
+
+    background-color: $white;
+
+    // logo img
+    img {
+        display: block;
+        width: 174px;
+    }
+}
+
+// header 내 정렬
+.nav_d1_area {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+// 주요 메뉴 내 정렬
+.depth1 {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    a {
+        color: $subColor;
+    }
+}
+
+// util 아이콘
+.util-lang {
+    &::before {
+        content: url(./../../images/comm/util_icon_lang.png);
+        display: inline;
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.util-login {
+    &::before {
+        content: url(./../../images/comm/util_icon_login.png);
+        display: inline;
+        width: 10px;
+        height: 10px;
+    }
+}
+
+// util 정렬
+.util {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    // icon : before로 작업. iframe 부재.
+    a {
+        color: $gray7;
+        font-weight: 500;
+    }
+}
+
+// nav_btm_l (gnb 아래 푸터 왼쪽부분)
+// #header 밖으로 나오면 우선순위 밀림.
+#header {
+    .nav_btm_d1 {
+        display: flex;
+        flex-direction: column;
+        gap: 16px; // nav_btm_link 간격의 2배
+
+        position: absolute;
+        left: 40px;
+        right: 0;
+        bottom: 40px;
+    }
+
+    .nav_btm_sns {
+        display: flex;
+        gap: 12px;
+    }
+
+    .sns_icon {
+        width: 20px;
+        height: 20px;
+        // object-fit: cover;
+    }
+
+    .nav_btm_info {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        @include nav_btm_text;
+        color: $gray7;
+    }
+}
+
+
+// depth 2 : 일단 밖을 빼고 진행
+.ct-nav_depth2 {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    width: $nav-widthD2;
+
+    padding: 40px;
+    margin-left: $nav-widthD1;
+
+    background: $white;
+
+    color: $subColor;
+
+    h2 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+}
+
+.nav_d2_area {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-top: 98px;
+}
+
+.depth2 {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    a {
+        font-size: 18px;
+
+        &:hover {
+            font-weight: 500;
+        }
+    }
+}
+
+.nav_btm_d2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+
+    @include nav_btm_text;
+}
+
+
+
+// 복붙용
+// @media screen and (max-width: 1200px) {}
+
+// @media screen and (max-width: 1200px) {
+
+//     body {
+//         display: flex;
+//         flex-direction: column;
+//         background-image: url(./../../images/sub_ticket/0131_1-1-m_이용요금\ 안내.jpg);
+//         background-repeat: no-repeat;
+//     }
+
+//     .wrap {
+//         padding: 24px;
+//         width: auto;
+//         margin-left: 0;
+//     }
+
+//     #header {
+//         position: fixed;
+//         // position: relative;
+//         top: 0;
+//         left: 0;
+//         right: 0;
+
+//         height: 52px;
+//         padding: 0;
+//         background-color: $white; // 임시
+
+//         .nav_d1_area {
+//             display: none;
+//         }
+
+//         .nav_btm_d1,
+//         .nav_btm_d2 {
+//             display: none;
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 1200px) {
+//     
+// }
+
+// 임시 : 네브 모바일에서 비활성화
+@media screen and (max-width: 1200px) {
+    .ct-nav_depth2 {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    body {
+        flex-direction: column;
+    }
+
+    // 모바일 nav 활성화 시 wrap 마진 생성
+    .wrap {
+        width: 100%; // pc : calc
+        margin-top: $mHdHeight;
+        margin-left: 0; //header가 fixed 이기 때문에 필요함
+    }
+}
