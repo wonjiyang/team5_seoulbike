@@ -22,9 +22,8 @@
 
   <body>
     <header id="header" class="hd-n">
-      <!-- withmuu nav + surim -->
-      <!-- div.h_category = nav -->
-      <nav class="nav_d1_area">
+      <!-- pc nav depth 1 -->
+      <div class="nav_d1_area">
         <h1>
           <a> <img src="./images/comm/logo.png" alt="따릉이 로고" /></a>
         </h1>
@@ -40,10 +39,10 @@
         <!-- util -->
         <!-- 이것도 뎁스 0 -->
         <ul class="util">
-          <li><a href="#">KR</a></li>
-          <li><a href="#">로그인</a></li>
+          <li><a href="#" class="util-lang">KR</a></li>
+          <li><a href="#" class="util-login">로그인</a></li>
         </ul>
-      </nav>
+      </div>
       <div class="nav_btm_d1">
         <div class="nav_btm_sns">
           <!-- sns icon -->
@@ -73,8 +72,14 @@
           <a href="#">개인정보처리방침</a>
         </div>
       </div>
-      <!-- depth2 -->
-      <section class="ct-nav_depth2">
+    </header>
+
+    <!-- contents container -->
+    <!-- pc nav depth2 부득이하게 여기에 있음 -->
+    <div class="wrap t-wrap">
+      <!-- pc nav depth 2 -->
+      <div class="ct-nav_depth2">
+        <!-- depth2 -->
         <div class="nav_d2_area">
           <h2>이용권</h2>
           <ul class="depth2">
@@ -89,11 +94,7 @@
           <span>우편번호 04524</span>
           <span>COPYRIGHT ⓒ 2018 bikeseoul All RIGHTS RESERVED.</span>
         </div>
-      </section>
-    </header>
-
-    <!-- content? -->
-    <div class="wrap t-wrap">
+      </div>
       <div class="inner in-t-info">
         <!-- 핵심 요약 -->
         <div class="ticket_summary">
