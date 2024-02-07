@@ -1,6 +1,10 @@
 @import "variables", "mixins", "reset";
 
 // 페이지 내용 레이아웃 max-width 제한
+body {
+    min-width: 320px;
+}
+
 .wrap {
     width: 100%;
     padding: 0 48px;
