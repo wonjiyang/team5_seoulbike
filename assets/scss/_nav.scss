@@ -93,36 +93,7 @@
 // nav_btm_l (gnb 아래 푸터 왼쪽부분)
 // #header 밖으로 나오면 우선순위 밀림.
 #header {
-    .nav_btm_d1 {
-        display: flex;
-        flex-direction: column;
-        gap: 16px; // nav_btm_link 간격의 2배
-
-        position: absolute;
-        left: 40px;
-        right: 0;
-        bottom: 40px;
-    }
-
-    .nav_btm_sns {
-        display: flex;
-        gap: 12px;
-    }
-
-    .sns_icon {
-        width: 20px;
-        height: 20px;
-        // object-fit: cover;
-    }
-
-    .nav_btm_info {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-
-        @include nav_btm_text;
-        color: $gray7;
-    }
+    @include nav_btm_depth1
 }
 
 
@@ -246,4 +217,141 @@
         margin-top: $mHdHeight;
         margin-left: 0; //header가 fixed 이기 때문에 필요함
     }
+}
+
+// mobile navigation
+.bgblur {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    z-index: 1000;
+}
+
+.nav_mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: $mNavOpenW;
+    height: 100svh;
+    padding: 30px;
+
+    background-color: $white;
+    z-index: 1100;
+
+    @include nav_btm_depth1
+}
+
+// .btn_menu {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+
+//     width: 28px;
+//     height: 28px;
+
+//     padding: 5px;
+
+//     .btn_menu_deco {
+//         // close
+//         width: 7.58px;
+//         height: 7.58px;
+//         border: 2px solid $subColor;
+//         border-radius: 7.58px;
+//     }
+// }
+
+
+// .m_nav_open
+.btn_menu {
+    display: inline-block;
+    vertical-align: middle;
+
+    width: 28px;
+    height: 28px;
+
+    // padding: 5px;
+    border-radius: 14px;
+    background-color: $subColor;
+
+    // transition: 0.3s;
+
+    i {
+        display: inline-block;
+
+        position: relative;
+        left: 50%;
+        top: 50%;
+
+        vertical-align: middle;
+
+        &::before {
+            content: '';
+
+            position: absolute;
+            left: 50%; // before에서는 left
+            top: 50%;
+
+            width: 6.67px;
+            height: 1.33px;
+            border-radius: 1.33px;
+            background-color: $primary;
+        }
+
+        &::after {
+            content: '';
+
+            position: absolute;
+            right: 0; // after에서는 right
+            top: 50%;
+
+            width: 6.67px;
+            height: 1.33px;
+            border-radius: 1.33px;
+            background-color: $primary;
+        }
+
+        &:nth-child(1) {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+
+        &:nth-child(2) {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+    }
+}
+
+.m_depth1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 28px; // 임시 지정
+
+    font-size: 16px;
+    color: $subColor;
+
+    strong {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    li {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+.m_depth2 {
+    display: none;
+
+    // display: block;
+
+    margin: 10px 0;
 }

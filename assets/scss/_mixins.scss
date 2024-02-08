@@ -7,3 +7,36 @@
     font-weight: 400;
     color: $gray7;
 }
+
+@mixin nav_btm_depth1 {
+    .nav_btm_d1 {
+        display: flex;
+        flex-direction: column;
+        gap: 16px; // nav_btm_link 간격의 2배
+
+        position: absolute;
+        left: 40px;
+        right: 0;
+        bottom: 40px;
+    }
+
+    .nav_btm_sns {
+        display: flex;
+        gap: 12px;
+    }
+
+    .sns_icon {
+        width: 20px;
+        height: 20px;
+        // object-fit: cover;
+    }
+
+    .nav_btm_info {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        @include nav_btm_text;
+        color: $gray7;
+    }
+}
