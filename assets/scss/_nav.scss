@@ -270,12 +270,11 @@
 // .m_nav_open
 .btn_menu {
     display: inline-block;
-    vertical-align: middle;
 
     width: 28px;
     height: 28px;
 
-    // padding: 5px;
+    padding: 6px;
     border-radius: 14px;
     background-color: $subColor;
 
@@ -284,18 +283,15 @@
     i {
         display: inline-block;
 
-        position: relative;
-        left: 50%;
-        top: 50%;
-
         vertical-align: middle;
 
         &::before {
             content: '';
 
+            margin-top: -3px;
             position: absolute;
             left: 50%; // before에서는 left
-            top: 50%;
+            top: 60%;
 
             width: 6.67px;
             height: 1.33px;
@@ -305,10 +301,11 @@
 
         &::after {
             content: '';
+            margin-top: -3px;
 
             position: absolute;
-            right: 0; // after에서는 right
-            top: 50%;
+            right: 50%; // after에서는 right
+            top: 60%;
 
             width: 6.67px;
             height: 1.33px;
@@ -349,9 +346,13 @@
 }
 
 .m_depth2 {
-    display: none;
+    // display: none;
+    display: block;
 
-    // display: block;
+    margin: 24px 0 0 0;
 
-    margin: 10px 0;
+    li {
+        margin-bottom: 16px;
+        padding: 0 20px;
+    }
 }
