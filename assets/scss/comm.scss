@@ -104,33 +104,10 @@ table {
     }
 }
 
-.infointro-wrap {
+.inner {
     padding: 56px 48px;
 }
 
-.infointro {
-    .bg {
-        text-align: center;
-    }
-    .text {
-        padding-top: 32px;
-        text-align: center;
-        .title {
-            font-size: 28px;
-            font-weight: 600;
-        }
-        .content {
-            padding-top: 12px;
-            color: $gray7;
-            font-size: 20px;
-            font-weight: 400;
-        }
-        .primary {
-            color: $primary;
-            font-weight: 600;
-        }
-    }
-}
 
 
 // 아래에 각자 페이지 연결
