@@ -1,47 +1,32 @@
 $(
-    var gd_topmenu = function(){
-        $('.depth0 li').on({
-            'mouseover':function(){
-                $(this).find('> ul').stop(true,true).fadeIn('fast');
-                $(this).find('> a').addClass('active');
-                //console.log('open');
-            },
-            'mouseleave':function(){
-                $(this).find('> ul').stop(true,true).fadeOut('fast');
-                $(this).find('> a').removeClass('active');
-                //console.log('hide');
-            }
-        });
-    };
-    gd_topmenu();
+  // menu open?
+  $(".btn_menu").click(function () {
+    // menu를 열어야 함.
 
-//   // li 클릭, 터치 시 메뉴 펼치기
-//   function () {
-//     if ($(this).hasClass("open") === true) {
-//       if ($(this).next().length > 0) {
-//         $(this).next().removeClass("open");
-//       }
-//       $(this).removeClass("open");
-//     } else {
-//       if ($(this).next().length > 0) {
-//         $(this).next().addClass("open");
-//       }
-//       $(this).addClass("open");
-//     }
-//   };
-  
+    // $('body').stop().toggleClass('open');
+    // $('#header').stop().toggleClass('open');
+    $("m_depth1").stop().toggleClass("open");
+    // $('.h_b2b').stop().toggleClass('open');
+    // $('.h_language').stop().toggleClass('open');
+    // $('#container').stop().toggleClass('blur');
+    // $('#footer').stop().toggleClass('blur');
+    // $('.h_category').stop().toggleClass('blur');
+    // $('.hm_partner').stop().toggleClass('blur');
+  }),
 
-//   // 사용하지 않을 마우스 오버
-//   function() {
-//     $(this).find('> ul').stop(true, true).fadeIn('fast');
-//     $(this).find('> a').addClass('active');
-//     //console.log('open');
-//   };
-//   function() {
-//     $(this).find('> ul').stop(true, true).fadeOut('fast');
-//     $(this).find('> a').removeClass('active');
-//     //console.log('hide');
-//   };
+  //depth 1 디테일 온오프
+  $(".m_depth1 > li > strong").click(function () {
+    if ($(this).hasClass("active") === true) {
+      if ($(this).next().length > 0) {
+        // 자식이 하나 이상 있으면
+        $(this).next().removeClass("active");
+      }
+      $(this).removeClass("active");
+    } else {
+      if ($(this).next().length > 0) {
+        $(this).next().addClass("active");
+      }
+      $(this).addClass("active");
+    }
+  })
 );
-
-

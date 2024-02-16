@@ -200,6 +200,7 @@
 
 // 임시 : 네브 모바일에서 비활성화
 @media screen and (max-width: 1200px) {
+
     .ct-nav_depth2 {
         display: none;
     }
@@ -271,6 +272,10 @@
 .btn_menu {
     display: inline-block;
 
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
     width: 28px;
     height: 28px;
 
@@ -331,12 +336,72 @@
     justify-content: space-between;
     gap: 28px; // 임시 지정
 
+    padding-top: 52px; // px지정 괜찮을까나...?
     font-size: 16px;
     color: $subColor;
 
     strong {
+        position: relative;
         font-size: 16px;
         font-weight: 700;
+
+        &::before {
+            content: "";
+            display: none;
+
+            position: absolute;
+            top: 16px;
+            left: -4px;
+            right: -4px;
+            z-index: -1;
+            height: 6px;
+            border-radius: 3px;
+            background-color: $primary;
+        }
+
+        &::after {
+            content: '';
+            display: none;
+
+            position: absolute;
+            top: 16px;
+            right: -14px;
+            z-index: -1;
+            width: 6px;
+            height: 6px;
+            border-radius: 3px;
+            background-color: $primary;
+        }
+    }
+
+    strong.active {
+        &::before {
+            content: "";
+            display: block;
+
+            // position: absolute;
+            // top: 16px;
+            // left: -4px;
+            // right: -4px;
+            // z-index: -1;
+            // height: 6px;
+            // border-radius: 3px;
+            // background-color: $primary;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+
+            // position: absolute;
+            // top: 16px;
+            // right: -14px;
+            // z-index: -1;
+            // width: 6px;
+            // height: 6px;
+            // border-radius: 3px;
+            // background-color: $primary;
+        }
     }
 
     li {
@@ -346,8 +411,8 @@
 }
 
 .m_depth2 {
-    // display: none;
-    display: block;
+    display: none;
+    // display: block;
 
     margin: 24px 0 0 0;
 
@@ -355,4 +420,8 @@
         margin-bottom: 16px;
         padding: 0 20px;
     }
+}
+
+ul.active {
+    display: block;
 }
