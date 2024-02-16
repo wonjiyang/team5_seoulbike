@@ -1,7 +1,7 @@
  // 원지님 대여소안내
 
 
-.infointro-wrap {
+.info-wrap {
     padding: 0;
     word-break: keep-all;
 }
@@ -10,22 +10,39 @@
     position: relative;
     .bg {
         position: relative;
+        text-align: center;
+        width: 100%;
     }
     .topbg {     
         width: 100%;
     }
     .text {
+        padding: 32px 48px;
+        text-align: center;
         width: 100%;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: 0;
         .con {
             padding-top: 12px;
             color: $gray7;
             font-size: 20px;
             font-weight: 400;
+        }
+        .title {
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .content {
+            padding-top: 12px;
+            color: $gray7;
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .primary {
+            color: $primary;
+            font-weight: 600;
         }
     }
 }
@@ -40,7 +57,7 @@
 }
 
 @media screen and (max-width: 1230px) {
-    .infointro {
+    .info-wrap {
         .text {
             .title {
                 font-size: 24px;
@@ -59,24 +76,22 @@
     .hd-n {
         display: none;
     }
-    .infointro {
+    .info-wrap {
         .text {
             width: 100%;
-            padding: 0 48px;
             .title {
-                font-size: 36px;
+                font-size: 32px;
             }
             .con {
-                font-size: 26px;
+                font-size: 24px;
             }
         }
     }
 }
 
 @media screen and (max-width: 640px) { 
-    .infointro {
+    .info-wrap {
         .text {
-            padding: 0 36px;
             .title {
                 font-size: 32px;
             }
@@ -88,7 +103,7 @@
 }
 
 @media screen and (max-width: 540px) { 
-    .infointro {
+    .info-wrap {
         .text {
             .title {
                 font-size: 28px;
@@ -101,9 +116,8 @@
 }
 
 @media screen and (max-width: 470px) { 
-    .infointro {
+    .info-wrap {
         .text {
-            padding: 0 24px;
             .title {
                 font-size: 24px;
             }
