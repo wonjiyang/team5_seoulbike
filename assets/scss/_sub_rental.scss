@@ -1,5 +1,865 @@
  // 원지님 대여소안내
 
- .rental {
-    padding: 56px 48px;
+
+.info-wrap {
+    padding: 0;
+    word-break: keep-all;
+}
+
+.rental-top {
+    position: relative;
+    .bg {
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+    .topbg {     
+        width: 100%;
+    }
+    .text {
+        padding: 32px 48px;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .con {
+            padding-top: 12px;
+            color: $gray7;
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .title {
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .content {
+            padding-top: 12px;
+            color: $gray7;
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .primary {
+            color: $primary;
+            font-weight: 600;
+        }
+    }
+}
+
+.test-img {
+    display: block;
+    height: 800px;
+    background: url(../../images/sub_rental/background_tablet2.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 1230px) {
+    .info-wrap {
+        .text {
+            .title {
+                font-size: 24px;
+            }
+            .con {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) { 
+    .wrap {
+        margin: 0;
+    }
+    .hd-n {
+        display: none;
+    }
+    .info-wrap {
+        .text {
+            width: 100%;
+            .title {
+                font-size: 32px;
+            }
+            .con {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) { 
+    .info-wrap {
+        .text {
+            .title {
+                font-size: 32px;
+            }
+            .con {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px) { 
+    .info-wrap {
+        .text {
+            .title {
+                font-size: 28px;
+            }
+            .con {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 470px) { 
+    .info-wrap {
+        .text {
+            .title {
+                font-size: 24px;
+            }
+            .con {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.rental-mid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 48px;
+    .left {
+        .text {
+            .title {
+                padding-bottom: 20px;
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .con {
+                font-size: 16px;
+                font-weight: 500;
+                color: $gray5;
+            }
+        }
+        .content {
+            padding-top: 48px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            .element {
+                display: block;
+                padding-right: 48px;
+            }
+            .title {
+                font-size: 22px;
+                font-weight: 500;
+                color: $gray7;
+            }
+            .primary {
+                font-size: 48px;
+                font-weight: 700;
+                color: $primary;
+            }
+            .con {
+                font-size: 30px;
+                font-weight: 500;
+                color: $gray7;
+            }
+        }
+    }
+    .right {
+        padding-left: 48px;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .rental-mid {
+        .left {
+            .content {
+                .element {
+                    padding-right: 32px;
+                }
+                .primary {
+                    font-size: 40px;
+                }
+                .con {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .rental-mid {
+        .left {
+            .content {
+                .primary {
+                    font-size: 36px;
+                }
+                .con {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) { 
+    .rental-mid {
+        .left {
+            .text {
+                .title {
+                    font-size: 26px;
+                }
+                .con {
+                    font-size: 20px;
+                }
+            }
+            .content {
+                align-items: flex-start;
+                .title {
+                    font-size: 22px;
+                }
+                .primary {
+                    font-size: 50px;
+                }
+                .con {
+                    font-size: 30px;
+                }
+            }
+        }
+        .right {
+            padding: 48px 0;
+            img {
+                width: 445px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .rental-mid {
+        flex-wrap: wrap;
+        .left {
+            width: 100%;
+        }
+        .right {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .rental-mid {
+        padding: 48px 32px;
+        .left {
+            .content {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .rental-mid {
+        .left {
+            .text {
+                .title {
+                    font-size: 22px;
+                }
+                .con {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .rental-mid {
+        padding: 32px 20px;
+        .left {
+            .text {
+                .title {
+                    font-size: 20px;
+                }
+            }
+            .content {
+                padding-top: 32px;
+                .title {
+                    font-size: 18px;
+                }
+                .primary {
+                    font-size: 40px;
+                }
+                .con {
+                    font-size: 28px;
+                }
+            }
+        }
+        .right {
+            padding-top: 32px;
+        }
+    }
+}
+
+.rental-bottom {
+    position: relative;
+    padding: 40px 0px 56px 0px;
+    .bottom-bg {
+        padding: 0;
+        width: 100%;
+    }
+    .bottom-content {
+        .content {
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+            gap: 24px;
+            &:first-child {
+                position: absolute;
+                top: 210px;
+                right: 412px;
+            }
+            &:last-child {
+                position: absolute;
+                bottom: 185px;
+                left: 360px;
+            }
+            .txt {
+                width: 360px;
+            }
+            .title {
+                padding-bottom: 16px;
+                font-size: 22px;
+                font-weight: 500;
+            }
+            .con {
+                color: $gray5;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1530px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:first-child {
+                    top: 210px;
+                    right: 390px;
+                }
+                &:last-child {
+                    bottom: 185px;
+                    left: 340px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1460px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:first-child {
+                    top: 190px;
+                    right: 360px;
+                }
+                &:last-child {
+                    bottom: 170px;
+                    left: 310px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:first-child {
+                    top: 190px;
+                    right: 335px;
+                }
+                &:last-child {
+                    bottom: 180px;
+                    left: 290px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                .txt {
+                    width: 320px;
+                }
+                &:first-child {
+                    top: 180px;
+                    right: 320px;
+                }
+                &:last-child {
+                    bottom: 160px;
+                    left: 290px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                .txt {
+                    width: 320px;
+                }
+                &:first-child {
+                    top: 170px;
+                    right: 320px;
+                }
+                &:last-child {
+                    bottom: 160px;
+                    left: 290px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1270px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                .txt {
+                    width: 310px;
+                }
+                &:first-child {
+                    top: 155px;
+                    right: 275px;
+                }
+                &:last-child {
+                    bottom: 150px;
+                    left: 270px;
+                }
+                .title {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                flex-direction: column;
+                &:first-child {
+                    top: 190px;
+                    right: 355px;
+                }
+                &:last-child {
+                    bottom: 190px;
+                    left: 315px;
+                }
+                .txt {
+                    width: 330px;
+                }
+            }
+        }
+    }
+    .bottom-bg {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:first-child {
+                    top: 175px;
+                    right: 315px;
+                }
+                &:last-child {
+                    bottom: 175px;
+                    left: 285px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:first-child {
+                    top: 145px;
+                    right: 340px;
+                    &::before {
+                        content: "";
+                        width: 191px;
+                        height: 121px;
+                        background: url(../../images//sub_rental/bike.png);
+                    }
+                }
+                &:last-child {
+                    bottom: 140px;
+                    left: 420px;
+                    &::before {
+                        content: "";
+                        width: 191px;
+                        height: 121px;
+                        background: url(../../images//sub_rental/rests.png);
+                    }
+                }
+                .txt {
+                    width: 490px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:first-child {
+                    top: 145px;
+                    right: 250px;
+                }
+                &:last-child {
+                    bottom: 135px;
+                    left: 330px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:first-child {
+                    top: 130px;
+                    right: 230px;
+                }
+                &:last-child {
+                    bottom: 130px;
+                    left: 320px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:first-child {
+                    top: 140px;
+                    right: 200px;
+                }
+                &:last-child {
+                    bottom: 140px;
+                    left: 260px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:first-child {
+                    top: 130px;
+                    right: 205px;
+                }
+                &:last-child {
+                    bottom: 130px;
+                    left: 250px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                margin-left: 40px;
+                .txt {
+                    width: 380px;
+                }
+                &:first-child {
+                    top: 140px;
+                    right: 280px;
+
+                }
+                &:last-child {
+                    bottom: 140px;
+                    left: 280px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:first-child {
+                    right: 230px;
+                }
+                &:last-child {
+                    bottom: 130px;
+                    left: 210px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:first-child {
+                    top: 109px;
+                    right: 204px;
+                }
+                &:last-child {
+                    bottom: 125px;
+                    left: 190px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:last-child {
+                    bottom: 110px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:first-child {
+                    top: 150px;
+                    right: 150px;
+                }
+                &:last-child {
+                    bottom: 140px;
+                    left: 140px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                gap: 16px;
+                &:first-child {
+                    top: 130px;
+                    right: 120px;
+                }
+                &:last-child {
+                    bottom: 120px;
+                    left: 110px;
+                }
+                .title {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:first-child {
+                    right: 90px;
+                }
+                &:last-child {
+                    bottom: 130px;
+                    left: 65px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:first-child {
+                    right: 90px;
+                }
+                &:last-child {
+                    left: 65px;
+                }
+                .title {
+                    font-size: 18px;
+                }
+                .con {
+                    font-size: 14px;
+                }
+                .txt {
+                    width: 320px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:first-child {
+                    top: 120px;
+                    right: 80px;
+                }
+                &:last-child {
+                    bottom: 120px;
+                    left: 60px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:450px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                margin: 0;
+                padding: 20px;
+                &:first-child {
+                    top: 110px;
+                    right: 40px;
+                }
+                &:last-child {
+                    bottom: 120px;
+                    left: 20px;
+                }
+                .txt {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:430px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                
+                &:first-child {
+                    top: 100px;
+                    left: 0;
+                    right: 0;
+                }
+                &:last-child {
+                    bottom: 105px;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:first-child {
+                    top: 85px;
+                }
+                &:last-child {
+                    bottom: 95px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:first-child {
+                    top: 110px;
+                }
+                &:last-child {
+                    bottom: 120px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:first-child {
+                    top: 95px;
+                }
+                &:last-child {
+                    bottom: 90px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:first-child {
+                    top: 80px;
+                }
+            }
+        }
+    }
 }
