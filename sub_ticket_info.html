@@ -17,33 +17,167 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="./assets/css/comm.css" />
-    <script src="./assets/js/sub_ticket_info.js"></script>
+    <script defer src="./assets/js/sub_ticket_info.js"></script>
+    <script defer src="./assets/js/nav.js"></script>
   </head>
 
   <body>
-    <!-- content? -->
-    <div class="wrap">
-      <header id="header" class="hd-n">
+    <header id="header" class="hd-n">
+      <!-- pc nav depth 1 -->
+      <div class="nav_d1_area">
         <h1>
           <a> <img src="./images/comm/logo.png" alt="따릉이 로고" /></a>
         </h1>
-        <nav>
-          <!-- 주요메뉴 -->
-          <ul>
-            <li><a href="#">마이페이지</a></li>
-            <li><a href="#">따릉이 소개</a></li>
-            <li><a href="#">지전거 보험</a></li>
-            <li><a href="#">이용권</a></li>
-            <li><a href="#">고객센터</a></li>
-          </ul>
-          <!-- util -->
-          <ul>
-            <li><a href="#">KR</a></li>
-            <li><a href="#">로그인</a></li>
-          </ul>
-        </nav>
-      </header>
 
+        <!-- 주요메뉴 -->
+        <ul class="depth1">
+          <li><a href="#">마이페이지</a></li>
+          <li><a href="#">따릉이 소개</a></li>
+          <li><a href="#">자전거 보험</a></li>
+          <li><a href="#">이용권</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+        <!-- util -->
+        <!-- 이것도 뎁스 0 -->
+        <ul class="util">
+          <li><a href="#" class="util-lang">KR</a></li>
+          <li><a href="#" class="util-login">로그인</a></li>
+        </ul>
+      </div>
+      <div class="nav_btm_d1">
+        <div class="nav_btm_sns">
+          <!-- sns icon -->
+          <a href="#"
+            ><img
+              src="./images/comm/sns_icon_01_instagram.svg"
+              alt=""
+              class="sns_icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="./images/comm/sns_icon_02_facebook.svg"
+              alt=""
+              class="sns_icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="./images/comm/sns_icon_03_naverblog.svg"
+              alt=""
+              class="sns_icon"
+          /></a>
+        </div>
+        <div class="nav_btm_info">
+          <!-- duty? -->
+          <a href="#">이용약관</a>
+          <a href="#">위치정보처리관련 약관</a>
+          <a href="#">개인정보처리방침</a>
+        </div>
+      </div>
+    </header>
+    <!-- mobile nav -->
+    <button class="btn_menu" type="button">
+      <i> </i>
+      <i> </i>
+      <span class="blind">MENU</span>
+    </button>
+    <div class="m_header_area">
+      <div class="bgblur"></div>
+      <div class="nav_mobile">
+        <ul class="m_depth1">
+          <li>
+            <strong>마이페이지</strong>
+            <ul class="m_depth2">
+              <li><a href="#">대여반납내역조회</a></li>
+              <li><a href="#">가입정보확인</a></li>
+              <li><a href="#">카드정보</a></li>
+              <li><a href="#">결제환불내역</a></li>
+            </ul>
+          </li>
+          <li>
+            <strong>따릉이 소개</strong>
+            <ul class="m_depth2">
+              <li><a href="#">사업 개요</a></li>
+              <li><a href="#">대여소 안내</a></li>
+            </ul>
+          </li>
+          <li>
+            <strong>자전거 보험</strong>
+            <ul class="m_depth2">
+              <li><a href="#">공공자전거 종합보험 안내</a></li>
+              <li><a href="#">영조물 배상공제 안내</a></li>
+            </ul>
+          </li>
+          <li>
+            <strong>이용권</strong>
+            <ul class="m_depth2">
+              <li>
+                <a href="#"><span>이용요금 안내</span></a>
+              </li>
+              <li><a href="#">이용권 구매</a></li>
+            </ul>
+          </li>
+          <li>
+            <strong>고객센터</strong>
+            <ul class="m_depth2">
+              <li><a href="">공지사항</a></li>
+              <li><a href="">문의하기</a></li>
+              <li><a href="">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="nav_btm_d1">
+          <div class="nav_btm_sns">
+            <!-- sns icon -->
+            <a href="#"
+              ><img
+                src="./images/comm/sns_icon_01_instagram.svg"
+                alt=""
+                class="sns_icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="./images/comm/sns_icon_02_facebook.svg"
+                alt=""
+                class="sns_icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="./images/comm/sns_icon_03_naverblog.svg"
+                alt=""
+                class="sns_icon"
+            /></a>
+          </div>
+          <div class="nav_btm_info">
+            <!-- duty? -->
+            <a href="#">이용약관</a>
+            <a href="#">위치정보처리관련 약관</a>
+            <a href="#">개인정보처리방침</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contents container -->
+    <!-- pc nav depth2 부득이하게 여기에 있음 -->
+    <div class="wrap t-wrap">
+      <!-- pc nav depth 2 -->
+      <div class="ct-nav_depth2">
+        <!-- depth2 -->
+        <div class="nav_d2_area">
+          <h2>이용권</h2>
+          <ul class="depth2">
+            <li><a href="#">이용요금 안내</a></li>
+            <li><a href="#">이용권 구매</a></li>
+          </ul>
+        </div>
+        <div class="nav_btm_d2">
+          <span>서울특별시 중구 세종대로 110 </span>
+          <span>서울특별시 대표자 오세훈</span>
+          <span>Tel : 1599-0120 (사업자등록번호 : 104-83-00469)</span>
+          <span>우편번호 04524</span>
+          <span>COPYRIGHT ⓒ 2018 bikeseoul All RIGHTS RESERVED.</span>
+        </div>
+      </div>
       <div class="inner in-t-info">
         <!-- 핵심 요약 -->
         <div class="ticket_summary">

@@ -1,15 +1,28 @@
 // // 민영 이용요금 안내
 
-@media screen and (max-width: 1024px) {
-    .hidden {
-        display: none;
+.in-t-info {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    margin-left: auto;
+    padding-top: 56px;
+    padding-bottom: 56px;
+
+    h3 {
+        margin-bottom: 18px;
     }
 }
 
 
-// ticket_info
+// 화면 크기에 따른 콘텐츠 전환을 위함 : on/off
+.hidden {
+    display: none !important;
+}
 
-// mq = 미디어 쿼리를 파트를 나누어서 하겠다고 해둔 것.
+// 핵심 요약 : ticket_summary
+
+// mq = 미디어 쿼리를 작성하기 위해 나눠둔 파트
 // mq 1
 .ticket_summary {
     padding: 40px 80px 60px;
@@ -60,9 +73,7 @@
     }
 }
 
-
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 960px) {
 
     // mq 1
     .ticket_summary {
@@ -123,27 +134,7 @@
 }
 
 
-
-
 // 상품안내
-
-// on/off
-.hidden {
-    display: none !important;
-}
-
-.in-t-info {
-    padding-top: 56px;
-    padding-bottom: 56px;
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-
-    h3 {
-        margin-bottom: 18px;
-    }
-}
-
 .m-fee {
     display: flex;
     flex-direction: column;
@@ -161,8 +152,6 @@
     border-radius: 16px;
 }
 
-
-
 .fee-comm {
     display: flex;
     flex-direction: row;
@@ -176,10 +165,7 @@
     .m-tic-right {
         width: 75%;
     }
-
-
 }
-
 
 // ticket_info : warning
 .warn-wrap {
@@ -233,7 +219,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
 
     .warn-wrap {
         padding: 24px 16px;
@@ -254,17 +240,16 @@
         }
     }
 
-
-
     // 라인 넣을 지 말지 최종 결정 필요
     // .warn-gap-line {
     //     display: none;
     // }
 }
 
+
 // 환불규정
 
-//table comm.scss설정과 이어짐
+//table comm.scss설정(=세팅)에서 상속받아 이어짐
 table {
     tbody {
         tr {
