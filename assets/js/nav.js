@@ -50,5 +50,22 @@ $(function () {
     // 다른 strong 태그의 부모 요소인 li 태그에서 active 클래스를 제거
     $(".m_depth1 > li > strong").not(this).parent().removeClass("active");
   });
+
+  /* 블러 영역 클릭 시 메뉴 닫힘 */
+  $(".bgblur").click(function () {
+    // 모바일 메뉴 닫기
+    $(".btn_menu").removeClass("open");
+    $(".m_header_area").hide();
+
+    // strong 태그의 스타일 초기화
+    $(".m_depth1 > li > strong")
+      .removeClass("active")
+      .css("position", "static");
+    $(".m_depth1 > li > strong::before").css("display", "none");
+    $(".m_depth1 > li > strong::after").css("display", "none");
+
+    // 모든 서브메뉴 닫기
+    $(".m_depth2").hide();
+  });
 });
 /* ready end */
