@@ -1,3 +1,6 @@
+// 복붙용
+// @media screen and (max-width: 1200px) {}
+
 // Navigation Bar 작성
 
 // 레이아웃 정돈
@@ -11,6 +14,21 @@
 
     .inner {
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        flex-direction: column;
+    }
+
+    // 모바일 nav 활성화 시 wrap 마진 생성
+    .wrap {
+        width: 100%; // pc : calc
+        margin-top: $mHdHeight;
+        margin-left: 0; //header가 fixed 이기 때문에 필요함
+
+        padding: 24px;
     }
 }
 
@@ -93,7 +111,63 @@
 // nav_btm_l (gnb 아래 푸터 왼쪽부분)
 // #header 밖으로 나오면 우선순위 밀림.
 #header {
-    @include nav_btm_depth1
+    .nav_btm_d1 {
+        display: flex;
+        flex-direction: column;
+        gap: 16px; // nav_btm_link 간격의 2배
+
+        position: absolute;
+        left: 40px;
+        right: 0;
+        bottom: 40px;
+    }
+
+    .nav_btm_sns {
+        display: flex;
+        gap: 12px;
+    }
+
+    .sns_icon {
+        width: 20px;
+        height: 20px;
+        // object-fit: cover;
+    }
+
+    .nav_btm_info {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        font-size: 12px;
+        font-weight: 400;
+        color: $gray7;
+    }
+}
+
+// header 모바일에서 변형
+@media screen and (max-width: 1200px) {
+    #header {
+        width: 100%;
+        height: 65px;
+        padding: 18px 20px;
+
+        img {
+            width: 99px;
+        }
+
+        .depth1,
+        .util {
+            display: none;
+        }
+
+        .nav_btm_d1 {
+            display: none;
+        }
+    }
+
+    .ct-nav_depth2 {
+        display: none;
+    }
 }
 
 
@@ -154,24 +228,9 @@
 
 
 
-// 복붙용
-// @media screen and (max-width: 1200px) {}
+
 
 // @media screen and (max-width: 1200px) {
-
-//     body {
-//         display: flex;
-//         flex-direction: column;
-//         background-image: url(./../../images/sub_ticket/0131_1-1-m_이용요금\ 안내.jpg);
-//         background-repeat: no-repeat;
-//     }
-
-//     .wrap {
-//         padding: 24px;
-//         width: auto;
-//         margin-left: 0;
-//     }
-
 //     #header {
 //         position: fixed;
 //         // position: relative;
@@ -194,32 +253,6 @@
 //     }
 // }
 
-// @media screen and (max-width: 1200px) {
-//     
-// }
-
-// 임시 : 네브 모바일에서 비활성화
-@media screen and (max-width: 1200px) {
-
-    .ct-nav_depth2 {
-        display: none;
-    }
-}
-
-
-@media screen and (max-width: 1200px) {
-    body {
-        flex-direction: column;
-    }
-
-    // 모바일 nav 활성화 시 wrap 마진 생성
-    .wrap {
-        width: 100%; // pc : calc
-        margin-top: $mHdHeight;
-        margin-left: 0; //header가 fixed 이기 때문에 필요함
-    }
-}
-
 // mobile navigation
 .bgblur {
     display: block;
@@ -232,6 +265,10 @@
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(15px);
     z-index: 1000;
+}
+
+.m_header_area {
+    display: none;
 }
 
 .nav_mobile {
@@ -249,32 +286,94 @@
     @include nav_btm_depth1
 }
 
-// .btn_menu {
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
+.btn_menu {
+    display: none;
 
-//     width: 28px;
-//     height: 28px;
+    position: fixed;
+    top: 18px;
+    right: 20px;
+    z-index: 10000;
 
-//     padding: 5px;
+    width: 28px;
+    height: 28px;
 
-//     .btn_menu_deco {
-//         // close
-//         width: 7.58px;
-//         height: 7.58px;
-//         border: 2px solid $subColor;
-//         border-radius: 7.58px;
-//     }
-// }
+    // padding: 5px;
+
+    background-color: $white;
+    transition: all 0.3s;
+
+    // 모바일이라 hover 적용 안 됨! menu 오픈 때 사용, 수정할 예정!
+    &:hover {
+        transform: rotate(90deg);
+    }
+
+    i {
+        display: inline-block;
+        position: absolute;
+
+        vertical-align: middle;
+
+        box-sizing: border-box;
+
+        // transform: rotate(-45deg);
+
+        &::before {
+            content: '';
+            margin: 1.4px;
+
+            position: absolute;
+            left: 50%; // before에서는 left
+            top: 50%;
+
+            width: 7.58px;
+            height: 7.58px;
+            border: 2px solid $subColor;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+
+        &::after {
+            content: '';
+            margin: 1.4px;
+
+            position: absolute;
+            right: 50%; // after에서는 right
+            top: 50%;
+
+            width: 7.58px;
+            height: 7.58px;
+            border: 2px solid $subColor;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+
+        &:nth-child(1) {
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+        }
+
+        &:nth-child(2) {
+            transform: rotate(-90deg);
+            -webkit-transform: rotate(-90deg);
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .btn_menu {
+        display: block;
+    }
+}
 
 
 // .m_nav_open
-.btn_menu {
+.btn_menu_close {
     display: inline-block;
 
-    position: absolute;
-    top: 24px;
-    right: 24px;
+    position: fixed;
+    top: 18px;
+    right: 20px;
+    z-index: 10000;
 
     width: 28px;
     height: 28px;
@@ -293,12 +392,12 @@
         &::before {
             content: '';
 
-            margin-top: -3px;
+            margin: -3px 0 0 0;
             position: absolute;
             left: 50%; // before에서는 left
             top: 60%;
 
-            width: 6.67px;
+            width: 6.5px;
             height: 1.33px;
             border-radius: 1.33px;
             background-color: $primary;
@@ -306,8 +405,8 @@
 
         &::after {
             content: '';
-            margin-top: -3px;
 
+            margin: -3px 0 0 0;
             position: absolute;
             right: 50%; // after에서는 right
             top: 60%;
@@ -328,6 +427,8 @@
             -webkit-transform: rotate(-45deg);
         }
     }
+
+
 }
 
 .m_depth1 {
@@ -350,36 +451,6 @@
             display: none;
 
             position: absolute;
-            top: 16px;
-            left: -4px;
-            right: -4px;
-            z-index: -1;
-            height: 6px;
-            border-radius: 3px;
-            background-color: $primary;
-        }
-
-        &::after {
-            content: '';
-            display: none;
-
-            position: absolute;
-            top: 16px;
-            right: -14px;
-            z-index: -1;
-            width: 6px;
-            height: 6px;
-            border-radius: 3px;
-            background-color: $primary;
-        }
-    }
-
-    strong.active {
-        &::before {
-            content: "";
-            display: block;
-
-            // position: absolute;
             // top: 16px;
             // left: -4px;
             // right: -4px;
@@ -391,9 +462,9 @@
 
         &::after {
             content: '';
-            display: block;
+            display: none;
 
-            // position: absolute;
+            position: absolute;
             // top: 16px;
             // right: -14px;
             // z-index: -1;
@@ -401,6 +472,36 @@
             // height: 6px;
             // border-radius: 3px;
             // background-color: $primary;
+        }
+    }
+
+    strong.active {
+        &::before {
+            content: "";
+            display: block;
+
+            position: absolute;
+            top: 16px;
+            left: -4px;
+            right: -4px;
+            z-index: -1;
+            height: 6px;
+            border-radius: 3px;
+            background-color: $primary;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+
+            position: absolute;
+            top: 16px;
+            right: -14px;
+            z-index: -1;
+            width: 6px;
+            height: 6px;
+            border-radius: 3px;
+            background-color: $primary;
         }
     }
 
