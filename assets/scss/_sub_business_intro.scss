@@ -114,9 +114,10 @@
                     position: absolute;
                     top: 154px;
                     right: -320px;
-                    width: 204px;
-                    height: 128px;
-                    background: url(../../images/sub_intro/bike_stone.png);
+                    width: 40%;
+                    height: 30%;
+                    background: url(../../images/sub_intro/bike_stone.png) 0 0 no-repeat;
+                    background-size: contain;
                 }
             }
             &:nth-child(2) {
@@ -131,9 +132,10 @@
                     position: absolute;
                     top: -288px;
                     right: -100px;
-                    width: 433px;
-                    height: 134px;
-                    background: url(../../images/sub_intro/bike.png);
+                    width: 90%;
+                    height: 30%;
+                    background: url(../../images/sub_intro/bike.png) 0 0 no-repeat;
+                    background-size: contain;
                 }
             }
             &:last-child {
@@ -144,9 +146,10 @@
                     position: absolute;
                     bottom: 84px;
                     left: -66px;
-                    width: 86px;
-                    height: 134px;
-                    background: url(../../images/sub_intro/stone_1.png);
+                    width: 20%;
+                    height: 25%;
+                    background: url(../../images/sub_intro/stone_1.png) 0 0 no-repeat;
+                    background-size: contain;
                 }
             }
         }
@@ -186,6 +189,39 @@
     }
 }
 
+@media screen and (max-width:1440px) {
+    .intro-content {
+        ul {
+            li {
+                &:first-child {
+                    top: 80px;
+                    left: 0;
+                    &::after {
+                        top: 154px;
+                        right: -320px;
+                    }
+                }
+                &:nth-child(2) {
+                    top: 500px;
+                    right: 0;
+                }
+                &:nth-child(3) {
+                    bottom: -30px;
+                    left: 70px;
+                }
+                &:last-child {
+                    bottom: -360px;
+                    right: 0;
+                    &::after {
+                        bottom: 84px;
+                        left: -66px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 470px) {
     .intro-main {
         padding-top: 290px;
@@ -201,8 +237,6 @@
                         top: 380px;
                         right: 0px;
                         width: 27%;
-                        background: url(../../images/sub_intro/bike_stone.png) 0 0 no-repeat;
-                        background-size: contain;
                     }
                 }
                 &:nth-child(2) {
