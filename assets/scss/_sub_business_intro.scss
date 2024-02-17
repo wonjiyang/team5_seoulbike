@@ -1,12 +1,104 @@
 // 원지님 사업소개
 
+.intro-wrap {
+    word-break: keep-all;
+}
+
+.intro-top {
+    img {
+        text-align: center;
+        width: 100%;
+    }
+    .text {
+        padding-top: 32px;
+        text-align: center;
+        .title {
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .content {
+            padding-top: 12px;
+            color: $gray7;
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .primary {
+            color: $primary;
+            font-weight: 600;
+        }
+    }
+    
+    
+}
+
+
+@media screen and (max-width: 1200px) {
+    .hd-n {
+        display: none;
+    }
+}
+
+@media screen and (max-width:920px) {
+    .intro-top {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .inner {
+        padding: 0;
+    }
+    .intro-top {
+        padding: 65px 20px 20px 20px;
+        img {
+            width: 100%;
+        }
+        .text {
+            .title {
+                display: block;
+                width: 300px;
+                text-align: center;
+                margin: auto;
+                font-size: 20px;
+            }
+            .content {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .intro-top {
+        .text {
+            .title {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .intro-top {
+        .text {        
+            .title {
+                font-size: 18px;
+            }
+            .content {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
 .intro-main {
     position: relative;
     padding-top: 140px;
     .intro-bg {
         text-align: center;
-        width: 985px;
-        height: 1668px;
+        width: 100%;
     }
 }
 
@@ -93,3 +185,225 @@
         }
     }
 }
+
+@media screen and (max-width: 470px) {
+    .intro-main {
+        padding-top: 290px;
+    }
+    .intro-content {
+        ul {
+            li {
+                padding: 0 20px;
+                &:first-child {
+                    top: 20px;
+                    left: 0;
+                    &::after {
+                        top: 380px;
+                        right: 0px;
+                        width: 27%;
+                        background: url(../../images/sub_intro/bike_stone.png) 0 0 no-repeat;
+                        background-size: contain;
+                    }
+                }
+                &:nth-child(2) {
+                    top: 505px;
+                    right: 0;
+                }
+                &:nth-child(3) {
+                    bottom: 180px;
+                    left: 0;
+                    &::after {
+                        top: -140px;
+                        left: 60px;
+                        width: 57%;
+                        background: url(../../images/sub_intro/bike.png) 0 0 no-repeat;
+                        background-size: contain;
+                    }
+                }
+                &:last-child {
+                    bottom: -325px;
+                    right: 0;
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .txt {        
+            margin-top: 16px;
+            .title {
+                font-size: 20px;
+            }
+            .sub {
+                font-size: 16px;
+                margin-top: 10px;
+            }
+        }
+        .content {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .intro-main {
+        padding-top: 280px;
+    }
+    .intro-content {
+        ul {
+            li {
+                &:first-child {
+                    top: 20px;
+                    &::after {
+                        top: 360px;
+                    }
+                }
+                &:nth-child(2) {
+                    top: 475px;
+                }
+                &:nth-child(3) {
+                    bottom: 160px;
+                    &::after {
+                        top: -140px;
+                    }
+                }
+                &:last-child {
+                    bottom: -315px;
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .intro-main {
+        padding-top: 260px;
+    }
+    .intro-content {
+        ul {
+            li {
+                &:first-child {
+                    &::after {
+                        top: 340px;
+                    }
+                }
+                &:nth-child(2) {
+                    top: 450px;
+                }
+                &:nth-child(3) {
+                    &::after {
+                        top: -110px;
+                    }
+                }
+                &:last-child {
+                    bottom: -295px;
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .intro-main {
+        padding-top: 240px;
+    }
+    .intro-content {
+        ul {
+            li {
+                &:first-child {
+                    &::after {
+                        top: 320px;
+                    }
+                }
+                &:nth-child(2) {
+                    top: 420px;
+                }
+                &:nth-child(3) {
+                    &::after {
+                        top: -100px;
+                    }
+                }
+                &:last-child {
+                    bottom: -265px;
+                    
+                }
+            }
+        }
+        .txt {
+            margin-top: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .intro-main {
+        padding-top: 215px;
+    }
+    .intro-content {
+        ul {
+            li {
+                &:first-child {
+                    &::after {
+                        top: 300px;
+                    }
+                }
+                &:nth-child(2) {
+                    top: 400px;
+                }
+                &:nth-child(3) {
+                    bottom: 100px;
+                    &::after {
+                        top: -90px;
+                    }
+                }
+                &:last-child {
+                    bottom: -295px;
+                    
+                }
+            }
+        }
+        .txt {
+            margin-top: 10px;
+            .title {
+                font-size: 18px;
+            }
+            .sub {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .intro-main {
+        padding-top: 200px;
+    }
+    .intro-content {
+        ul {
+            li {
+                &:first-child {
+                    &::after {
+                        top: 280px;
+                    }
+                }
+                &:nth-child(2) {
+                    top: 380px;
+                }
+                &:nth-child(3) {
+                    bottom: 100px;
+                    &::after {
+                        top: -80px;
+                    }
+                }
+                &:last-child {
+                    bottom: -280px;
+                    
+                }
+            }
+        }
+        
+    }
+}
+
