@@ -1,8 +1,12 @@
  // 원지님 대여소안내
 
+ .inner-wrap {
+    width: calc(100% - 254px - 373px);
+    margin-left: 627px;
+    padding: 0;
+ }
 
 .info-wrap {
-    padding: 0;
     word-break: keep-all;
 }
 
@@ -10,6 +14,7 @@
     position: relative;
     .bg {
         position: relative;
+        display: block;
         text-align: center;
         width: 100%;
     }
@@ -70,11 +75,10 @@
 }
 
 @media screen and (max-width: 1200px) { 
-    .wrap {
-        margin: 0;
-    }
-    .hd-n {
-        display: none;
+    .inner-wrap {
+        width: 100%;
+        margin-top: 65px;
+        margin-left: 0;
     }
     .info-wrap {
         .text {
@@ -174,6 +178,19 @@
     }
     .right {
         padding-left: 48px;
+    }
+}
+
+@media screen and (max-width: 1680px) {
+    .rental-mid {
+        .left {
+            width: 50%;
+        }
+        .right {
+            img {
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -349,17 +366,87 @@
     }
 }
 
-@media screen and (max-width: 1530px) {
+@media screen and (max-width: 1830px) {
     .rental-bottom {
         .bottom-content {
             .content {
                 &:first-child {
-                    top: 210px;
-                    right: 390px;
+                    top: 185px;
+                    right: 360px;
                 }
                 &:last-child {
-                    bottom: 185px;
-                    left: 340px;
+                    bottom: 170px;
+                    left: 310px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1730px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:first-child {
+                    top: 175px;
+                    right: 320px;
+                }
+                &:last-child {
+                    bottom: 160px;
+                    left: 280px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1680px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:first-child {
+                    top: 165px;
+                    right: 295px;
+                }
+                &:last-child {
+                    bottom: 155px;
+                    left: 260px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1630px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:first-child {
+                    width: 312px;
+                    top: 155px;
+                    right: 290px;
+                }
+                &:last-child {
+                    width: 326px;
+                    bottom: 150px;
+                    left: 255px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1570px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:first-child {
+                    top: 145px;
+                    right: 265px;
+                }
+                &:last-child {
+                    bottom: 145px;
+                    left: 235px;
                 }
             }
         }
@@ -382,6 +469,7 @@
         }
     }
 }
+
 
 @media screen and (max-width: 1400px) {
     .rental-bottom {
@@ -754,11 +842,11 @@
         .bottom-content {
             .content {
                 &:first-child {
-                    top: 120px;
+                    top: 135px;
                     right: 80px;
                 }
                 &:last-child {
-                    bottom: 120px;
+                    bottom: 145px;
                     left: 60px;
                 }
             }
@@ -770,37 +858,16 @@
     .rental-bottom {
         .bottom-content {
             .content {
-                margin: 0;
-                padding: 20px;
                 &:first-child {
-                    top: 110px;
-                    right: 40px;
+                    top: 130px;
+                    right: 80px;
                 }
                 &:last-child {
-                    bottom: 120px;
-                    left: 20px;
+                    bottom: 135px;
+                    left: 30px;
                 }
                 .txt {
                     width: 100%;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:430px) {
-    .rental-bottom {
-        .bottom-content {
-            .content {
-                
-                &:first-child {
-                    top: 100px;
-                    left: 0;
-                    right: 0;
-                }
-                &:last-child {
-                    bottom: 105px;
-                    left: 0;
                 }
             }
         }
