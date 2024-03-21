@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>따릉이 - 서울 자전거 무인대여시스템</title>
@@ -10,216 +9,418 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="페이지 제목" />
     <meta property="og:description" content="페이지 설명" />
-    <meta property="og:image" content="http://www.mysite.com/article/article1_featured_image.jpg" />
-    <meta property="og:url" content="http://www.mysite.com/article/article1.html" />
+    <meta
+      property="og:image"
+      content="http://www.mysite.com/article/article1_featured_image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="http://www.mysite.com/article/article1.html"
+    />
     <!-- 트위터카드 -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="페이지 제목" />
     <meta name="twitter:description" content="페이지 설명" />
-    <meta name="twitter:image" content="http://www.mysite.com/article/article1.html" />
+    <meta
+      name="twitter:image"
+      content="http://www.mysite.com/article/article1.html"
+    />
     <meta name="twitter:domain" content="사이트 명" />
 
     <!-- reset.css cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
 
     <!-- 파비콘 -->
-    <link rel="shortcut icon" href="./images/comm/fav-test@2x.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./images/comm/fav-test@2x.png"
+      type="image/x-icon"
+    />
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- icon library : font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- 우리의 작업파일 연결 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/comm.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/comm.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!--NAVER MAP API-->
-    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=4wfp2d63il"></script>
-    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=4wfp2d63il&callback=initMap"></script>
+    <script
+      type="text/javascript"
+      src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=4wfp2d63il"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=4wfp2d63il&callback=initMap"
+    ></script>
     <script defer src="./assets/js/main.js"></script>
-</head>
+  </head>
 
-<body id="main">
+  <body id="main">
     <div id="wrap" class="wrap">
-    <!-- header -->
-    <header id="header" class="hd-n">
-        <a>
-            <img src="./images/comm/logo.png" alt="따릉이 로고">따릉이
-        </a>
-    </header>
+      <!-- header -->
+      <header id="header" class="hd-n">
+        <!-- pc nav depth 1 -->
+        <div class="nav_d1_area">
+          <h1>
+            <a> <img src="./images/comm/logo.png" alt="따릉이 로고" /></a>
+          </h1>
 
-        <div class="content">
-            <div id="map">
+          <!-- 주요메뉴 -->
+          <ul class="depth1">
+            <li><a href="#">마이페이지</a></li>
+            <li><a href="#">따릉이 소개</a></li>
+            <li><a href="#">자전거 보험</a></li>
+            <li><a href="#">이용권</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+          <!-- util -->
+          <!-- 이것도 뎁스 0 -->
+          <ul class="util">
+            <li><a href="#" class="util-lang">KR</a></li>
+            <li><a href="#" class="util-login">로그인</a></li>
+          </ul>
+        </div>
+        <div class="nav_btm_d1">
+          <div class="nav_btm_sns">
+            <!-- sns icon -->
+            <a href="#"
+              ><img
+                src="./images/comm/sns_icon_01_instagram.svg"
+                alt=""
+                class="sns_icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="./images/comm/sns_icon_02_facebook.svg"
+                alt=""
+                class="sns_icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="./images/comm/sns_icon_03_naverblog.svg"
+                alt=""
+                class="sns_icon"
+            /></a>
+          </div>
+          <div class="nav_btm_info">
+            <!-- duty? -->
+            <a href="#">이용약관</a>
+            <a href="#">위치정보처리관련 약관</a>
+            <a href="#">개인정보처리방침</a>
+          </div>
+        </div>
+      </header>
+      <!-- mobile nav -->
+      <button class="btn_menu" type="button">
+        <i> </i>
+        <i> </i>
+        <span class="blind">MENU</span>
+      </button>
+      <div class="m_header_area">
+        <div class="bgblur"></div>
+        <div class="nav_mobile">
+          <ul class="m_depth1">
+            <li>
+              <strong>마이페이지</strong>
+              <ul class="m_depth2">
+                <li><a href="#">대여반납내역조회</a></li>
+                <li><a href="#">가입정보확인</a></li>
+                <li><a href="#">카드정보</a></li>
+                <li><a href="#">결제환불내역</a></li>
+              </ul>
+            </li>
+            <li>
+              <strong>따릉이 소개</strong>
+              <ul class="m_depth2">
+                <li><a href="#">사업 개요</a></li>
+                <li><a href="#">대여소 안내</a></li>
+              </ul>
+            </li>
+            <li>
+              <strong>자전거 보험</strong>
+              <ul class="m_depth2">
+                <li><a href="#">공공자전거 종합보험 안내</a></li>
+                <li><a href="#">영조물 배상공제 안내</a></li>
+              </ul>
+            </li>
+            <li>
+              <strong>이용권</strong>
+              <ul class="m_depth2">
+                <li>
+                  <a href="#"><span>이용요금 안내</span></a>
+                </li>
+                <li><a href="#">이용권 구매</a></li>
+              </ul>
+            </li>
+            <li>
+              <strong>고객센터</strong>
+              <ul class="m_depth2">
+                <li><a href="">공지사항</a></li>
+                <li><a href="">문의하기</a></li>
+                <li><a href="">FAQ</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="nav_btm_d1">
+            <div class="nav_btm_sns">
+              <!-- sns icon -->
+              <a href="#"
+                ><img
+                  src="./images/comm/sns_icon_01_instagram.svg"
+                  alt=""
+                  class="sns_icon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./images/comm/sns_icon_02_facebook.svg"
+                  alt=""
+                  class="sns_icon"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./images/comm/sns_icon_03_naverblog.svg"
+                  alt=""
+                  class="sns_icon"
+              /></a>
             </div>
-            <div class="bikeinfo-layoutbox">
-                <div class="bikeinfo-box">
-                    <a href="#">
-                        <img src="./images/main/logo.png" alt="">
-                        <span class="blind">실시간 이용현황 보기</span>
-                    </a>
+            <div class="nav_btm_info">
+              <!-- duty? -->
+              <a href="#">이용약관</a>
+              <a href="#">위치정보처리관련 약관</a>
+              <a href="#">개인정보처리방침</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div id="map"></div>
+        <div class="bikeinfo-layoutbox">
+          <div class="bikeinfo-box">
+            <a href="#">
+              <img src="./images/main/logo.png" alt="" />
+              <span class="blind">실시간 이용현황 보기</span>
+            </a>
+          </div>
+          <div class="bikeinfo-layout">
+            <div class="bikeinfo">
+              <div class="bikeinfo-title">
+                <h3 class="tit">따릉이 이용현황</h3>
+                <div class="text-list">
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        data-bs-toggle="tab"
+                        href="#home"
+                      >
+                        <span class="text-content">일반</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-bs-toggle="tab" href="#menu1">
+                        <span class="text-content">새싹</span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-                <div class="bikeinfo-layout">
-                    <div class="bikeinfo">
-                        <div class="bikeinfo-title">
-                            <h3 class="tit">따릉이 이용현황</h3>
-                            <div class="text-list">
-                                <!-- Nav tabs -->
-                                <ul class="nav nav-tabs" role="tablist">
-                                  <li class="nav-item">
-                                    <a class="nav-link active" data-bs-toggle="tab" href="#home">
-                                        <span class="text-content">일반</span>
-                                    </a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" data-bs-toggle="tab" href="#menu1">
-                                        <span class="text-content">새싹</span>
-                                    </a>
-                                  </li>
-                                </ul>
-                            </div>
-                        </div>
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                              <div id="home" class="container tab-pane active"><br>
-                                <div class="bikeinfo-bikenum">
-                                    <dl>
-                                        <dd class="bikenum_b active">200</dd>
-                                        <dt>사용가능</dt>
-                                    </dl>
-                                    <dl>
-                                        <dd class="bikenum_b">0</dd>
-                                        <dt>점검중</dt>
-                                    </dl>
-                                    <dl>
-                                        <dd class="bikenum_b">350</dd>
-                                        <dt>전체</dt>
-                                    </dl>
-                                </div>
-                              </div>
-                              <div id="menu1" class="container tab-pane fade"><br>
-                                <div class="bikeinfo-bikenum">
-                                    <dl>
-                                        <dd class="bikenum_b active">32</dd>
-                                        <dt>사용가능</dt>
-                                    </dl>
-                                    <dl>
-                                        <dd class="bikenum_b">0</dd>
-                                        <dt>점검중</dt>
-                                    </dl>
-                                    <dl>
-                                        <dd class="bikenum_b">121</dd>
-                                        <dt>전체</dt>
-                                    </dl>
-                                </div>
-                            </div>
-                            </div>
-                        <div class="bikeinfo-btn-area">
-                            <div class="bikeinfo-btn">
-                                <a href="#">
-                                    <p>대여 방법</p>
-                                    <img src="./images/main/use_icon.png" alt="대여방법 버튼 이미지">
-                                </a>
-                            </div>
-                            <div class="bikeinfo-btn">
-                                <a href="#">
-                                    <p>반납 방법</p>
-                                    <img src="./images/main/return_icon.png" alt="반납방법 버튼 이미지">
-                                </a>
-                            </div>
-                            <div class="bikeinfo-btn">
-                                <a href="#">
-                                    <p>안전 수칙</p>
-                                    <img src="./images/main/safety_icon.png" alt="안전수칙 버튼 이미지">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div id="home" class="container tab-pane active">
+                  <br />
+                  <div class="bikeinfo-bikenum">
+                    <dl>
+                      <dd class="bikenum_b active">200</dd>
+                      <dt>사용가능</dt>
+                    </dl>
+                    <dl>
+                      <dd class="bikenum_b">0</dd>
+                      <dt>점검중</dt>
+                    </dl>
+                    <dl>
+                      <dd class="bikenum_b">350</dd>
+                      <dt>전체</dt>
+                    </dl>
+                  </div>
                 </div>
+                <div id="menu1" class="container tab-pane fade">
+                  <br />
+                  <div class="bikeinfo-bikenum">
+                    <dl>
+                      <dd class="bikenum_b active">32</dd>
+                      <dt>사용가능</dt>
+                    </dl>
+                    <dl>
+                      <dd class="bikenum_b">0</dd>
+                      <dt>점검중</dt>
+                    </dl>
+                    <dl>
+                      <dd class="bikenum_b">121</dd>
+                      <dt>전체</dt>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+              <div class="bikeinfo-btn-area">
+                <div class="bikeinfo-btn">
+                  <a href="#">
+                    <p>대여 방법</p>
+                    <img
+                      src="./images/main/use_icon.png"
+                      alt="대여방법 버튼 이미지"
+                    />
+                  </a>
+                </div>
+                <div class="bikeinfo-btn">
+                  <a href="#">
+                    <p>반납 방법</p>
+                    <img
+                      src="./images/main/return_icon.png"
+                      alt="반납방법 버튼 이미지"
+                    />
+                  </a>
+                </div>
+                <div class="bikeinfo-btn">
+                  <a href="#">
+                    <p>안전 수칙</p>
+                    <img
+                      src="./images/main/safety_icon.png"
+                      alt="안전수칙 버튼 이미지"
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="bikeinfo-m">
-                    <div class="bikeinfo-btn_m">
-                        <div class="img"><img src="./images/main/bikeinfo_m.png" alt=""></div>
-                        <a href="#">
-                            <img src="./images/main/use_icon_m.png" alt="대여방법 버튼 이미지">
-                            <p>대여 방법</p>
-                        </a>
-                    </div>
-                    <div class="bikeinfo-btn_m">
-                        <div class="img"><img src="./images/main/bikeinfo_m.png" alt=""></div>
-                        <a href="#">
-                            <img src="./images/main/return_icon_m.png" alt="반납방법 버튼 이미지">
-                            <p>반납 방법</p>
-                        </a>
-                    </div>
-                    <div class="bikeinfo-btn_m">
-                        <div class="img"><img src="./images/main/bikeinfo_m.png" alt=""></div>
-                        <a href="#">
-                            <img src="./images/main/safety_icon_m.png" alt="안전수칙 버튼 이미지">
-                            <p>안전 수칙</p>
-                        </a>
-                    </div>
+          </div>
+        </div>
+        <div class="bikeinfo-m">
+          <div class="bikeinfo-btn_m">
+            <div class="img">
+              <img src="./images/main/bikeinfo_m.png" alt="" />
             </div>
-            <div class="chatbot">
-                <div class="chatbotbox">
-                    <div class="chatbot-messenger">
-                        <div class="top">
-                            <img class="img1" src="./images/main/chatbot_icon.png" alt="챗봇 아이콘">
-                            <span>따릉이에게 문의하세요.</span>
-                            <img class="img2" src="./images/main/chatbot_hambuger.png" alt="">
-                        </div>
-                    <div class="mid">
-                        <div class="chatroom">
-                            <div class="timestamp">
-                                <span class="chatdate">2024.01.29 월요일</span>
-                            </div>
-                            <div class="chatmain">
-                                <div class="profile">
-                                    <img src="./images/main/profile.png" alt="">
-                                </div>
-                                <div class="msg-box">
-                                    <div class="msg-text">
-                                        <span>안녕하세요. 고객님 <br>
-                                            <span class="primary">서울자전거 따릉이</span>
-                                            입니다.<br>
-                                            무엇이 궁금하신가요?
-                                        </span>
-                                    </div>
-                                    <div class="msg-time">오후 2:21</div>
-                                </div>
-                            </div>
-                        </div>
+            <a href="#">
+              <img
+                src="./images/main/use_icon_m.png"
+                alt="대여방법 버튼 이미지"
+              />
+              <p>대여 방법</p>
+            </a>
+          </div>
+          <div class="bikeinfo-btn_m">
+            <div class="img">
+              <img src="./images/main/bikeinfo_m.png" alt="" />
+            </div>
+            <a href="#">
+              <img
+                src="./images/main/return_icon_m.png"
+                alt="반납방법 버튼 이미지"
+              />
+              <p>반납 방법</p>
+            </a>
+          </div>
+          <div class="bikeinfo-btn_m">
+            <div class="img">
+              <img src="./images/main/bikeinfo_m.png" alt="" />
+            </div>
+            <a href="#">
+              <img
+                src="./images/main/safety_icon_m.png"
+                alt="안전수칙 버튼 이미지"
+              />
+              <p>안전 수칙</p>
+            </a>
+          </div>
+        </div>
+        <div class="chatbot">
+          <div class="chatbotbox">
+            <div class="chatbot-messenger">
+              <div class="top">
+                <img
+                  class="img1"
+                  src="./images/main/chatbot_icon.png"
+                  alt="챗봇 아이콘"
+                />
+                <span>따릉이에게 문의하세요.</span>
+                <img
+                  class="img2"
+                  src="./images/main/chatbot_hambuger.png"
+                  alt=""
+                />
+              </div>
+              <div class="mid">
+                <div class="chatroom">
+                  <div class="timestamp">
+                    <span class="chatdate">2024.01.29 월요일</span>
+                  </div>
+                  <div class="chatmain">
+                    <div class="profile">
+                      <img src="./images/main/profile.png" alt="" />
                     </div>
-                    <div class="bottom">
-                        <div class="type-area">
-                            <input class="typing" placeholder="메세지를 입력해주세요." id="user_msg" onkeyup="inputMsg(event);" autocomplete="off">
-                            <div class="sendbox">
-                                <span class="blind">전송하기</span>
-                                <img src="./images/main/send.png" alt="">
-                            </div>
-                        </div>
+                    <div class="msg-box">
+                      <div class="msg-text">
+                        <span
+                          >안녕하세요. 고객님 <br />
+                          <span class="primary">서울자전거 따릉이</span>
+                          입니다.<br />
+                          무엇이 궁금하신가요?
+                        </span>
+                      </div>
+                      <div class="msg-time">오후 2:21</div>
                     </div>
-                    </div>
-                    <!-- <div class="chatbot-closeimg">
+                  </div>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="type-area">
+                  <input
+                    class="typing"
+                    placeholder="메세지를 입력해주세요."
+                    id="user_msg"
+                    onkeyup="inputMsg(event);"
+                    autocomplete="off"
+                  />
+                  <div class="sendbox">
+                    <span class="blind">전송하기</span>
+                    <img src="./images/main/send.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="chatbot-closeimg">
                         <img src="./images/main/chatbot_clise_icon.png" alt="">
                         <span class="blind">챗봇 창 닫기</span>
                     </div> -->
-                </div>
-                <div class="chatbot-buttonimg">
-                    <!-- <img src="./images/main/chatbot_button_icon.png" alt="챗봇 버튼 이미지"> -->
-                    <span class="blind">궁금한 점 모두 챗봇에게 물어보세요!</span>
-                </div>
-            </div>
+          </div>
+          <div class="chatbot-buttonimg">
+            <!-- <img src="./images/main/chatbot_button_icon.png" alt="챗봇 버튼 이미지"> -->
+            <span class="blind">궁금한 점 모두 챗봇에게 물어보세요!</span>
+          </div>
         </div>
-    </div> 
-</body>
-
+      </div>
+    </div>
+  </body>
 </html>
