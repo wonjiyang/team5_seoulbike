@@ -1,117 +1,359 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>대여소 안내 | 따릉이 - 서울 자전거 무인대여시스템</title>
 
     <!-- 오픈 그래프 -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="페이지 제목" />
     <meta property="og:description" content="페이지 설명" />
-    <meta property="og:image" content="http://www.mysite.com/article/article1_featured_image.jpg" />
-    <meta property="og:url" content="http://www.mysite.com/article/article1.html" />
+    <meta
+      property="og:image"
+      content="http://www.mysite.com/article/article1_featured_image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="http://www.mysite.com/article/article1.html"
+    />
     <!-- 트위터카드 -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="페이지 제목" />
     <meta name="twitter:description" content="페이지 설명" />
-    <meta name="twitter:image" content="http://www.mysite.com/article/article1.html" />
+    <meta
+      name="twitter:image"
+      content="http://www.mysite.com/article/article1.html"
+    />
     <meta name="twitter:domain" content="사이트 명" />
 
     <!-- reset.css cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
 
     <!-- 파비콘 -->
-    <link rel="shortcut icon" href="./images/comm/fav-test@2x.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./images/comm/fav-test@2x.png"
+      type="image/x-icon"
+    />
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- icon library : font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- 우리의 작업파일 연결 -->
-    <link rel="stylesheet" href="./assets/css/comm.css">
+    <link rel="stylesheet" href="./assets/css/comm.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- header -->
     <header id="header" class="hd-n">
-        <a>
-            <img src="./images/comm/logo.png" alt="따릉이 로고">따릉이
-        </a>
-    </header>
-    <div class="inner-wrap">
-        <div class="info-wrap">
-            <div class="rental-top">
-                <picture class="bg">
-                    <source media="(max-width : 470px)" srcset="./images/sub_rental/top_background_mobile.png">
-                    <source media="(max-width : 1200px)" srcset="./images/sub_rental/top_background_tablet.png">
-                    <img class="topbg" src="./images/sub_rental/top_background_desktop.png" alt="">
-                </picture>
-                <div class="text">
-                    <img src="./images/sub_rental/location.png" alt="">
-                    <div class="title">따릉이 대여소</div>
-                    <div class="con">서울자전거를 대여하고 반납할 수 있는 <span class="primary">무인 정류장 형태</span>의 자전거 거치 시설</span></div>
-                </div>
-            </div>
-            <div class="rental-mid">
-                <div class="left">
-                    <div class="text">
-                        <div class="title">대여소 위치</div>
-                        <span class="con">대여소는 지하철 출입구, 버스정류장, 주택단지, 광공서, 학교, 은행 등
-                            접근이 편리한 주변 생활시설 및 통행장소를 중심으로 운영하고 있습니다.
-                            대여소가 설치된 곳이면 어디에서나 '따릉이 앱'을 통해 서울 자전거를 대여하고 반납할 수 있습니다.</span>
-                    </div>
-                    <div class="content">
-                        <div class="element">
-                            <div class="title">대여소</div>
-                            <span class="primary">43,500<span class="con">개소</span></span>
-                        </div>
-                        <div class="element">
-                            <div class="title">따릉이</div>
-                            <span class="primary ">2,850<span class="con">개</span></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="right">
-                    <img src="./images/sub_rental/rental_location.png" alt="">
-                </div>
-            </div>
-            <div class="rental-bottom">
-                <picture style="height: 800px;">
-                    <source class="bottom-bg" media="(max-width : 380px)" srcset="./images/sub_rental/background_mobile2.png">
-                    <source class="bottom-bg" media="(max-width : 420px)" srcset="./images/sub_rental/background_mobile1.png">
-                    <source class="bottom-bg" media="(max-width : 470px)" srcset="./images/sub_rental/background_mobile.png">
-                    <source class="bottom-bg"  media="(max-width : 540px)" srcset="./images/sub_rental/background_tablet7.png">
-                    <source class="bottom-bg"  media="(max-width : 640px)" srcset="./images/sub_rental/background_tablet6.png">
-                    <source class="bottom-bg"  media="(max-width : 780px)" srcset="./images/sub_rental/background_tablet5.png">
-                    <source class="bottom-bg"  media="(max-width : 850px)" srcset="./images/sub_rental/background_tablet4.png">
-                    <source class="bottom-bg"  media="(max-width : 1000px)" srcset="./images/sub_rental/background_tablet3.png">
-                    <source class="bottom-bg"  media="(max-width : 1060px)" srcset="./images/sub_rental/background_tablet2.png">
-                    <source class="bottom-bg"  media="(max-width : 1400px)" srcset="./images/sub_rental/background_tablet.png">
-                    <img class="bottom-bg" src="./images/sub_rental/background_desktop.png" alt="">
-                </picture>
-                <div class="bottom-content">
-                    <div class="content">
-                        <div class="txt">
-                            <div class="title">자전거</div>
-                            <span class="con">누구나 이용할 수 있는 자전거로, 내구성이 강한 소재와 고급기어를 사용하여 주행 안정성과 편의성을 취우선으로 제작하였습니다.</span>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="txt">
-                            <div class="title">거치대</div>
-                            <span class="con">거치대는 자전거를 안전하게 세워 보관하는 시설이며, 따릉이 고유 색상과 형태를 지녀 복잡한 서울 시내에서 쉽게 눈에 띄도록 제작되었습니다.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <!-- pc nav depth 1 -->
+      <div class="nav_d1_area">
+        <h1>
+          <a href="./index.html">
+            <img src="./images/comm/logo.png" alt="따릉이 로고"
+          /></a>
+        </h1>
+
+        <!-- 주요메뉴 -->
+        <ul class="depth1">
+          <li><a href="javascript:void(0)">마이페이지</a></li>
+          <li><a href="./sub_business_intro.html">따릉이 소개</a></li>
+          <li><a href="./sub_insurance.html">자전거 보험</a></li>
+          <li><a href="./sub_ticket_info.html">이용권</a></li>
+          <li><a href="./sub_notice.html">고객센터</a></li>
+        </ul>
+        <!-- util -->
+        <!-- 이것도 뎁스 0 -->
+        <ul class="util">
+          <li><a href="#" class="util-lang">KR</a></li>
+          <li><a href="#" class="util-login">로그인</a></li>
+        </ul>
+      </div>
+      <div class="nav_btm_d1">
+        <div class="nav_btm_sns">
+          <!-- sns icon -->
+          <a href="#"
+            ><img
+              src="./images/comm/sns_icon_01_instagram.svg"
+              alt=""
+              class="sns_icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="./images/comm/sns_icon_02_facebook.svg"
+              alt=""
+              class="sns_icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="./images/comm/sns_icon_03_naverblog.svg"
+              alt=""
+              class="sns_icon"
+          /></a>
         </div>
+        <div class="nav_btm_info">
+          <!-- duty? -->
+          <a href="javascript:void(0)">이용약관</a>
+          <a href="javascript:void(0)">위치정보처리관련 약관</a>
+          <a href="javascript:void(0)">개인정보처리방침</a>
+        </div>
+      </div>
+    </header>
+    <!-- mobile nav -->
+    <button class="btn_menu" type="button">
+      <i> </i>
+      <i> </i>
+      <span class="blind">MENU</span>
+    </button>
+    <div class="m_header_area">
+      <div class="bgblur"></div>
+      <div class="nav_mobile">
+        <ul class="m_depth1">
+          <li>
+            <strong>마이페이지</strong>
+            <ul class="m_depth2">
+              <li><a href="javascript:void(0)">대여반납내역조회</a></li>
+              <li><a href="javascript:void(0)">가입정보확인</a></li>
+              <li><a href="javascript:void(0)">카드정보</a></li>
+              <li><a href="javascript:void(0)">결제환불내역</a></li>
+            </ul>
+          </li>
+          <li>
+            <strong>따릉이 소개</strong>
+            <ul class="m_depth2">
+              <li><a href="./sub_business_intro.html">사업 개요</a></li>
+              <li><a href="./sub_rental_info.html">대여소 안내</a></li>
+            </ul>
+          </li>
+          <li>
+            <strong>자전거 보험</strong>
+            <ul class="m_depth2">
+              <li>
+                <a href="./sub_insurance.html">공공자전거 종합보험 안내</a>
+              </li>
+              <li><a href="./sub_insurance2.html">영조물 배상공제 안내</a></li>
+            </ul>
+          </li>
+          <li>
+            <strong>이용권</strong>
+            <ul class="m_depth2">
+              <li>
+                <a href="./sub_ticket_info.html"><span>이용요금 안내</span></a>
+              </li>
+              <li><a href="javascript:void(0)">이용권 구매</a></li>
+            </ul>
+          </li>
+          <li>
+            <strong>고객센터</strong>
+            <ul class="m_depth2">
+              <li><a href="./sub_notice.html">공지사항</a></li>
+              <li><a href="javascript:void(0)">문의하기</a></li>
+              <li><a href="./sub_faq.html">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="nav_btm_d1">
+          <div class="nav_btm_sns">
+            <!-- sns icon -->
+            <a href="#"
+              ><img
+                src="./images/comm/sns_icon_01_instagram.svg"
+                alt=""
+                class="sns_icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="./images/comm/sns_icon_02_facebook.svg"
+                alt=""
+                class="sns_icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="./images/comm/sns_icon_03_naverblog.svg"
+                alt=""
+                class="sns_icon"
+            /></a>
+          </div>
+          <div class="nav_btm_info">
+            <!-- duty? -->
+            <a href="#">이용약관</a>
+            <a href="#">위치정보처리관련 약관</a>
+            <a href="#">개인정보처리방침</a>
+          </div>
+        </div>
+      </div>
     </div>
-    
-</body>
+    <!-- pc nav depth 2 -->
+    <div class="ct-nav_depth2">
+      <!-- depth2 -->
+      <div class="nav_d2_area">
+        <h2>따릉이 소개</h2>
+        <ul class="depth2">
+          <li><a href="./sub_business_intro.html">사업 개요</a></li>
+          <li><a href="./sub_rental_info.html">대여소 안내</a></li>
+        </ul>
+      </div>
+      <div class="nav_btm_d2">
+        <span>서울특별시 중구 세종대로 110 </span>
+        <span>서울특별시 대표자 오세훈</span>
+        <span>Tel : 1599-0120 (사업자등록번호 : 104-83-00469)</span>
+        <span>우편번호 04524</span>
+        <span>COPYRIGHT ⓒ 2018 bikeseoul All RIGHTS RESERVED.</span>
+      </div>
+    </div>
+    <div class="inner-wrap">
+      <div class="info-wrap">
+        <div class="rental-top">
+          <picture class="bg">
+            <source
+              media="(max-width : 470px)"
+              srcset="./images/sub_rental/top_background_mobile.png"
+            />
+            <source
+              media="(max-width : 1200px)"
+              srcset="./images/sub_rental/top_background_tablet.png"
+            />
+            <img
+              class="topbg"
+              src="./images/sub_rental/top_background_desktop.png"
+              alt=""
+            />
+          </picture>
+          <div class="text">
+            <img src="./images/sub_rental/location.png" alt="" />
+            <div class="title">따릉이 대여소</div>
+            <div class="con">
+              서울자전거를 대여하고 반납할 수 있는
+              <span class="primary">무인 정류장 형태</span>의 자전거 거치 시설
+            </div>
+          </div>
+        </div>
+        <div class="rental-mid">
+          <div class="left">
+            <div class="text">
+              <div class="title">대여소 위치</div>
+              <span class="con"
+                >대여소는 지하철 출입구, 버스정류장, 주택단지, 광공서, 학교,
+                은행 등 접근이 편리한 주변 생활시설 및 통행장소를 중심으로
+                운영하고 있습니다. 대여소가 설치된 곳이면 어디에서나 '따릉이
+                앱'을 통해 서울 자전거를 대여하고 반납할 수 있습니다.</span
+              >
+            </div>
+            <div class="content">
+              <div class="element">
+                <div class="title">대여소</div>
+                <span class="primary">43,500<span class="con">개소</span></span>
+              </div>
+              <div class="element">
+                <div class="title">따릉이</div>
+                <span class="primary">2,850<span class="con">개</span></span>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <img src="./images/sub_rental/rental_location.png" alt="" />
+          </div>
+        </div>
+        <div class="rental-bottom">
+          <picture style="height: 800px">
+            <source
+              class="bottom-bg"
+              media="(max-width : 380px)"
+              srcset="./images/sub_rental/background_mobile2.png"
+            />
+            <source
+              class="bottom-bg"
+              media="(max-width : 420px)"
+              srcset="./images/sub_rental/background_mobile1.png"
+            />
+            <source
+              class="bottom-bg"
+              media="(max-width : 470px)"
+              srcset="./images/sub_rental/background_mobile.png"
+            />
+            <source
+              class="bottom-bg"
+              media="(max-width : 540px)"
+              srcset="./images/sub_rental/background_tablet7.png"
+            />
+            <source
+              class="bottom-bg"
+              media="(max-width : 640px)"
+              srcset="./images/sub_rental/background_tablet6.png"
+            />
+            <source
+              class="bottom-bg"
+              media="(max-width : 780px)"
+              srcset="./images/sub_rental/background_tablet5.png"
+            />
+            <source
+              class="bottom-bg"
+              media="(max-width : 850px)"
+              srcset="./images/sub_rental/background_tablet4.png"
+            />
+            <source
+              class="bottom-bg"
+              media="(max-width : 1000px)"
+              srcset="./images/sub_rental/background_tablet3.png"
+            />
+            <source
+              class="bottom-bg"
+              media="(max-width : 1060px)"
+              srcset="./images/sub_rental/background_tablet2.png"
+            />
+            <source
+              class="bottom-bg"
+              media="(max-width : 1400px)"
+              srcset="./images/sub_rental/background_tablet.png"
+            />
+            <img
+              class="bottom-bg"
+              src="./images/sub_rental/background_desktop.png"
+              alt=""
+            />
+          </picture>
+          <div class="bottom-content">
+            <div class="content">
+              <div class="txt">
+                <div class="title">자전거</div>
+                <span class="con"
+                  >누구나 이용할 수 있는 자전거로, 내구성이 강한 소재와
+                  고급기어를 사용하여 주행 안정성과 편의성을 취우선으로
+                  제작하였습니다.</span
+                >
+              </div>
+            </div>
+            <div class="content">
+              <div class="txt">
+                <div class="title">거치대</div>
+                <span class="con"
+                  >거치대는 자전거를 안전하게 세워 보관하는 시설이며, 따릉이
+                  고유 색상과 형태를 지녀 복잡한 서울 시내에서 쉽게 눈에 띄도록
+                  제작되었습니다.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
