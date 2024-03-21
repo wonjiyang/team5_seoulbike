@@ -3011,6 +3011,9 @@ table tbody tr .add-right-line {
   flex-direction: column;
   gap: 48px;
 }
+.nav_d1_area a {
+  display: inline-block;
+}
 
 .depth1 {
   display: flex;

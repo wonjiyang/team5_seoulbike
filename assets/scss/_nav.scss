@@ -60,6 +60,10 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
+
+    a {
+        display: inline-block;
+    }
 }
 
 // 주요 메뉴 내 정렬
