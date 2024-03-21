@@ -453,17 +453,36 @@
     }
 }
 
-@media screen and (max-width: 1460px) {
+@media screen and (max-width: 1530px) {
     .rental-bottom {
         .bottom-content {
             .content {
                 &:first-child {
-                    top: 190px;
-                    right: 360px;
+                    top: 135px;
+                    right: 245px;
                 }
                 &:last-child {
-                    bottom: 170px;
-                    left: 310px;
+                    bottom: 135px;
+                    left: 215px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1480px) {
+    .rental-bottom {
+        .bottom-content {
+            .content {
+                &:first-child {
+                    width: 277px;
+                    top: 130px;
+                    right: 225px;
+                }
+                &:last-child {
+                    width: 277px;
+                    bottom: 130px;
+                    left: 200px;
                 }
             }
         }
